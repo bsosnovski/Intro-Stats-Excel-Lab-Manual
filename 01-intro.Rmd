@@ -1,0 +1,6 @@
+# Introduction {#intro}
+
+This basic Microsoft&reg; Excel&reg; manual provides students with the skills needed to execute many personal and professional activities. It also prepares them to go on to more advanced skills using the Excel software. The text takes the approach of making decisions using Excel. Personal decisions introduced include important purchases, such as homes and automobiles, savings for retirement, and personal budgets. Professional decisions include budgets for managing expenses, merchandise items to mark down or discontinue, and inventory management. Students are given clear, easy-to-follow instructions for each skill presented and are also provided with opportunities to learn additional skills related to the personal or professional objectives presented. For example,
+students learn the key terms with respect to home mortgages and understand the impact interest rates have on monthly mortgage payments. This text also places an emphasis on "what-if" scenarios so students gain an appreciation for the computational power of the Excel application. In
+addition, students learn how Excel is used with Microsoft&reg; Word&reg; and Microsoft&reg; Word&reg to accomplish a variety of personal and professional objectives.
+

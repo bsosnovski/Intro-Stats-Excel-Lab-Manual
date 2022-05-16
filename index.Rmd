@@ -1,0 +1,48 @@
+--- 
+title: "Introduction to Statistics - Excel Lab Manual"
+author: "Bianca Sosnovski"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+github-repo: rstudio/bookdown-demo
+description: "This is an Excel computer lab manual to be used  an Introduction to Statistics."
+---
+
+# Preface {-}
+
+Statistics is present in many ways our lives. Statistical methodology can be found in surveys, sampling, clinical trials, studies of biomedical treatments, etc . In recent years, Statistics has been undergoing changes in its techniques and its approaches because the need to analyze exceptionally large and complex data sets that arise all around us but cannot done by hand. Since we more powerful computers available to us at present time, we can employ them  to analyze these large datasets. Thus it is even more important to learn how to use computer applications for statistical analysis, enhancing technology skills effectively for academic research and lifelong learning.
+
+
+## About this Book {-}
+
+This book has been written as a companion text for a course is an introduction to statistics with use of Excel software . Topics include: descriptive statistics; probability; binomial and normal distributions; sampling; confidence intervals and tests of hypotheses.
+
+This text is to be used as a tutorial on how to use Excel to `learn` some fundamentals concepts covered in a typical Introduction to Statistics course, also a tool to advance technology skills effectively for academic research and lifelong learning.It is to be used along side lectures and/or textbooks in such a course. It is not a comprehensive introduction to Excel or Statistics.
+
+The mathematical equations required for statistical concepts such as the mean and the standard deviation have not been provided as these are easily performed with functions in Excel.
+
+
+## About the Author {-}
+
+Bianca Sosnovski (<https://www.qcc.cuny.edu/mathcs/people/BSosnovski.html>) is an Assistant Professor for the Department of Mathematics and Computer Science at Queensborough Community College, CUNY. (<https://www.qcc.cuny.edu>). She earned her PhD and M.Ph. in Mathematics from the Department of Mathematics at the Graduate Center, CUNY in New York, and her M.S. in Applied Mathematics from the Department of Mathematics at the State University of Campinas (UNICAMP) in Brazil. In addition to her interest in mathematics education, she is also interested in abstract algebra and cryptography.
+
+
+She enjoys photography and traveling. She can be found on Instagram (https://www.instagram.com/bsosnovski/) posting her amateur photography, and also on GitHub (https://github.com/bsosnovski).
+
+## Licensing {-}
+
+![Creative Commons License](by-nc-sa.png)  
+
+
+Introduction to Statistics - Excel Lab Manual is copyrighted by Bianca Sosnovski. The online version of this book is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/). You may freely share this content for non-commercial purposes, with a source credit to https://Introduction_to_Statistics_Excel_Lab_Manual.org.
+
+## Disclaimer {-}
+
+The information is this book is provided without warranty. The author and publisher have neither liability nor responsibility to any person or entity related to any loss or damages arising from the information contained in this book.
+
+
+

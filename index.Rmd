@@ -43,6 +43,3 @@ Introduction to Statistics - Excel Lab Manual is copyrighted by Bianca Sosnovski
 ## Disclaimer {-}
 
 The information is this book is provided without warranty. The author and publisher have neither liability nor responsibility to any person or entity related to any loss or damages arising from the information contained in this book.
-
-
-

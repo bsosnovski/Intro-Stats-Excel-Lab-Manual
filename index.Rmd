@@ -8,8 +8,8 @@ documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
-github-repo: rstudio/bookdown-demo
-description: "This is an Excel computer lab manual to be used in an Introduction to Statistics."
+github-repo: https://github.com/bsosnovski/Intro-Stats-Excel-Lab-Manual
+description: "This is an Excel computer lab manual to be used  an Introduction to Statistics."
 ---
 
 # Preface {-}
@@ -43,6 +43,3 @@ Introduction to Statistics - Excel Lab Manual is copyrighted by Bianca Sosnovski
 ## Disclaimer {-}
 
 The information is this book is provided without warranty. The author and publisher have neither liability nor responsibility to any person or entity related to any loss or damages arising from the information contained in this book.
-
-
-

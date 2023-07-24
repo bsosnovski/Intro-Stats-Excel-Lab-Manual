@@ -114,6 +114,10 @@ knitr::include_graphics('style-pc.png')
 
 3. Select the `My table has headers` check box in the `Format as Table` dialog box.
 
+```{r format-as-table, echo=FALSE, fig.align = 'center', out.width='70%', fig.show='hold', fig.cap='32: Format As Table dialog box.', fig.alt = 'A screenshot  showing the dialog box from command Format As Table command.'}
+knitr::include_graphics('format-table.png')
+```
+
 *Remark:* When you select a table by clicking the mouse pointer, the `Table Tools` menu becomes available, and a `Design` tab is displayed. To get a good idea of what you can add to or change in your table, click the `Design` tab, then explore the groups and options provided on this tab.
 
 4. Replace the table headers. Instead of `Columns1` through `Column5`, replace headers by typing in them the following: *Name*, *Exam 1*, *Exam 2*, *Exam 3* and *Final Exam*.

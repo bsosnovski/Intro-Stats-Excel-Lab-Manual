@@ -63,3 +63,4 @@ fig:number-formatting
 fig:entering-data
 fig:autosum
 fig:sorting
+fig:format-as-table

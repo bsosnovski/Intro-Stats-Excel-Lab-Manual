@@ -86,3 +86,13 @@ pc
 fig:relabel-horiontal-axis-pc
 fig:adjusted-histogram
 adjusting-the-title-of-the-histogram
+measures-of-central-tendency-and-variation
+preparation-1
+excel-instructions-1
+using-the-descriptive-statistics-in-excel-to-obtain-the-measures
+using-excels-functions-to-obtain-the-measures
+fig:descriptive-stats1
+fig:descriptive-stats2
+fig:summary-stats
+descriptive-stats
+excel-functions

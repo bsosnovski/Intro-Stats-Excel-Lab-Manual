@@ -31,7 +31,7 @@ The mathematical equations required for statistical concepts such as the mean an
 Bianca Sosnovski (**<https://www.qcc.cuny.edu/mathcs/people/BSosnovski.html>**) is an Assistant Professor for the Department of Mathematics and Computer Science at Queensborough Community College, CUNY. (**<https://www.qcc.cuny.edu>**). She earned her Ph.D. and M.Phil. in Mathematics from the Department of Mathematics at the Graduate Center, CUNY in New York, and her M.S. in Applied Mathematics from the Department of Mathematics at the State University of Campinas (UNICAMP) in Brazil. In addition to her interest in mathematics education, she is also interested in abstract algebra and cryptography.
 
 
- She also shares some other resources on GitHub (**<https://github.com/bsosnovski>**).  In her free time, she enjoys photography and traveling.
+ She also shares some other resources on GitHub [(**https://github.com/bsosnovski**)](https://github.com/bsosnovski).  In her free time, she enjoys photography and traveling.
 
 ## License {-}
 

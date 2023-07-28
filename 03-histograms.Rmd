@@ -4,11 +4,11 @@
 
 You will construct a histogram with 5 classes (bars) using Excel. Start by determining minimum and maximum values in a data set, class width, the lower and upper limits of classes of values, class boundaries, midpoints, etc. This is similar in Excel. You will need the upper-class limits and the midpoints for adjusting the graph created with Excel.
 
-Throughout this handout, by *select* I mean for you to left-click with the mouse.
+Throughout these instructions, by *Select* I mean for you to left-click with the mouse.
 
 ###	Preparation
 
-In this lab, you will use a data set that contains scores received on an MA-336 Exam. Download the data set Lab 3 Exam Scores.xlsx from here:  (**https://github.com/bsosnovski/Intro-Stats-Excel-Lab-Manual/blob/main/Data_Sets/Lab-3-Exam-Scores.xlsx**)
+In this lab, you will use a data set that contains scores received on an MA-336 Exam. Download the data set. called *Lab 3 Exam Scores.xlsx* from here:  [**https://github.com/bsosnovski/Intro-Stats-Excel-Lab-Manual/blob/main/Data_Sets/Lab-3-Exam-Scores.xlsx**](https://github.com/bsosnovski/Intro-Stats-Excel-Lab-Manual/blob/main/Data_Sets/Lab-3-Exam-Scores.xlsx)
 
 ## Excel Instructions
 
@@ -50,7 +50,7 @@ knitr::include_graphics('initial-comp.png')
 
 **Note:** If the formulas do not update automatically, do step 5 below. Otherwise, skip to step 6.
 
-5. Select `>Formulas>Calculate Now`.
+5. Select `Formulas>Calculate Now`.
 6. Type in cell D7 the label *Upper Limits*.
 
 7.Type the values of the upper limits of each class in cells D8 through D12. 
@@ -68,9 +68,9 @@ knitr::include_graphics('class-limits-comp.png')
 
 ### Creating the Histogram
 
-1. Select `>Data>Data Analysis>Histogram` and click `OK`.
+1. Select `Data>Data Analysis>Histogram` and click `OK`.
 
-**Note:** If `Data Analysis` does not appear in the `Data` menu, refer to the instructions in Lab 1 Getting Started with Excel how to make it available. 
+**Note:** If `Data Analysis` does not appear in the Data menu, refer to the instructions in Lab **\@ref(start)** *Getting Started with Excel* how to make it available. 
 
 2. In the dialog box, first click in the `Input Range` field then type in `$A$2:$A$33`. 
 
@@ -102,9 +102,9 @@ knitr::include_graphics('raw-histogram.png')
 3. A frequency table was created with the graph in the process. That table controls some aspects of the graph. Select the cells in the last row of the frequency table, the one that contains the word *More*.
 4. Select `>Home>Delete` (you can also do this by right-clicking on the selected cells and then the option `Delete`).
 
-**Note:** If you don’t delete the row in the table, the graph will contain an extra bar on the right of the graph with a frequency equal to zero. **Be sure to delete the cells and not just delete the contents in those cells.**
+**Note:** If you do not delete the row in the table, the graph will contain an extra bar on the right of the graph with a frequency equal to zero. **Be sure to delete the cells and not just delete the contents in those cells.**
 
-5. If the graph doesn’t update automatically, select `>Formulas>Calculate Now`.
+5. If the graph doesn’t update automatically, select `Formulas>Calculate Now`.
 
 ```{r delete-more-row, echo=FALSE, fig.align = 'center', out.width='100%', fig.show='hold', fig.cap='Deleting the *More* row from the frequency table of the histogram.', fig.alt = 'A screenshot showing how to delete the row labeled More.'}
 knitr::include_graphics('delete-more-row.png')

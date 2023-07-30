@@ -188,7 +188,7 @@ In Excel, we enter data and labels in the cells. It is common to select a column
 
 **Practice 1:**
 
-For every twenty hours of prime-time viewing, the number of ads and the time devoted to ads were recorded. Enter the data as shown in Figure \@ref(fig:entering-data) in your Excel workbook.
+The number of ads and the time devoted to ads were recorded for every twenty hours of prime-time viewing. Enter the data as shown in Figure \@ref(fig:entering-data) in your Excel workbook.
 
 ```{r entering-data, echo=FALSE, fig.align = 'center', out.width='25%', fig.show='hold', fig.cap='Excel worksheet with data.', fig.alt = 'Excel worksheet with some data typed in.'}
 knitr::include_graphics('entering_data.png')
@@ -228,7 +228,7 @@ For the data you entered in your worksheet (see Practice 1), select cells in Col
 
 ### Sorting Data
 
-The `Sort` and `Filter` buttons on the `Home Menu` shown in Figure \@ref(fig:sorting) sort the data in ascending or descending depending on the selection from the sub-menu. 
+The `Sort` and `Filter` button on the `Home` tab shown in Figure \@ref(fig:sorting) sort the data in ascending or descending depending on the selection from the sub-menu. 
 
 
 ```{r sorting, echo=FALSE, fig.align = 'center', out.width='30%', fig.show='hold', fig.cap='Sort and Filter buttons.', fig.alt = 'A screenshot showing the Sort and Filter buttons in Excel.'}

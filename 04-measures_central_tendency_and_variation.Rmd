@@ -73,13 +73,15 @@ You will investigate the many modes in the data set and what they are. For that,
 10. While the block of cells is selected, type the function `MODE.MULT(A2:A101)` into the Formula bar.
 11. Press the keys `Control` + `Shift` + `Enter` (For MAC, use the keys `Command` + `Shift` + `Enter`).
 
-**Note:** Be careful! If you only press Enter or use the function MODE(), Excel will only display one value for the mode even if there are multiple modes. 
+**Note:** Be careful! If you only press Enter or use the function MODE, Excel will only display one value for the mode even if there are multiple modes. 
 
-**Note:** Here is a link to a video tutorial about how to use the function `MODE.MULT()`: [**https://youtu.be/BPboB7Ov-A8**](https://youtu.be/BPboB7Ov-A8).
+**Note:** Here is a link to a video tutorial about how to use the function MODE.MULT: [**https://youtu.be/BPboB7Ov-A8**](https://youtu.be/BPboB7Ov-A8).
 
-**Note:** If there is no mode, #N/A will appear as a result.
+**Note:** If there is no mode, #N/A will appear as a result. If there is only one mode, MODE.MULT returns the same value repeatedly.
 
-
+```{r excel-functions, echo=FALSE, fig.align = 'center', out.width='40%', fig.show='hold', fig.cap='The results from the Excel functions used above..', fig.alt = 'A screenshot of the results from the Excel functions used.'}
+knitr::include_graphics('excel-functions.png')
+```
 
 **Practice 2:**
 

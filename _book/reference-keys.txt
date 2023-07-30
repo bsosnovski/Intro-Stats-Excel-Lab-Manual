@@ -96,3 +96,4 @@ fig:descriptive-stats2
 fig:summary-stats
 descriptive-stats
 excel-functions
+fig:excel-functions

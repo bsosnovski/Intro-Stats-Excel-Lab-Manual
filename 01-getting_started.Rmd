@@ -30,7 +30,7 @@ knitr::include_graphics('saving-pc2.png')
 ```{r saving-dialog-box-mac, echo=FALSE, fig.align = 'center', out.width='60%', fig.show='hold', fig.cap='Dialog box when saving a workbook on a MAC.', fig.alt = 'A dialog box on a MAC showing where to enter file name, select the directory and file type.'}
 knitr::include_graphics('saving-mac2.png')
 ```
-After using the `Save As` feature, you can use the `Save` command to overwrite your previously saved file with the file in its current state.  After you have saved the Excel file for the first time, you can save the updates during your working session by using the save button on the title toolbar.
+After using the `Save As` feature, you can use the `Save` command to overwrite your previously saved file with the file in its current state.  After saving the Excel file for the first time, you can save the updates during your working session using the save button on the title toolbar.
 
 ```{r saving-options, echo=FALSE, fig.align = 'center', out.width='85%', fig.show='hold', fig.cap='Saving options.', fig.alt = 'A screenshot displaying saving options in Excel.'}
 knitr::include_graphics('saving-options.png')
@@ -45,7 +45,7 @@ You can also turn on the *AutoSave* feature to save your data automatically whil
 1. Click the `File` tab.
 2. Click on `Options`.
 3. In the Options dialog box, click on the `Save` option on the left.
-4. Check the option `Save AutoRecover information every`. By default, the value is 10 minutes, but you can choose a lower or higher value if you want.
+4. Check the option `Save AutoRecover information every`. By default, the value is 10 minutes, but you can choose a lower or higher value.
 5. Then click `Ok`.
 
 ```{r autosave-pc, echo=FALSE, fig.align = 'center', out.width='85%', fig.show='hold', fig.cap='AutoSave option on PC.', fig.alt = 'Excel AutoSave option on PC.'}
@@ -77,7 +77,7 @@ knitr::include_graphics('autosave-mac2.png')
 
 ## Opening an Excel File
 
-To open an Excel file, go to the main menu and click `File > Open`. Select the directory containing the file, and then select the file you want to open.
+To open an Excel file, go to the main menu and click `File > Open`. Select the directory containing the file, then select the file you want to open.
 
 
 ## The Analysis ToolPak {#toolpak}
@@ -90,7 +90,7 @@ With an Excel worksheet open:
 
 1. Click on `File` in the main menu.
 2. Click on `Options`.
-3. Click `Add-ins` (left side menu) to see if the ToolPak is listed in the Active Application Add-ins. If it is, the ToolPak is installed. If you do not see a listing for Analysis ToolPak in Active Application Add-ins, it may be under the list of inactive applications. If you do not see it, you will need to install it from the original Excel installation source.
+3. Click `Add-ins` (left side menu) to see if the ToolPak is listed in the Active Application Add-ins. If it is, the ToolPak is installed. If you do not see a listing for Analysis ToolPak in Active Application Add-ins, it may be under the list of inactive applications. IYou must install it from the original Excel installation source if you do not see it.
 4. To install or activate it, click `Go`.
 5. Check the box next to `Analysis ToolPak`.
 6. Click `OK`.
@@ -151,7 +151,7 @@ Intersecting rows and columns form the cells. A cell’s address consists of a c
 
 To select a cell, position the cursor in the cell and click the left mouse button (or click on your computer's trackpad). Sometimes you will want to select several cells simultaneously to format them (as described next). 
 
-To select a rectangular block of cells, position the cursor in a corner cell of the block, hold down the left mouse button, drag the cursor to the cell in the opposite corner of the block, and release the button.
+To select a rectangular block of cells, position the cursor in a corner cell, hold down the left mouse button, drag the cursor to the cell in the opposite corner of the block, and release the button.
 
 ```{r cell-sellection, echo=FALSE, fig.align = 'center', out.width='40%', fig.show='hold', fig.cap='A block of cells selected in the worksheet.', fig.alt = 'A screenshot of a block of selected cells.'}
 knitr::include_graphics('cell-selection.png')
@@ -184,7 +184,7 @@ All these instructions may seem a little mysterious, but once you try them, you 
 
 ## Entering Data
 
-In Excel, we enter data and labels in the cells. It is common to select a column for the data and place a label as the first entry in the column.
+In Excel, we enter data and labels in the cells. It is common to select a column for the data and place a label as the first entry of the column.
 
 **Practice 1:**
 
@@ -197,17 +197,17 @@ knitr::include_graphics('entering_data.png')
 ### Entering and Correcting Data
 To select a cell for content entry, move the mouse pointer to the cell and click. Then type the label or data and press Enter. Excel automatically moves to select the next cell in the same column. If you want to enter information in a different cell, click on it.
 
-Errors are easily fixed. If you notice a mistake before you press Enter, back-arrow to the mistake and correct it. If you see the error after you have pressed Enter, select the affected cell, and then click on the formula bar to add a typing cursor to the cell contents displayed. Use standard keyboard editing techniques to make corrections, then press Enter.
+Errors are easily fixed. If you notice a mistake before you press Enter, back-arrow to the mistake and correct it. If you see the error after you have pressed Enter, select the affected cell, and then click on the formula bar to add a typing cursor to the cell contents displayed. Use standard keyboard editing techniques to make corrections, then press `Enter`.
 
 If you want to erase the contents of a cell or range of cells but keep the formatting:
 
 1. 	Select the cells and click `Home`
 2. 	Click the arrow next to `Clear`
-3. 	Select `Clear Content` (or just press Delete)
+3. 	Select `Clear Content` (or press `Delete`)
 
-The `Clear > Clear Formats` option keeps the content but clears the format. The ` Clear > Clear All` option clears both content and format.
+The `Clear > Clear Formats` option keeps the content but clears the format. The ` Clear > Clear All` option removes both content and format.
 
-*Remark:* `Clear > Formats` is especially useful for changing percent data back into decimal format.
+**Note:** `Clear > Formats` is handy for changing percent data back into decimal format.
 
 ## Arithmetic Options on the Standard Toolbar
 
@@ -228,7 +228,7 @@ For the data you entered in your worksheet (see Practice 1), select cells in Col
 
 ### Sorting Data
 
-The `Sort` and `Filter` button on the `Home` tab shown in Figure \@ref(fig:sorting) sort the data in ascending or descending depending on the selection from the sub-menu. 
+The `Sort` and `Filter` ribbon on the `Home` tab shown in Figure \@ref(fig:sorting) can be used to sort the data in ascending or descending depending on the selection from the sub-menu. 
 
 
 ```{r sorting, echo=FALSE, fig.align = 'center', out.width='30%', fig.show='hold', fig.cap='Sort and Filter buttons.', fig.alt = 'A screenshot showing the Sort and Filter buttons in Excel.'}
@@ -250,7 +250,7 @@ After step 2 above, your data set should be in the original form.
 To copy one cell or a block of cells to another location on the worksheet:
 
 1.	Select the cells you wish to copy.
-2.	From the `Home Menu`, select `Copy` (the shortcut with keyboard for this process is `Ctrl-C` or `Command -C`). Notice that the range of cells being copied now has a blinking border around it.
+2.	From the `Home Menu`, select `Copy` (the shortcut with the keyboard for this process is `Ctrl-C` or `Command -C`). Notice that the range of cells being copied now has a blinking border around it.
 3.	Select the upper-left cell of the block that will receive the copy.
 4.	Press Enter. When you press Enter, the copy process is complete, and the blinking border around the original cells disappears.
 

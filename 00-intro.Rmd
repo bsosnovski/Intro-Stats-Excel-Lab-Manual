@@ -2,11 +2,11 @@
 
 Microsoft Excel&reg; is a spreadsheet software for business applications available in the Microsoft Office&reg; package. Excel enables users to format, organize, and calculate data with formulas and functions.
 
-This basic Excel lab manual provides students and the novice with the skills needed to use Excel’s built-in statistical functions and how to produce some useful graphs. It also prepares them to go on to more advanced skills using the Excel software.
+This basic Excel lab manual provides students and the novice with the skills needed to use Excel’s built-in statistical functions and how to produce some useful graphs. It also prepares them for more advanced skills using the Excel software.
 
 Although Excel is a powerful tool for executing many personal and professional activities, it is not a statistical data analysis package. It was never designed to be one, but it has the *Data Analysis ToolPak*, an extra feature extending Excel's standard capabilities. Data Analysis ToolPak enables users to perform various statistical analyses in Excel. In many cases, macros (automated actions that can be used repeatedly to perform a task or tasks) can be created to produce special graphs, such as box-and-whisker plots.
 However, this manual only shows how to use some of the existing built-in features and the Data Analysis ToolPak.
 
 The Analysis ToolPak is part of Excel and can be added to the basic Excel program as an option on the program's list of Add-ins. The details for getting started with the Analysis ToolPak are presented in Chapter **\@ref(start)** of this manual. No additional software is required to use the Excel functions described.
 
-Excel runs slightly differently on Mac and PC computers. Whenever there is a difference between Excel for Mac and PC on performing a task, each system's instructions in this lab will be provided separately. Otherwise, the same set of instructions is applied to both systems.
+Excel runs slightly differently on MACs and PCs. Whenever there is a difference between Excel for Mac and PC on performing a task, each system's instructions in this lab will be provided separately. Otherwise, the same set of instructions is applied to both systems.

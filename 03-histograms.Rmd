@@ -4,7 +4,7 @@
 
 You will construct a histogram with 5 classes (bars) using Excel. Start by determining minimum and maximum values in a data set, class width, the lower and upper limits of classes of values, class boundaries, midpoints, etc. This is similar in Excel. You will need the upper-class limits and the midpoints for adjusting the graph created with Excel.
 
-Throughout these instructions, by *Select* I mean for you to left-click with the mouse.
+Throughout this manual, Select means to left-click with the mouse/pad.
 
 ###	Preparation
 
@@ -17,7 +17,7 @@ Open the Excel file you downloaded and follow the instructions below.
 ###	Initial Computations
 1. Select cell C1 and in the formula bar type in `=COUNT(A2:A33)`.
 
-**Note:** You can fill in the input range, A2:A33, in the formula count above by manually typing the address of the cells containing the data values. Alternatively, you can select cells that form the Input Range by clicking on A2, hold, and dragging downward until you reach cell A33. Then release.
+**Note:** You can fill in the input range, A2:A33, in the formula count above by manually typing the address of the cells containing the data values. Alternatively, you can select cells that form the Input Range by clicking on A2, holding, and dragging downward until you reach cell A33. Then release.
 
 2. Type in cell D1 the label *Total number of data entries*.
 3. Select cell C2 and in the formula bar type in `=MIN(A2:A33)`.
@@ -40,7 +40,7 @@ knitr::include_graphics('initial-comp.png')
 
 1. Type in cell C7 the label *Lower Limits*.
 2. In cell C8, type the formula `= C2`. This will copy the value in cell C2 as the histogram's lower limit for the first class.
-3. Select cell C9 and in the formula bar type `=SUM(C8,$C$5)`. Do not forget the `dollar sign` because the value in C5, that is the width, is a fixed value for all formulas you use here.
+3. 3)	Select cell C9, and in the formula bar, type `=SUM(C8,$C$5)`. Remember  the `dollar sign` because the value in C5, the width, is a fixed value for all formulas you use here.
 
 **Note:** You may also do the computation in step 3 above using the keyboard key `+`.
 
@@ -55,12 +55,12 @@ knitr::include_graphics('initial-comp.png')
 
 7.Type the values of the upper limits of each class in cells D8 through D12. 
 
-**Note:** You can also be creative and use a formula to do the work in step for you. There are different ways of entering the upper limits using formulas but that is not being requested from you for this lab. 
+**Note:** You can also be creative and use a formula to do the work in this step. There are different ways of entering the upper limits using formulas, but that is not being requested from you for this lab.
 
 8. Type in cell E7 the label *Midpoints*.
 9. Compute the values of the midpoints (lower limit + upper limit)/2 of each class in cells E8 through E12 by using Excel formulas.
 
-**Note:** To do this step use the techniques and Excel functions presented above (create the Excel formula!)
+**Note:** To do this step, use the techniques and Excel functions presented above (create the Excel formula!)
 
 ```{r class-limits-comp, echo=FALSE, fig.align = 'center', out.width='50%', fig.show='hold', fig.cap='Class limits computations.', fig.alt = 'A screenshot of the class limits computations.'}
 knitr::include_graphics('class-limits-comp.png')
@@ -74,7 +74,7 @@ knitr::include_graphics('class-limits-comp.png')
 
 2. In the dialog box, first click in the `Input Range` field then type in `$A$2:$A$33`. 
 
-**Note:** Instead of typing, you can *select cells* that form the Input Range by clicking on A2, holding and dragging downward until you reach cell A33. Then release.
+**Note:** Instead of typing, you can *select cells* that form the Input Range by clicking on A2, holding, and dragging downward until you reach cell A33. Then release.
 
 3. 3)	Click the `Bin Range` field in the dialog window first, then type in  `$D$8:$D$12`. 
 
@@ -88,7 +88,7 @@ knitr::include_graphics('class-limits-comp.png')
 knitr::include_graphics('histogram-mac.png')
 ```
 
-After the steps above, Excel presents you with a frequency table and the corresponding graph. Excel counts the frequency of each class based on the *Bins* values you entered in the dialog window for the histogram. Thus, it counts how many values are in the date set (Input Range) up to the upper limits.
+After the steps above, Excel presents a frequency table and the corresponding graph. Excel counts the frequency of each class based on the *Bins* values you entered in the dialog window for the histogram. Thus, it counts how many values are in the date set (Input Range) up to the upper limits.
 
 The graph is a *raw histogram* that needs to be adjusted to resemble an actual histogram.
 

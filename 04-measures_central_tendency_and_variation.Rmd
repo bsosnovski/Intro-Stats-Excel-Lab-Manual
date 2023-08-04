@@ -1,4 +1,4 @@
-# Measures of Central Tendency and Variation
+# Measures of Central Tendency and Variation {#central-tendency-variation}
 
 In this lab, you will use Excel to determine a data set's mean, median, mode, and standard deviation. A measure of central tendency shows where the center or middle of the data set is located. A measure of variation shows the spread among data values.
 

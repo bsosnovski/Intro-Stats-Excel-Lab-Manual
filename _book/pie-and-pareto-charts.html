@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Page not found | Introduction to Statistics: Excel Lab Manual</title>
+  <title>Lab 6 Pie and Pareto Charts | Introduction to Statistics: Excel Lab Manual</title>
   <meta name="description" content="This is an Excel computer lab manual to be used in an Introduction to Statistics course at QCC." />
   <meta name="generator" content="bookdown 0.29 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Page not found | Introduction to Statistics: Excel Lab Manual" />
+  <meta property="og:title" content="Lab 6 Pie and Pareto Charts | Introduction to Statistics: Excel Lab Manual" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="This is an Excel computer lab manual to be used in an Introduction to Statistics course at QCC." />
   <meta name="github-repo" content="https://github.com/bsosnovski/Intro-Stats-Excel-Lab-Manual" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Page not found | Introduction to Statistics: Excel Lab Manual" />
+  <meta name="twitter:title" content="Lab 6 Pie and Pareto Charts | Introduction to Statistics: Excel Lab Manual" />
   
   <meta name="twitter:description" content="This is an Excel computer lab manual to be used in an Introduction to Statistics course at QCC." />
   
@@ -30,7 +30,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
+<link rel="prev" href="time-series-and-measures-of-central-tendency.html"/>
 
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -195,18 +195,105 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="page-not-found" class="section level1">
-<h1>Page not found</h1>
-<p>The page you requested cannot be found (perhaps it was moved or renamed).</p>
-<p>You may want to try searching to find the page's new location, or use
-the table of contents to find the page you are looking for.</p>
+<div id="pie-and-pareto-charts" class="section level1 hasAnchor" number="6">
+<h1><span class="header-section-number">Lab 6</span> Pie and Pareto Charts<a href="pie-and-pareto-charts.html#pie-and-pareto-charts" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>In this lab, you will build pie and Pareto charts using Excel.</p>
+<div id="preparation-2" class="section level2 hasAnchor" number="6.1">
+<h2><span class="header-section-number">6.1</span> Preparation<a href="pie-and-pareto-charts.html#preparation-2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>In this lab, you will use a data set that provides a snapshot of a sample Netflix user base. The data set includes information such as the user’s subscription type, device type, and the country in which they are located.</p>
+<p>Download the data set called <em>Lab 6 Netflix Sample.xlsx</em> from here: <a href="https://github.com/bsosnovski/Intro-Stats-Excel-Lab-Manual/blob/main/Data_Sets/Lab-6-Netflix-Sample.xlsx"><strong>https://github.com/bsosnovski/Intro-Stats-Excel-Lab-Manual/blob/main/Data_Sets/Lab-6-Netflix-Sample.xlsx</strong></a>.</p>
+</div>
+<div id="pie-charts" class="section level2 hasAnchor" number="6.2">
+<h2><span class="header-section-number">6.2</span> Pie Charts<a href="pie-and-pareto-charts.html#pie-charts" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>A <em>pie chart</em> (or a circle chart) is a circular statistical graphic that is divided into slices (or wedges) to illustrate numerical proportions.</p>
+<ol style="list-style-type: decimal">
+<li>Open a new Excel worksheet and enter <em>Earned Degree</em> data, as shown below.</li>
+</ol>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:degree-earned-data"></span>
+<img src="degree-earned-data.png" alt="Earned Degree data." width="50%" />
+<p class="caption">
+Figure 6.1: Earned degree data.
+</p>
+</div>
+<ol start="2" style="list-style-type: decimal">
+<li>Select the cells A1:B6.</li>
+<li>Go to the <code>Insert</code> tab. Select the <code>leftmost 2D Pie diagram</code> in the top row in the <code>Charts</code> ribbon.</li>
+</ol>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:pie-chart"></span>
+<img src="pie-chart.png" alt="A screenshot of the pie chart options." width="40%" />
+<p class="caption">
+Figure 6.2: Pie chart options in the Insert tab.
+</p>
+</div>
+<ol start="4" style="list-style-type: decimal">
+<li>If your graph does noy appear with a title and legend, do Steps 5 and 6 below.</li>
+<li>When you select the graph, the tab <code>Chart Design</code> appears in the menu bar (you must select the graph for this tool to appear).</li>
+<li>Choose Style 3 for your pie chart.</li>
+</ol>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:pie-chart-design"></span>
+<img src="pie-chart-design.png" alt="A screenshot of the options in the Chart Design tab for pie charts." width="100%" />
+<p class="caption">
+Figure 6.3: Options in the Chart Design tab for pie charts.
+</p>
+</div>
+<p><strong>Note:</strong> Style 3 includes titles, legends, and labels in percent form. Check other styles to see the differences among them.</p>
+<ol start="7" style="list-style-type: decimal">
+<li>Replace <em>Number (in thousands)</em> with the title <em>Earned Degrees Conferred in 2000</em>.</li>
+</ol>
+<p><strong>Note:</strong> You can <code>RIGHT-click</code> on one of the data labels (e.g., on the percent of 45%) and then select <code>Format Data Labels</code> to change the format of the labels in your graph.</p>
+<p><strong>Practice 1:</strong></p>
+<p>Use Excel to build a pie chart for the data containing <em>Device Type</em> in the <em>Lab 6 Netflix Sample.xlsx</em> file.</p>
+</div>
+<div id="pareto-charts" class="section level2 hasAnchor" number="6.3">
+<h2><span class="header-section-number">6.3</span> Pareto Charts<a href="pie-and-pareto-charts.html#pareto-charts" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>A <em>Pareto chart</em> is a bar graph with the bars arranged from the tallest bar to the shortest bar. Because of that, we need first to put the data in descending order.</p>
+<div id="sorting-data-1" class="section level3 hasAnchor" number="6.3.1">
+<h3><span class="header-section-number">6.3.1</span> Sorting Data<a href="pie-and-pareto-charts.html#sorting-data-1" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ol style="list-style-type: decimal">
+<li>Highlight the cells A1:B6 again.</li>
+<li><code>Copy</code> (<code>CTRL</code> + <code>C</code>) the data, click on cell E1 (or any empty cells of the worksheet), and <code>paste</code> (<code>CTRL</code> + <code>V</code>) the data.</li>
+<li>Highlight the cells E1:F6 (or the cells that contain the copy of the data). Select <code>Custom Sort</code> in the <em>Sort &amp; Filter</em> ribbon in the <code>Home</code> tab in the menu bar.</li>
+<li>In the Sort dialog box that appears. Select the following options:
+<ul>
+<li><em>Sort by</em> -&gt; <code>Number (in thousands)</code></li>
+<li><em>Sort on</em> -&gt; <code>Values</code></li>
+<li><em>Order</em> -&gt; <code>Largest to Smallest</code></li>
+</ul></li>
+</ol>
+<p>This will sort both highlighted columns concerning the highest frequencies.</p>
+<ol start="5" style="list-style-type: decimal">
+<li>Check the box to the left on <code>My list has headers</code>. Click <code>OK</code>.</li>
+</ol>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:sorting-earn-degree-data"></span>
+<img src="sorting-earn-degree-data.png" alt="A screenshot of the custom sort options." width="70%" />
+<p class="caption">
+Figure 6.4: Custom sort options..
+</p>
+</div>
+</div>
+<div id="building-the-pareto-chart" class="section level3 hasAnchor" number="6.3.2">
+<h3><span class="header-section-number">6.3.2</span> Building the Pareto Chart<a href="pie-and-pareto-charts.html#building-the-pareto-chart" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ol style="list-style-type: decimal">
+<li>Select the cells E1:F6 (or the cells containing the copy of the data) that have been sorted.</li>
+<li>Go to <code>Insert &gt; Column chart</code> and choose the leftmost top type.</li>
+<li>Change the title of the graph to <em>Earned Degrees conferred in 2000</em>.</li>
+<li>With the graph selected, go to the <code>Chart Design</code> tab.</li>
+<li>To add axis titles, click <code>Add Chart Element &gt; Axis Titles &gt; Primary Horizontal</code> and then <code>Add Chart Element &gt; Axis Titles &gt; Primary Vertical</code>.</li>
+<li>Replace the horizontal axis title with the <em>Type of Degree</em>.</li>
+<li>Replace the vertical axis title with <em>In Thousands</em>.</li>
+</ol>
+<p><strong>Practice 2:</strong></p>
+<p>Use Excel to build a Pareto chart for the data containing <em>Country</em> in the <em>Lab 6 Netflix Sample.xlsx</em> file.</p>
+
+</div>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
+<a href="time-series-and-measures-of-central-tendency.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
     </div>
   </div>
@@ -238,7 +325,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/bsosnovski/Intro-Stats-Excel-Lab-Manual%s",
+"link": "https://github.com/bsosnovski/Intro-Stats-Excel-Lab-Manual06-pie_and_pareto_charts.Rmd",
 "text": "Edit"
 },
 "history": {

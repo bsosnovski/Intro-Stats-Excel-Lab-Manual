@@ -113,3 +113,12 @@ fig:scatter-options
 fig:adjust-scatter
 fig:adjust-axis
 preparation-2
+pie-and-pareto-charts
+pie-charts
+pareto-charts
+sorting-data-1
+building-the-pareto-chart
+fig:degree-earned-data
+fig:pie-chart
+fig:pie-chart-design
+fig:sorting-earn-degree-data

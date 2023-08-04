@@ -108,9 +108,9 @@ knitr::include_graphics('adjust-axis.png')
 
 **Practice 1:**
 
-Construct a time series for the *High* prices in your data set.
+Use Excel to build a time series for the *High* prices in your data set.
 
 **Practice 2:**
 
-Calculate your data set's mean, mode, median and sample standard deviation of the *Close* prices.
+Use Excel to calculate your data set's mean, mode, median and sample standard deviation of the *Close* prices.
 

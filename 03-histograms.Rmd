@@ -157,3 +157,12 @@ After all the adjustments are made, the graph will look like the one below.
 ```{r adjusted-histogram, echo=FALSE, fig.align = 'center', out.width='70%', fig.show='hold', fig.cap='Adjusted histogram.', fig.alt = 'The adjusted histogram.'}
 knitr::include_graphics('adjusted-histogram.png')
 ```
+
+**Practice:**
+
+As a project for her finance class, Linda gathered data about the number of cash requests made between the hours of 6 P.M. and 11 P.M at an automatic teller machine located in the student center. She made a count every day for four weeks. The results follow:
+
+17, 32, 46, 22, 32, 19, 21, 12, 26, 43, 25, 19, 27, 25, 26, 29, 39, 12, 19, 27, 10, 15, 21, 20, 32, 24, 17, 57
+
+Use the data and the techniques learned in these lab instructions to build a histogram with five classes and descriptive statistics.
+

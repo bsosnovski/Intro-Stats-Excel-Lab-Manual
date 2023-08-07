@@ -36,7 +36,7 @@ knitr::include_graphics('randbetween-pc.png')
 knitr::include_graphics('insert-function-dialog-mac.png')
 ```
 
-*Remark:*	Alternatively, you may simply type `=RANDBETWEEN(bottom,top)` in the formula bar, with numbers in place of *bottom* and *top* for the arguments of the formula.
+**Note:**	Alternatively, you can simply type `=RANDBETWEEN(bottom,top)` in the formula bar, with numbers in place of *bottom* and *top* for the arguments of the formula.
 
 ## Setting the Workbook to Manual Calculation
 

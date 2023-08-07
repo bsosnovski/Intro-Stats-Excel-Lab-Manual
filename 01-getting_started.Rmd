@@ -118,7 +118,7 @@ knitr::include_graphics('toolpak_mac2.png')
 ```
 
 
-## Checking if the Analysis Toolpak is Active
+## Checking if the Analysis ToolPak is Active
 1.	Click on the tab `Data`.
 2.	You should be able to see it as a ribbon on the top right of your Excel Window.
 
@@ -129,7 +129,7 @@ knitr::include_graphics('check_toolpak_mac.png')
 
 ## The Excel Workbook {#workbook}
 
-An Excel file is called a Workbook. Each workbook consists of one or more worksheets. The tabs near the bottom of the screen show that we are working with Sheet 1 (check Figures \@ref(fig:window-pc) and \@ref(fig:window-mac)) . To change worksheets, click on the corresponding worksheet tab. Alternatively, you can right-click (or `Control + click`) the arrows just to the left of the worksheet tabs to get a list of all the worksheets in the projects and select a worksheet.
+The workbook is an Excel file that consists of one or more worksheets. The tabs near the bottom of the screen show that we are working with Sheet 1 (check Figures \@ref(fig:window-pc) and \@ref(fig:window-mac)) . To change worksheets, click on the corresponding worksheet tab. Alternatively, you can right-click (or `Control + click`) the arrows just to the left of the worksheet tabs to get a list of all the worksheets in the projects and select a worksheet.
 
 ### The Cells in the Worksheet
 

@@ -1,4 +1,4 @@
-# Histograms
+# Lab 3.	Frequency Tables and Histograms
 
 ## Constructing a Histogram
 
@@ -160,9 +160,10 @@ knitr::include_graphics('adjusted-histogram.png')
 
 **Practice:**
 
-As a project for her finance class, Linda gathered data about the number of cash requests made between the hours of 6 P.M. and 11 P.M at an automatic teller machine located in the student center. She made a count every day for four weeks. The results follow:
+Practice:
+Dan gathered data about the number of minutes per day that a sample of teenagers spends in doing a physical activity. 
 
-17, 32, 46, 22, 32, 19, 21, 12, 26, 43, 25, 19, 27, 25, 26, 29, 39, 12, 19, 27, 10, 15, 21, 20, 32, 24, 17, 57
+15, 30, 45, 25, 30, 15, 20, 10, 30, 40, 25, 15, 20, 25, 25, 29, 40, 10, 20, 27, 10, 15, 20, 20, 30, 25, 20, 60, 60, 75, 50, 45 
 
 Use the data and the techniques learned in these lab instructions to build a histogram with five classes and descriptive statistics.
 

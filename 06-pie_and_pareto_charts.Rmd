@@ -1,6 +1,6 @@
 # Pie and Pareto Charts
 
-In this lab, you will build pie and Pareto charts using Excel.
+In this lab, you will generate pie and Pareto charts using Excel.
 
 ## Preparation
 

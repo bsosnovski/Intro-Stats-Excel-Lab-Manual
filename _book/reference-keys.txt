@@ -123,3 +123,4 @@ fig:pie-chart
 fig:pie-chart-design
 fig:sorting-earn-degree-data
 preparation-3
+lab-3.-frequency-tables-and-histograms

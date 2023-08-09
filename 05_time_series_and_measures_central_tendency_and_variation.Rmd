@@ -1,4 +1,4 @@
-# Time Series and Measures of Central Tendency
+# Time Series and Measures of Central Tendency {#time-series}
 
 In this lab, you will build a time series using Excel. In addition, you will use Excel to calculate the measures of tendency and variation. Use Lab \@ref(central-tendency-variation) Measures of Central Tendency and Variation's instructions on how to calculate the mean, median, mode, and standard deviation.
 
@@ -54,7 +54,7 @@ knitr::include_graphics('insert-column-mac.png')
 3. Type the label *Day* at the top of the new column.
 
 
-#### Creating a List of Sequential Numbers
+#### Creating a List of Sequential Numbers {#seq-numbers}
 
 Next, you will create a list in the new column with numbers 1 to 30 (or more, depending on your data). 
 

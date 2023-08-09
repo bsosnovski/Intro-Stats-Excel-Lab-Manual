@@ -124,3 +124,15 @@ fig:pie-chart-design
 fig:sorting-earn-degree-data
 preparation-3
 lab-3.-frequency-tables-and-histograms
+measures-of-location
+percentiles
+seq-numbers
+time-series-1
+fig:percentiles
+fig:percentranks
+fig:number-ribon-percentages
+percentile-ranks
+standard-scores
+calculating-the-mean-and-standard-deviation
+converting-to-z-scores
+mean-st-dev

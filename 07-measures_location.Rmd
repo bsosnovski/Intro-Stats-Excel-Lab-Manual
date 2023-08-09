@@ -93,6 +93,7 @@ The function `STANDARDIZE(x, mean, stand_dev)` returns a normalized value *x* fr
 As a result, the z-scores range from -1.55 to 1.69.
 
 **Practice 2:**
+
 Use Excel to calculate the z-scores of the values in the column *South Pole, Antarctica* in *Lab 7 Carbon Dioxide Concentrations.xlsx*. 
 
 

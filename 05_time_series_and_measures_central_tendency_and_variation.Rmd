@@ -18,24 +18,22 @@ Go to the tab *Markets*, select the type of asset (e.g., *Trending Tickets*), th
 
 Select an asset available on the website. Go to *Historical Data* in the tab *General* to obtain the data set.
 
-## Collecting and Formatting the Data
-
-### Download the Data
+## Download the Data
 
 1. After choosing one of the financial sites to obtain your data, select an asset to download its prices.
 2. Once you have selected an asset , choose a range of 30 or more consecutive days of prices.
 3. Download the data into an Excel file.
 
-### Preparing the Data
+## Preparing the Data
 You will label each day in the data set with sequential numbers from 1 to 30 (or more than 30, depending on your data).
 The asset's *Close*, *Open*, *Low*, and *High* values are contained in the file. 
 
-#### Renaming the File
+### Renaming the File
 
 1. Open the file you downloaded from the website. 
 2. Go to `File > Save As`. Include *Lab 5* in the file’s name and save it with the extension *.xlsx*.
 
-#### Inserting a Column on MAC
+### Inserting a Column on MAC
 
 Next, you will insert a new column between the columns with *Dates* and *Prices*. The following steps will prompt Excel to insert a new column with all the columns with prices to the right of it.
 
@@ -47,14 +45,14 @@ Next, you will insert a new column between the columns with *Dates* and *Prices*
 knitr::include_graphics('insert-column-mac.png')
 ```
 
-#### Inserting a Column on PC
+### Inserting a Column on PC
 
 1. `RIGHT-click` the top of the first column with Prices.
 2. Select `Insert`.
 3. Type the label *Day* at the top of the new column.
 
 
-#### Creating a List of Sequential Numbers {#seq-numbers}
+### Creating a List of Sequential Numbers {#seq-numbers}
 
 Next, you will create a list in the new column with numbers 1 to 30 (or more, depending on your data). 
 

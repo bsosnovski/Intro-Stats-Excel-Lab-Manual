@@ -1,20 +1,16 @@
 # Lab 3.	Frequency Tables and Histograms
 
-## Constructing a Histogram
-
 You will construct a histogram with 5 classes (bars) using Excel. Start by determining minimum and maximum values in a data set, class width, the lower and upper limits of classes of values, class boundaries, midpoints, etc. This is similar in Excel. You will need the upper-class limits and the midpoints for adjusting the graph created with Excel.
 
 Throughout this manual, Select means to left-click with the mouse/pad.
 
-###	Preparation
+##	Preparation
 
 In this lab, you will use a data set that contains scores received on an MA-336 Exam. Download the data set. called *Lab 3 Exam Scores.xlsx* from here:  [**https://github.com/bsosnovski/Intro-Stats-Excel-Lab-Manual/blob/main/Data_Sets/Lab-3-Exam-Scores.xlsx**](https://github.com/bsosnovski/Intro-Stats-Excel-Lab-Manual/blob/main/Data_Sets/Lab-3-Exam-Scores.xlsx)
 
-## Excel Instructions
-
 Open the Excel file you downloaded and follow the instructions below.
 
-###	Initial Computations
+##	Initial Computations
 1. Select cell C1 and in the formula bar type in `=COUNT(A2:A33)`.
 
 **Note:** You can fill in the input range, A2:A33, in the formula count above by manually typing the address of the cells containing the data values. Alternatively, you can select cells that form the Input Range by clicking on A2, holding, and dragging downward until you reach cell A33. Then release.
@@ -36,7 +32,7 @@ Open the Excel file you downloaded and follow the instructions below.
 knitr::include_graphics('initial-comp.png')
 ```
 
-### Class Limits Computations
+## Class Limits Computations
 
 1. Type in cell C7 the label *Lower Limits*.
 2. In cell C8, type the formula `= C2`. This will copy the value in cell C2 as the histogram's lower limit for the first class.
@@ -66,7 +62,7 @@ knitr::include_graphics('initial-comp.png')
 knitr::include_graphics('class-limits-comp.png')
 ```
 
-### Creating the Histogram
+## Creating the Histogram
 
 1. Select `Data>Data Analysis>Histogram` and click `OK`.
 
@@ -95,7 +91,7 @@ The graph is a *raw histogram* that needs to be adjusted to resemble an actual h
 ```{r raw-histogram, echo=FALSE, fig.align = 'center', out.width='80%', fig.show='hold', fig.cap='Resulting histogram.', fig.alt = 'A screenshot showing the resulting histogram graph.'}
 knitr::include_graphics('raw-histogram.png')
 ```
-### Removing the *More* bar of the Histogram
+## Removing the *More* bar of the Histogram
 
 1. If you chose `New Worksheet Ply` in step 4 above, select the Worksheet that contains the graph. Otherwise, go to next step 2 below.
 2. You may resize the graph by clicking anywhere within the figure. Handles appear along the perimeter of the graph. You can change the shape of the figure by clicking on a handle and dragging it. Make your graph to be displayed in an appropriate size.
@@ -116,9 +112,9 @@ After Steps 4-5, the last column in the graph, labeled *More* will no longer be 
 7. Move `Gap Width` to position `0%` (this makes the bars of the graph touch).
 
 
-### Adjusting the Horizontal Axis
+## Adjusting the Horizontal Axis
 
-#### MAC
+### MAC
 
 1. Right-click on any vertical bar of the graph. From the menu, click the option `Select Data`. 
 2. Click `Edit` under *Horizontal (Category) Axis Labels*. Click and drag over the range `E8:E12` (midpoints). 
@@ -129,7 +125,7 @@ After Steps 4-5, the last column in the graph, labeled *More* will no longer be 
 knitr::include_graphics('adjusting-horizontal-axis-mac.png')
 ```
 
-####	PC
+###	PC
 1. Right-click on any vertical bar of the graph. From the menu, click the option `Select Data`. 
 2. Click `Edit` under *Horizontal (Category) Axis Labels*. 
 
@@ -145,7 +141,7 @@ knitr::include_graphics('adjusting-horizontal-axis-pc.png')
 knitr::include_graphics('relabel-horiontal-axis-pc.png')
 ```
 
-###	Adjusting the Title of the Histogram
+##	Adjusting the Title of the Histogram
 
 1. To change the histogram title, click on the word *Histogram*, which appears
 in a box. Change the title to *MA336 Exam Scores*.

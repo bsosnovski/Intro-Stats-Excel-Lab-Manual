@@ -11,11 +11,9 @@ In this lab, you will use a data set that contains three samples. You will compu
 * Sample 2 contains 120 data values.
 * Sample 3 contains 95 data values.
 
-## Excel Instructions
-
 Open the Excel file you downloaded and follow the instructions below.
 
-### Using the Descriptive Statistics in Excel to Obtain the Measures {#descriptive-stats}
+## Using the Descriptive Statistics in Excel to Obtain the Measures {#descriptive-stats}
 
 ***Sample 1***
 
@@ -51,7 +49,7 @@ Now you will do the same work above (Steps 1-8) for *Samples 2* and *3*.
 
 **Note:** In the instructions above, you must adjust the cell addresses for Samples 2 and 3.
 
-### Using Excel’s Functions to Obtain the Measures {#excel-functions}
+## Using Excel’s Functions to Obtain the Measures {#excel-functions}
 
 ***Sample 1***
 
@@ -74,8 +72,6 @@ You will investigate the many modes in the data set and what they are. For that,
 11. Press the keys `Control` + `Shift` + `Enter` (For MAC, use the keys `Command` + `Shift` + `Enter`).
 
 **Note:** Be careful! If you only press Enter or use the function MODE, Excel will only display one value for the mode even if there are multiple modes. 
-
-**Note:** Here is a link to a video tutorial about how to use the function MODE.MULT: [**https://youtu.be/BPboB7Ov-A8**](https://youtu.be/BPboB7Ov-A8).
 
 **Note:** If there is no mode, #N/A will appear as a result. If there is only one mode, MODE.MULT returns the same value repeatedly.
 

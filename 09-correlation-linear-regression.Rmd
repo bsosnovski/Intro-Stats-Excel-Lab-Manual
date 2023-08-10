@@ -1,0 +1,61 @@
+# Correlation and linear regression 
+
+You are going to use Excel to determine the correlation of a data set with pair variables, graph the scatter plot and also determine the line of best-fitting (linear regression).
+Throughout this handout, by “select” I mean for you to left-click with the mouse.
+For extra help with this lab, check Technology sections 10.2 of textbook (about Excel), which contains some of the instructions below.
+Preparation
+Download from Blackboard the data set to be used in this lab.
+Excel Instructions
+Open the Excel file and follow the instructions below.
+Creating a scatter plot:
+	Select the data in both columns. Then at the top of the screen, click Insert >Scatter.
+	Select the leftmost chart in the top row by clicking on it (Scatter with only markers).
+	In the Design ribbon, click the leftmost diagram (Style 1)
+	Click Add Chart Element > Axis Title > More Axis Title Options, so that you can add an x-axis title, y-axis title.
+	Change Time to Duration of Old Faithful’s Eruptions by Time Until the Next Eruption.
+	Click the Y-Axis Title and replace it with Time Until the Next Eruption (in minutes).
+	 Click X-Axis Title and replace it with Duration (in minutes).
+	Adjust the vertical and horizontal axes to best show the plot.
+Using Excel to find Correlation Coefficient:
+	Type the label Correlation in empty cell of the worksheet. 
+	In the cell below the label Correlation, select Formulas and Insert Function.
+	Select the Statistical category. Select the CORREL function. Click OK.
+	Complete the CORREL dialog box will be similar as shown below.
+	For Array 1, select the cells in the first column of the data set.
+	For Array 2, select the cells in the second column of the data set
+ 
+Using Excel to find a Regression Equation:
+	You will be using Excel’s functions to obtain the slope and intercept. Type the label “Slope” and “Intercept” in cells D1 and E1.
+	Click in cell D2 where the slope will be placed.
+	At the top of the screen, select Formulas and Insert Function.
+	Select the Statistical category. Select the SLOPE function. Click OK.
+
+	Complete the SLOPE dialog box with the following:
+Known_y’s 	B1:B26
+Known_x’s 	A1:A26
+	Click OK.
+	Click in cell E2 where the intercept will be placed.
+	Again Formulas  > Insert Function.
+	In the Statistical category, select the INTERCEPT function. Click OK.
+	Complete the INTERCEPT dialog box with the following:
+Known_y’s 	B1:B26
+Known_x’s 	A1:A26
+	Click OK.
+We can find the regression line in another way:
+	Click Data > Data Analysis. Select Regression and click OK. Complete the Regression dialog as shown. By selecting Residuals, the output will include y-y ̂ for each observation in the data set. Click OK.
+
+	The intercept and slope of the regression equation are show. 
+
+ 
+ 
+Using Excel to graph the best-fitting line:
+	Right click directly on a point in the scatter plot.
+	Select Add Trendline.
+	Be sure to have a Linear trend selected. 
+	Click in the checkbox to display the equation. 
+Switching the roles of the variables in the regression:
+Now you are going to switching the explanatory and response variables, that is, you are switching the roles of x and y values for the ordered pairs. Following the guidelines above use Excel to:
+	Construct the scatter plot.
+	Calculate the correlation coefficient. 
+	Draw the regression line in your scatter plot
+Answer to the following questions (you may refer to your notes or textbook):

@@ -1,0 +1,46 @@
+# Coin Toss Simulation
+
+In Lab **\@ref(number-gen)** *Random Number Generators and Tables*, the function `RANDBETWEEN(Bottom,Top)` was used to obtain a random integer between (and including) the bottom and top numbers. 
+
+We can use the random number generator to simulate experiments such as tossing coins or rolling dice.
+
+## Simulating a Coin Tossing Experiment
+
+To simulate the experiment, assign to the outcome *Head* the digit *1* and to *Tail* the digit *2*. 
+
+You will draw a random sample of size 30 in Column A from the distributions of integers with a minimum value of 1 to a maximum value of 2. 
+
+1. Write the label *Coin Toss* in cell A1.
+2. Type the formula `= RANDBETWEEN(1,2)` in cell A2 and press `Enter/Return`.
+3. Select cell A2 again, position the mouse pointer in the lower right corner of the selected cell until it becomes a `+` sign, and click-drag downward across until cell A31.
+4. Ensure that Excel randomizes all the values by going to the `Formula` tab in the menu bar and clicking the `Calculate Now` ribbon to apply the randomization. Column A should now have 30 random values.
+
+## Counting the Number of Heads and the Number of Tails
+
+Next, you will use Excel to count the *1*’s and *2*’s in column A. You will set up a table in Columns C and D to display the results. 
+
+1. Type the label *Outcome* in Cell C1.
+2. Type the label *Heads* in Cell C2.
+3. Type the label *Tails* in Cell C3. 
+4. Type the label *Frequency* in Cell D1.
+
+You will use the formula `COUNTIF(data range, condition)` to count the *1*’s and *2*’s as the formula's conditions. Recall that we assigned the number *1* to the outcome *Head* and the number *2* to the *Tail*. 
+
+1. Select cell D2, and enter the formula `= COUNTIF(A2:A31,1)`.
+2. Next, select cell D3, and enter `= COUNTIF(A2:A31,2)`. 
+
+## Calculating the Empirical Probability
+
+*Empirical Probability* is based on experience or historical data to determine the likelihood of outcomes. It is calculated by determining the relative frequency. You will calculate the observed probabilities of the outcomes *Heads* and *Tails* you simulated. 
+
+To calculate the relative frequency of an outcome, calculate the number of times the outcomes appear divided by the total number of all outcomes.
+
+1. Enter the label *Rel Freq* in cell E1.
+2. In cell E2, enter `= D2/30`.
+3. In cell E3, enter `= D3/30`.
+4. Select the cells E2 and E3 and go to the `Home` tab, and then adjust the results to have four (4) decimal places in the `Number` ribbon.
+
+**Practice:**
+
+Repeat this process to generate another simulation with 500 *Coin Tosses* in any empty cells of the *Lab 9* worksheet.
+

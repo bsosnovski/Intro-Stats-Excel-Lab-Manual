@@ -235,12 +235,63 @@
 <li>Below <em>Max</em>, type <em>Median</em>, and enter <code>= MEDIAN(B3:B32)</code> next to it to compute the median.</li>
 </ol>
 <p>Be sure that your five-number summary is organized to display the results. For example:</p>
-<p>r, echo=FALSE}
-m=matrix(c(Min,18, Q1, 24.50, Q2, 38, Q3, 44.25, Max, 58, Median, 38))</p>
-<p>knitr::kable(
-matrix(c(Min,18, Q1, 24.50, Q2, 38, Q3, 44.25, Max, 58, Median, 38), nrow = 2, byrow = TRUE, longtable = TRUE, booktabs = TRUE,
-caption = ‘Example of a five-number-summery.’
-)</p>
+<center>
+<table style="width:50%;">
+<caption>
+<span id="tab:unnamed-chunk-1">Table 8.1: </span>Example of a five-number-summary
+</caption>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Min
+</td>
+<td style="text-align:right;">
+18.00
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Q1
+</td>
+<td style="text-align:right;">
+24.50
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Q2
+</td>
+<td style="text-align:right;">
+38.00
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Q3
+</td>
+<td style="text-align:right;">
+44.25
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Max
+</td>
+<td style="text-align:right;">
+58.00
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Median
+</td>
+<td style="text-align:right;">
+38.00
+</td>
+</tr>
+</tbody>
+</table>
+<center>
 <p><strong>Note:</strong> The five-number summary for the NY Temperatures will differ from those shown in Table 1.</p>
 </div>
 <div id="the-interquartile-range" class="section level2 hasAnchor" number="8.3">
@@ -255,7 +306,7 @@ caption = ‘Example of a five-number-summery.’
 <li>Go to the Insert tab. Select <code>Box and Whisker</code> in the <code>Charts</code> ribbon (Figure <strong><a href="box-and-whisker-plot.html#fig:box-and-whisker-menu">8.1</a></strong>).</li>
 </ol>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:box-and-whisker-menu"></span>
-<img src="box-and-whisker-menu.png" alt="A screenshot of the Box and Whisker option in Chart ribbon of the Insert tab." width="55%" />
+<img src="box-and-whisker-menu.png" alt="A screenshot of the Box and Whisker option in Chart ribbon of the Insert tab." width="45%" />
 <p class="caption">
 Figure 8.1: Box and Whisker option in the Chart ribbon of the Insert tab.
 </p>

@@ -29,13 +29,15 @@ Use Excel to compute the following in an empty part of the worksheet.
 
 Be sure that your five-number summary is organized to display the results. For example:
 
-r, echo=FALSE}
-m=matrix(c(Min,18, Q1, 24.50, Q2, 38, Q3, 44.25, Max, 58, Median, 38))
-
-knitr::kable(
-  matrix(c(Min,18, Q1, 24.50, Q2, 38, Q3, 44.25, Max, 58, Median, 38), nrow = 2, byrow = TRUE, longtable = TRUE, booktabs = TRUE,
-  caption = 'Example of a five-number-summery.'
-)
+<center>
+```{r, echo= FALSE, fig.align="center"}
+Measures <- c('Min', 'Q1', 'Q2', 'Q3', 'Max', 'Median')
+Values <- c(18, 24.50, 38, 44.25, 58, 38)
+df <- data.frame(Measures,Values)
+knitr::kable(df,
+  caption = 'Example of a five-number-summary', col.names = NULL, format = "html", table.attr = "style='width:50%;'" )
+```
+<center>
 
 **Note:**  The five-number summary for the NY Temperatures will differ from those shown in Table 1.
 
@@ -49,7 +51,7 @@ Use an Excel formula to calculate the *IQR*. Your formula must use cell addresse
 1. Select the cells with the temperature values in Column B.
 2. Go to the Insert tab. Select `Box and Whisker` in the `Charts` ribbon (Figure **\@ref(fig:box-and-whisker-menu)**).
 
-```{r box-and-whisker-menu, echo=FALSE, fig.align = 'center', out.width='55%', fig.show='hold', fig.cap='Box and Whisker option in the Chart ribbon of the Insert tab.', fig.alt = 'A screenshot of the Box and Whisker option in Chart ribbon of the Insert tab.'}
+```{r box-and-whisker-menu, echo=FALSE, fig.align = 'center', out.width='45%', fig.show='hold', fig.cap='Box and Whisker option in the Chart ribbon of the Insert tab.', fig.alt = 'A screenshot of the Box and Whisker option in Chart ribbon of the Insert tab.'}
 knitr::include_graphics('box-and-whisker-menu.png')
 ```
 

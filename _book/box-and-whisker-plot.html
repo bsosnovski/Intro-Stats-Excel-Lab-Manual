@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Page not found | Introduction to Statistics: Excel Lab Manual</title>
+  <title>Lab 8 Box and Whisker Plot | Introduction to Statistics: Excel Lab Manual</title>
   <meta name="description" content="This is an Excel computer lab manual to be used in an Introduction to Statistics course at QCC." />
   <meta name="generator" content="bookdown 0.29 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Page not found | Introduction to Statistics: Excel Lab Manual" />
+  <meta property="og:title" content="Lab 8 Box and Whisker Plot | Introduction to Statistics: Excel Lab Manual" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="This is an Excel computer lab manual to be used in an Introduction to Statistics course at QCC." />
   <meta name="github-repo" content="https://github.com/bsosnovski/Intro-Stats-Excel-Lab-Manual" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Page not found | Introduction to Statistics: Excel Lab Manual" />
+  <meta name="twitter:title" content="Lab 8 Box and Whisker Plot | Introduction to Statistics: Excel Lab Manual" />
   
   <meta name="twitter:description" content="This is an Excel computer lab manual to be used in an Introduction to Statistics course at QCC." />
   
@@ -30,7 +30,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
+<link rel="prev" href="measures-of-location.html"/>
 
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -211,18 +211,96 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="page-not-found" class="section level1">
-<h1>Page not found</h1>
-<p>The page you requested cannot be found (perhaps it was moved or renamed).</p>
-<p>You may want to try searching to find the page's new location, or use
-the table of contents to find the page you are looking for.</p>
+<div id="box-and-whisker-plot" class="section level1 hasAnchor" number="8">
+<h1><span class="header-section-number">Lab 8</span> Box and Whisker Plot<a href="box-and-whisker-plot.html#box-and-whisker-plot" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p><em>Quartiles</em> are quantiles (also percentiles) that divide the data into approximately four equal parts.</p>
+<p>A <em>box and whisker plot</em> is a graph showing the data distribution using the <em>five-number-summary</em>: minimum value, first quartile, median (second quartile), third quartile, and maximum value. This type of graph is also known as a box plot.</p>
+<p>The <em>interquartile range</em> (<em>IQR</em>) represents the spread of the middle half of the data and is calculated as the difference between the third and first quartiles.</p>
+<div id="preparation-4" class="section level2 hasAnchor" number="8.1">
+<h2><span class="header-section-number">8.1</span> Preparation<a href="box-and-whisker-plot.html#preparation-4" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>In this lab, you will use a data set containing NY temperatures in September of 2013.</p>
+<p>Download the data set called Lab 8 NY Temp Sept2013.xlsx from here <a href="https://github.com/bsosnovski/Intro-Stats-Excel-Lab-Manual/blob/main/Data_Sets/Lab-8-NY-Temp-Sept2013.xlsx"><strong>https://github.com/bsosnovski/Intro-Stats-Excel-Lab-Manual/blob/main/Data_Sets/Lab-8-NY-Temp-Sept2013.xlsx</strong></a>.</p>
+<p>Open the Excel file <em>Lab 8 NY Temp Sept2013.xlsx</em> and follow the instructions below.</p>
+</div>
+<div id="five-number-summary" class="section level2 hasAnchor" number="8.2">
+<h2><span class="header-section-number">8.2</span> Five-Number-Summary<a href="box-and-whisker-plot.html#five-number-summary" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Using Excel, you will compute the five-number summary, generate a box plot, and compute the interquartile range (IQR) for <em>Lab 8 NY temperatures in the September 2013</em> workbook.</p>
+<p>Use Excel to compute the following in an empty part of the worksheet.</p>
+<ol style="list-style-type: decimal">
+<li>Choose a cell and type <em>Min</em>, and in the cell next to it, enter <code>= MIN(B3:B32)</code> to find the minimum value of the data set.</li>
+<li>Below <em>Min</em>, type <em>Q1</em>, and in the cell next to it, enter <code>= QUARTILE(B3:B32,1)</code> to find the first quartile.</li>
+<li>Below <em>Q1</em>, type <em>Q2</em>, and in the cell next to it, enter <code>= QUARTILE(B3:B32,2)</code> to find the second quartile.</li>
+<li>Below <em>Q2</em>, type <em>Q3</em>, and in the cell next to it, enter <code>= QUARTILE(B3:B32,3)</code> to find the third quartile.
+5, Below <em>Q3</em>, type <em>Max</em>, and in the cell next to it, enter <code>= Max(B3:B32)</code> to find the maximum value of the data set.</li>
+<li>Below <em>Max</em>, type <em>Median</em>, and enter <code>= MEDIAN(B3:B32)</code> next to it to compute the median.</li>
+</ol>
+<p>Be sure that your five-number summary is organized to display the results. For example:</p>
+<p>r, echo=FALSE}
+m=matrix(c(Min,18, Q1, 24.50, Q2, 38, Q3, 44.25, Max, 58, Median, 38))</p>
+<p>knitr::kable(
+matrix(c(Min,18, Q1, 24.50, Q2, 38, Q3, 44.25, Max, 58, Median, 38), nrow = 2, byrow = TRUE, longtable = TRUE, booktabs = TRUE,
+caption = ‘Example of a five-number-summery.’
+)</p>
+<p><strong>Note:</strong> The five-number summary for the NY Temperatures will differ from those shown in Table 1.</p>
+</div>
+<div id="the-interquartile-range" class="section level2 hasAnchor" number="8.3">
+<h2><span class="header-section-number">8.3</span> The Interquartile Range<a href="box-and-whisker-plot.html#the-interquartile-range" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Using Excel compute the <em>IQR</em> of the data set. Recall that the formula for <em>IQR</em> is <code>IQR = Q3 - Q1</code>.</p>
+<p>Use an Excel formula to calculate the <em>IQR</em>. Your formula must use cell addresses in the calculation. Place your formula in empty cells below your five-number summary.</p>
+</div>
+<div id="box-plot" class="section level2 hasAnchor" number="8.4">
+<h2><span class="header-section-number">8.4</span> Box Plot<a href="box-and-whisker-plot.html#box-plot" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ol style="list-style-type: decimal">
+<li>Select the cells with the temperature values in Column B.</li>
+<li>Go to the Insert tab. Select <code>Box and Whisker</code> in the <code>Charts</code> ribbon (Figure <strong><a href="box-and-whisker-plot.html#fig:box-and-whisker-menu">8.1</a></strong>).</li>
+</ol>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:box-and-whisker-menu"></span>
+<img src="box-and-whisker-menu.png" alt="A screenshot of the Box and Whisker option in Chart ribbon of the Insert tab." width="55%" />
+<p class="caption">
+Figure 8.1: Box and Whisker option in the Chart ribbon of the Insert tab.
+</p>
+</div>
+<p>The resulting plot is shown in Figure <strong><a href="box-and-whisker-plot.html#fig:box-and-whisker-plot">8.2</a></strong>.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:box-and-whisker-plot"></span>
+<img src="box-and-whisker-plot.png" alt="A screenshot of  the Box and Whisker created." width="55%" />
+<p class="caption">
+Figure 8.2: Box and Whisker created.
+</p>
+</div>
+<ol start="3" style="list-style-type: decimal">
+<li>Replace <em>Chart Title</em> with <em>NY Temperatures in September 2013</em>.</li>
+<li><code>RIGHT-click</code> on the vertical axis and then select <code>Format Axis</code> to change the axis format in the graph. Set the <em>Minimum Bound</em> as 45. Adjusting the axis removes the unnecessary space in the chart.</li>
+</ol>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:format-axis"></span>
+<img src="format-axis.png" alt="A screenshot of the Format Axis options." width="35%" />
+<p class="caption">
+Figure 8.3: Format Axis options.
+</p>
+</div>
+<p>Use the <code>Chart Design</code> to customize the look of your chart.</p>
+<ol start="5" style="list-style-type: decimal">
+<li>Select the graph, and the tab <code>Chart Design</code> appears in the menu. Click on the <code>Chart Design</code> tab.</li>
+<li>Click <code>Add Chart Element &gt; Data Labels &gt; Right</code>.</li>
+<li>Click <code>Add Chart Element &gt; Axes</code>. Uncheck the option <code>Primary Horizontal</code>.</li>
+</ol>
+<p>The adjusted box plot is shown in Figure <strong><a href="box-and-whisker-plot.html#fig:final-box-plot">8.4</a></strong>.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:final-box-plot"></span>
+<img src="final-box-plot.png" alt="Adjusted box plot." width="55%" />
+<p class="caption">
+Figure 8.4: Adjusted box plot.
+</p>
+</div>
+<p><strong>Practice:</strong></p>
+<p>Use Excel to generate the five-number-summary, <em>IQR</em>, and box plot for the financial data you collected for Lab <strong><a href="time-series.html#time-series">5</a></strong> <em>Time Series and Measures of Central Tendency</em>.</p>
+
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
+<a href="measures-of-location.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
     </div>
   </div>
@@ -254,7 +332,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/bsosnovski/Intro-Stats-Excel-Lab-Manual%s",
+"link": "https://github.com/bsosnovski/Intro-Stats-Excel-Lab-Manual08-box-and-whisker.Rmd",
 "text": "Edit"
 },
 "history": {

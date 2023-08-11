@@ -75,3 +75,14 @@ simulating-a-coin-tossing-experiment
 counting-the-number-of-heads-and-the-number-of-tails
 calculating-the-empirical-probability
 checking-redenring
+fig:scatter-plot
+linear-regression-and-correlation
+preparation-5
+creating-a-scatter-plot
+fig:resulting-scatter-plot
+fig:final-scatter-plot
+calculating-the-correlation-coefficient
+fig:correl-funciton-mac
+fig:correl-funciton-pc
+fig:trendline
+graphing-the-regression-line

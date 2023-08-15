@@ -11,8 +11,8 @@ bookdown::gitbook:
     download: ["pdf", "epub"]
     sharing:
       github: yes
-bookdown::html_chapters:
-  css: [css/style.css, css/toc.css]
+#bookdown::html_chapters:
+#  css: [css/style.css, css/toc.css]
 # bookdown::pdf_book:
 #   includes:
 #     in_header: preamble.tex

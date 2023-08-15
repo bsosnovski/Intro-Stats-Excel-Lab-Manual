@@ -10,6 +10,8 @@ bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
 fontsize: 12pt
+lot: yes
+lof: yes
 github-repo: https://github.com/bsosnovski/Intro-Stats-Excel-Lab-Manual
 description: "This is an Excel computer lab manual to be used in an Introduction to Statistics course at QCC."
 ---

@@ -5,9 +5,9 @@ account: bsosnovski
 server: bookdown.org
 hostUrl: https://bookdown.org/__api__
 appId: 12714
-bundleId: 87440
+bundleId: 87441
 url: https://bookdown.org/bsosnovski/intro-stats-excel-lab-manual/
-when: 1692074360.1404
-lastSyncTime: 1692074360.14041
+when: 1692075083.96003
+lastSyncTime: 1692075083.96004
 asMultiple: FALSE
 asStatic: FALSE

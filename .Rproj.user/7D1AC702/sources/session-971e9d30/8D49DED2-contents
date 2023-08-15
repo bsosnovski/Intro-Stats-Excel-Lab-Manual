@@ -1,0 +1,39 @@
+The Central Limit Theorem
+The sampling distribution of sample means is a distribution formed by means of all samples of size n repeatedly taken from a population. If a population has mean μ and standard deviation σ and all possible samples of size n are taken with replacement from the population then sampling distribution satisfies the following properties μ_X ̅ =μ and σ_X ̅ =σ/√n.
+The Central Limit Theorem states that the sampling distribution of sample means approaches a normal distribution as the sample size gets larger no matter the population distribution's shape. This fact holds especially true for sample sizes over 30. The greater the sample size, the better the approximation. 
+If the population itself is normally distributed, then the sampling distribution of sample means is normally distributed for any sample size n.
+	Preparation
+You will use a data set Lab 12 FB Daily.xlsx that contains some of the daily Facebook stock prices.
+Download the data set from here https://github.com/bsosnovski/Intro-Stats-Excel-Lab-Manual/blob/main/Data_Sets/Lab-12-FB-Daily.xlsx. 
+Open the Excel file Lab 12 FB Daily.xlsx and follow the instructions below.
+	Mean and Standard Deviation of the Population 
+Assume that the data contains all the Close Prices of the FB stocks. You will calculate the mean and standard deviation of the populations of FB Close Prices. 
+	Go to an empty column in the Lab 12 FB Daily.xlsx worksheet, and type the label Population, Mean and Stand Dev in separate cells.
+	 Select the cell next to the cell Mean and enter the formula = AVERAGE(F2:F389) to compute the mean.
+	 Select the cell next to the cell Stand Dev and enter = STDEV.P(F2:F389) to compute the data’s standard deviation of the population.
+	Adjust the mean and standard deviation values to have two (2) decimal places.
+	Generating Random Samples
+You will simulate the sampling distribution by generating only 10 random samples of Close Prices with a sample size equal to 20. 
+	Go to an empty column and type the label Sample 1. 
+	Below Sample 1, click Data > Data Analysis > Sampling. 
+	Click OK.
+	In the dialogue box that appears, enter the following:
+	Input Range: Select cells F2:F389. 
+	Sample method: Click Random.
+	Number of Samples: 20.
+	Output Options: Click Output Range.
+Select an empty cell to paste the sample created.
+	Click OK.
+	Repeat the process for Sample 2 through Sample 10. 
+	 Sample Mean for Each Sample
+Now you will calculate the mean for each sample mean you generated.
+	For each sample, place its sample mean below the column that contains the sample (use a similar formula to the one in Section 12.2 Mean and Standard Deviation of the population).
+	Highlight the results to distinguish them from the values in the sample.
+	The Mean and Standard Deviation of Sampling Distribution
+	After Section 12.4 above, all the ten (10) sample means should be on the same row. From these sample means calculate the mean and standard deviation (use  STDEV.S) for the FB Close Prices in an empty part of the worksheet.
+	Calculate the standard deviation value in Section 12.2 divided by √20  (square root of the sample size).
+Recall that the theoretical value of generating all the samples of size 30 should be μ_X ̅ =μ and σ_X ̅ =σ/√n. Compare the results in Step 1 with the results obtained in Step 2. 
+	Practice
+	Repeat the process above with 10 samples of size 50 for the FB Close Prices.
+	Repeat the process above with 20 samples of size 50 for the FB Open Prices.
+

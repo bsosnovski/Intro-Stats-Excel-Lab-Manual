@@ -1,0 +1,114 @@
+# Normal Distributions
+
+A *normal distribution* is a continuous probability distribution for a random variable that describes the frequency of the outcomes of the variable. The mean and the standard deviation parameters determine the normal distribution.
+
+In this lab, you will use the `AVERAGE` and `STDEV.S` functions to calculate the data's mean and standard deviation, respectively. 
+
+The `NORM.DIST(x,mean,standard_dev,cumulative)` function returns the normal distribution for the specified mean and standard deviation. In this case, we will use the *false* argument for *cumulative* since we will get the corresponding probability for the respective *x* values.
+
+The `NORM.INV(probability,mean,standard_dev)` function returns the *z*-score in a normal cumulative distribution for the specified mean and standard deviation.
+
+The `STANDARDIZE(x, mean, standard_dev)` function returns a normalized value from a mean and standard deviation distribution.
+
+## Preparation
+
+You will use a data set on baby birth, including the variables birthweight, mother’s age, mother’s weight, mother’s height, and whether the mother is a smoker. There are one thousand (1000) cases included in this data set. 
+
+Download the data set called *Lab 11 Babies.xlsx* from here [**https://github.com/bsosnovski/Intro-Stats-Excel-Lab-Manual/blob/main/Data_Sets/Lab-11-Babies.xlsx**](https://github.com/bsosnovski/Intro-Stats-Excel-Lab-Manual/blob/main/Data_Sets/Lab-11-Babies.xlsx). 
+
+Open the Excel file *Lab 11 Babies.xlsx* and follow the instructions below.
+
+## Calculating the Mean and Standard Deviation
+
+First, you will make a copy of the data on birthweight and sort the values from the smallest to the largest. Then you will calculate the mean and standard deviation. These Excel functions were covered in *Lab*  **\@ref(central-tendency-variation)** *Measures of Central Tendency and Variation*.
+
+1. Select the cells in Column B (cells B1:B1001).
+
+**Note:** A shortcut to select data in a range, click on the first cell in the range and press the `Shift` + `Arrow Down` keys to select a range of data.
+
+2. `Copy` (`CRTL-C` on PC or `Command-C` on MAC) the selected data, click on cell J1 (or any empty cells of the worksheet), and `Paste` (`CRTL-V` on PC or `Command-V` on MAC) the data. 
+3. Select the cells J1:J1001 (or the cells that contain the copy of the data). Go to `Sort & Filter` ribbon in the `Home` tab and select `Sort Smallest to Largest`.
+4. Type the label *Mean* in cell H1.
+5. Select cell H2, then enter the formula `= AVERAGE(J2:J101)`. 
+6. Adjust the mean value to one (1) decimal place.
+7. Type the label *Stand Dev* in cell H3.
+8. Select cell H4, then enter `= STDEV(J2:J101)`. 
+9. Adjust the standard deviation value to two (2) decimal places.
+
+The data’s mean is 119.9, and the standard deviation is 17.99.
+
+## Graphing the Normal Distribution
+
+The `NORM.DIST(x,mean,standard_dev,FALSE)` function calculates the normal probability density function that can be used to plot the bell-shaped curve. To graph the normal curve, we need *x* and *y* values. The *x* values correspond to the birthweights. The *y* values are values of the probability density functions.
+
+First, you will generate the *y*-values and then use a scatter plot to display the bell-shaped curve.
+
+1. Select the cell K1 and type the label *Y-Values*.
+2. Below *Y-Values*, enter the formula `= NORM.DIST(J2,$H$2,$H$4, FALSE)`. 
+3. Select cell K2 and place the mouse pointer in the lower right corner of the selected cell until it becomes a `+` sign, and click-drag downward across the range that covers all the values in column K.
+
+The *y*-values range from $3.34$ x $10^{-5}$ to $1.71$ x $10^{-4}$.
+
+4. Select all cells in the *birthweight* and *Y-Values* columns (select the first cells in columns J and K, then press the `Shift` + `Arrow Down` keys to select the whole range of data).
+5. Click `Insert > Scatter > Scatter with Smooth Lines`. 
+
+```{r normal-curve, echo=FALSE, fig.align = 'center', out.width='100%', fig.show='hold', fig.cap='The normal curve created.', fig.alt = 'A screenshot of the normal curve generated.'}
+knitr::include_graphics('normal-curve.png')
+```
+
+The resulting graph needed to be adjusted (Figure **\@ref(fig:normal-curve)
+**). Use the instructions in Steps 3-8 in *Section* ***\@ref(create-scatter-plot)*** *Creating a Scatter Plot* to make the necessary adjustments to the graph. Adjust the title, axis titles, and horizontal axis.
+
+## Calculating Probability or Cumulative Area
+
+We can use the `NORM.DIST(x,mean,standard_dev,TRUE)` function to calculate the probability that variable *x* falls below or at a specified value. Recall that a percentile in a normal distribution also corresponds to the area to the left (cumulative area) of a specific value.
+
+1. Select cell L1 and enter the label *Percentile*. 
+2. Go to cell L2 and enter the formula `= NORM.DIST(J2,$H$2,$H$4,TRUE)`.
+
+**Note:** Remember to include the `$` symbol.
+
+3. Select cell L2 and place the mouse pointer in the lower right corner of the selected cell until it becomes a `+` sign, and click-drag downward across the range that covers all the values in column K.
+4. In the `Home` tab, select `Percentage` (%) in the `Numbers` ribbon to convert the values in Column L to percentages.
+5. Adjust the probability (or percentiles) values to two (2) decimal places.
+
+The data’s percentiles should range from 0.02% to 99.91%.
+
+## Finding Raw Scores from Probabilities
+
+The function `NORM.INV(probability,mean,standard_dev)`, where *probability* is in the percentage form, will provide the raw value corresponding to the probability (or percentile). 
+
+1. Select cell M1 and type the label *90th Percentile*.
+2. In cell M2, type the label *95th Percentile*.
+3. In cell M3, type the label *99th Percentile*.
+4. In cell N1, type `= NORM.INV(90%, $H$2,$H$4)`. 
+
+**Note:** Remember to include the `$` symbol.
+
+5. Repeat Step 4 above to obtain the other percentiles, 95th in cell N2 and 99th in cell N3.
+
+## Converting to Z-Scores
+
+We can use `STANDARDIZE(value, mean, standard_dev)` to convert any value to a *z*-score when the mean and standard deviation are given.
+
+1. Select the cell K1 and type the label *Z-Scores*.
+2. Below *Z-Scores*, enter the formula `= STANDARDIZE(J2,$H$2,$H$4)`. 
+
+**Note:** Remember to include the `$` symbol.
+
+3. Select the cell with the *z*-score calculated, K2.
+4. Place the mouse pointer in the lower right corner of the selected cell until it becomes a `+` sign, and click-drag downward across the range that covers all the values in column J.
+5. Adjust the *z*-scores values to two (2) decimal places 
+
+
+## Practice
+
+For the variable *mother’s age*, perform the following tasks.
+1. Graph the normal curve for the distribution.
+2. Find the distribution’s probability.
+3. Find the *88th Percentile*.
+4. Find the *z*-scores.
+
+
+
+

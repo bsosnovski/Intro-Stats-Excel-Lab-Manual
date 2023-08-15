@@ -20,7 +20,7 @@ knitr::include_graphics('window-mac.png')
 ```
 
 ## Saving Excel Files
-On the main menu, click `File > Save As` when saving for the first time. A dialog  will appear, similar to the one in figure **\@ref(fig:saving-dialog-box)**. Fill in the file name, select the directory of your choice where the file will be saved on your machine, and the file type, for example, file with extensions `.xlsx` or `.xls`. 
+On the main menu, click `File > Save As` when saving for the first time. A dialog  will appear, similar to the one in figure **\@ref(fig:saving-dialog-box-pc)**. Fill in the file name, select the directory of your choice where the file will be saved on your machine, and the file type, for example, file with extensions `.xlsx` or `.xls`. 
 
 
 ```{r saving-dialog-box-pc, echo=FALSE, fig.align = 'center', out.width='45%', fig.show='hold', fig.cap='Dialog window when saving a workbook on a PC.', fig.alt = 'A dialog box on a PC showing where to enter file name, select the directory and file type.'}

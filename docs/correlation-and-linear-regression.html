@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Lab 9 Correlation and linear regression | Introduction to Statistics: Excel Lab Manual</title>
+  <meta name="description" content="This is an Excel computer lab manual to be used in an Introduction to Statistics course at QCC." />
+  <meta name="generator" content="bookdown 0.29 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Lab 9 Correlation and linear regression | Introduction to Statistics: Excel Lab Manual" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="This is an Excel computer lab manual to be used in an Introduction to Statistics course at QCC." />
+  <meta name="github-repo" content="https://github.com/bsosnovski/Intro-Stats-Excel-Lab-Manual" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Lab 9 Correlation and linear regression | Introduction to Statistics: Excel Lab Manual" />
+  
+  <meta name="twitter:description" content="This is an Excel computer lab manual to be used in an Introduction to Statistics course at QCC." />
+  
+
+<meta name="author" content="Bianca Sosnovski" />
+
+
+<meta name="date" content="2022-05-18" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="box-and-whisker-plot.html"/>
+
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Excel Lab Manual for Intro to Statistics</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#about-this-manual"><i class="fa fa-check"></i>About this Manual</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#about-the-author"><i class="fa fa-check"></i>About the Author</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#license"><i class="fa fa-check"></i>License</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#disclaimer"><i class="fa fa-check"></i>Disclaimer</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i>Introduction</a></li>
+<li class="chapter" data-level="1" data-path="start.html"><a href="start.html"><i class="fa fa-check"></i><b>1</b> Getting Started with Excel</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="start.html"><a href="start.html#the-excel-window"><i class="fa fa-check"></i><b>1.1</b> The Excel Window</a>
+<ul>
+<li class="chapter" data-level="1.1.1" data-path="start.html"><a href="start.html#the-excel-window-on-a-pc"><i class="fa fa-check"></i><b>1.1.1</b> The Excel Window on a PC</a></li>
+<li class="chapter" data-level="1.1.2" data-path="start.html"><a href="start.html#the-excel-window-on-a-mac"><i class="fa fa-check"></i><b>1.1.2</b> The Excel Window on a MAC</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="start.html"><a href="start.html#saving-excel-files"><i class="fa fa-check"></i><b>1.2</b> Saving Excel Files</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="start.html"><a href="start.html#autosave-on-a-pc"><i class="fa fa-check"></i><b>1.2.1</b> AutoSave on a PC</a></li>
+<li class="chapter" data-level="1.2.2" data-path="start.html"><a href="start.html#autosave-on-a-mac"><i class="fa fa-check"></i><b>1.2.2</b> AutoSave on a Mac</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="start.html"><a href="start.html#opening-an-excel-file"><i class="fa fa-check"></i><b>1.3</b> Opening an Excel File</a></li>
+<li class="chapter" data-level="1.4" data-path="start.html"><a href="start.html#toolpak"><i class="fa fa-check"></i><b>1.4</b> The Analysis ToolPak</a>
+<ul>
+<li class="chapter" data-level="1.4.1" data-path="start.html"><a href="start.html#adding-the-analysis-toolpak-on-a-pc"><i class="fa fa-check"></i><b>1.4.1</b> Adding the Analysis ToolPak on a PC</a></li>
+<li class="chapter" data-level="1.4.2" data-path="start.html"><a href="start.html#adding-the-analysis-toolpak-on-a-mac"><i class="fa fa-check"></i><b>1.4.2</b> Adding the Analysis ToolPak on a Mac</a></li>
+</ul></li>
+<li class="chapter" data-level="1.5" data-path="start.html"><a href="start.html#checking-if-the-analysis-toolpak-is-active"><i class="fa fa-check"></i><b>1.5</b> Checking if the Analysis ToolPak is Active</a></li>
+<li class="chapter" data-level="1.6" data-path="start.html"><a href="start.html#workbook"><i class="fa fa-check"></i><b>1.6</b> The Excel Workbook</a>
+<ul>
+<li class="chapter" data-level="1.6.1" data-path="start.html"><a href="start.html#the-cells-in-the-worksheet"><i class="fa fa-check"></i><b>1.6.1</b> The Cells in the Worksheet</a></li>
+<li class="chapter" data-level="1.6.2" data-path="start.html"><a href="start.html#cell-addresses"><i class="fa fa-check"></i><b>1.6.2</b> Cell Addresses</a></li>
+<li class="chapter" data-level="1.6.3" data-path="start.html"><a href="start.html#selecting-cells"><i class="fa fa-check"></i><b>1.6.3</b> Selecting Cells</a></li>
+<li class="chapter" data-level="1.6.4" data-path="start.html"><a href="start.html#formatting-cell-contents"><i class="fa fa-check"></i><b>1.6.4</b> Formatting Cell Contents</a></li>
+<li class="chapter" data-level="1.6.5" data-path="start.html"><a href="start.html#changing-cell-width"><i class="fa fa-check"></i><b>1.6.5</b> Changing Cell Width</a></li>
+</ul></li>
+<li class="chapter" data-level="1.7" data-path="start.html"><a href="start.html#entering-data"><i class="fa fa-check"></i><b>1.7</b> Entering Data</a>
+<ul>
+<li class="chapter" data-level="1.7.1" data-path="start.html"><a href="start.html#entering-and-correcting-data"><i class="fa fa-check"></i><b>1.7.1</b> Entering and Correcting Data</a></li>
+</ul></li>
+<li class="chapter" data-level="1.8" data-path="start.html"><a href="start.html#arithmetic-options-on-the-standard-toolbar"><i class="fa fa-check"></i><b>1.8</b> Arithmetic Options on the Standard Toolbar</a>
+<ul>
+<li class="chapter" data-level="1.8.1" data-path="start.html"><a href="start.html#summing-data-in-a-column"><i class="fa fa-check"></i><b>1.8.1</b> Summing Data in a Column</a></li>
+<li class="chapter" data-level="1.8.2" data-path="start.html"><a href="start.html#sorting-data"><i class="fa fa-check"></i><b>1.8.2</b> Sorting Data</a></li>
+<li class="chapter" data-level="1.8.3" data-path="start.html"><a href="start.html#copying-cells"><i class="fa fa-check"></i><b>1.8.3</b> Copying Cells</a></li>
+</ul></li>
+<li class="chapter" data-level="1.9" data-path="start.html"><a href="start.html#using-formulas"><i class="fa fa-check"></i><b>1.9</b> Using Formulas</a></li>
+<li class="chapter" data-level="1.10" data-path="start.html"><a href="start.html#adjustment-to-formulas"><i class="fa fa-check"></i><b>1.10</b> Adjustment to Formulas</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="number-gen.html"><a href="number-gen.html"><i class="fa fa-check"></i><b>2</b> Random Number Generators and Tables</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="number-gen.html"><a href="number-gen.html#random-samples"><i class="fa fa-check"></i><b>2.1</b> Random Samples</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="number-gen.html"><a href="number-gen.html#insert-the-function-randbetween-on-a-pc"><i class="fa fa-check"></i><b>2.1.1</b> Insert the function RANDBETWEEN on a PC</a></li>
+<li class="chapter" data-level="2.1.2" data-path="number-gen.html"><a href="number-gen.html#insert-the-function-randbetween-on-a-mac"><i class="fa fa-check"></i><b>2.1.2</b> Insert the function RANDBETWEEN on a MAC</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="number-gen.html"><a href="number-gen.html#setting-the-workbook-to-manual-calculation"><i class="fa fa-check"></i><b>2.2</b> Setting the Workbook to Manual Calculation</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="number-gen.html"><a href="number-gen.html#manual-calculation-on-a-pc"><i class="fa fa-check"></i><b>2.2.1</b> Manual Calculation on a PC</a></li>
+<li class="chapter" data-level="2.2.2" data-path="number-gen.html"><a href="number-gen.html#manual-calculation-on-a-mac"><i class="fa fa-check"></i><b>2.2.2</b> Manual Calculation on a MAC</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="number-gen.html"><a href="number-gen.html#using-the-recalculation-mode"><i class="fa fa-check"></i><b>2.3</b> Using the Recalculation Mode</a></li>
+<li class="chapter" data-level="2.4" data-path="number-gen.html"><a href="number-gen.html#creating-tables"><i class="fa fa-check"></i><b>2.4</b> Creating Tables</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="lab-3.-frequency-tables-and-histograms.html"><a href="lab-3.-frequency-tables-and-histograms.html"><i class="fa fa-check"></i><b>3</b> Lab 3. Frequency Tables and Histograms</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="lab-3.-frequency-tables-and-histograms.html"><a href="lab-3.-frequency-tables-and-histograms.html#preparation"><i class="fa fa-check"></i><b>3.1</b> Preparation</a></li>
+<li class="chapter" data-level="3.2" data-path="lab-3.-frequency-tables-and-histograms.html"><a href="lab-3.-frequency-tables-and-histograms.html#initial-computations"><i class="fa fa-check"></i><b>3.2</b> Initial Computations</a></li>
+<li class="chapter" data-level="3.3" data-path="lab-3.-frequency-tables-and-histograms.html"><a href="lab-3.-frequency-tables-and-histograms.html#class-limits-computations"><i class="fa fa-check"></i><b>3.3</b> Class Limits Computations</a></li>
+<li class="chapter" data-level="3.4" data-path="lab-3.-frequency-tables-and-histograms.html"><a href="lab-3.-frequency-tables-and-histograms.html#creating-the-histogram"><i class="fa fa-check"></i><b>3.4</b> Creating the Histogram</a></li>
+<li class="chapter" data-level="3.5" data-path="lab-3.-frequency-tables-and-histograms.html"><a href="lab-3.-frequency-tables-and-histograms.html#removing-the-more-bar-of-the-histogram"><i class="fa fa-check"></i><b>3.5</b> Removing the <em>More</em> bar of the Histogram</a></li>
+<li class="chapter" data-level="3.6" data-path="lab-3.-frequency-tables-and-histograms.html"><a href="lab-3.-frequency-tables-and-histograms.html#adjusting-the-horizontal-axis"><i class="fa fa-check"></i><b>3.6</b> Adjusting the Horizontal Axis</a>
+<ul>
+<li class="chapter" data-level="3.6.1" data-path="lab-3.-frequency-tables-and-histograms.html"><a href="lab-3.-frequency-tables-and-histograms.html#mac"><i class="fa fa-check"></i><b>3.6.1</b> MAC</a></li>
+<li class="chapter" data-level="3.6.2" data-path="lab-3.-frequency-tables-and-histograms.html"><a href="lab-3.-frequency-tables-and-histograms.html#pc"><i class="fa fa-check"></i><b>3.6.2</b> PC</a></li>
+</ul></li>
+<li class="chapter" data-level="3.7" data-path="lab-3.-frequency-tables-and-histograms.html"><a href="lab-3.-frequency-tables-and-histograms.html#adjusting-the-title-of-the-histogram"><i class="fa fa-check"></i><b>3.7</b> Adjusting the Title of the Histogram</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="central-tendency-variation.html"><a href="central-tendency-variation.html"><i class="fa fa-check"></i><b>4</b> Measures of Central Tendency and Variation</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="central-tendency-variation.html"><a href="central-tendency-variation.html#preparation-1"><i class="fa fa-check"></i><b>4.1</b> Preparation</a></li>
+<li class="chapter" data-level="4.2" data-path="central-tendency-variation.html"><a href="central-tendency-variation.html#descriptive-stats"><i class="fa fa-check"></i><b>4.2</b> Using the Descriptive Statistics in Excel to Obtain the Measures</a></li>
+<li class="chapter" data-level="4.3" data-path="central-tendency-variation.html"><a href="central-tendency-variation.html#excel-functions"><i class="fa fa-check"></i><b>4.3</b> Using Excel’s Functions to Obtain the Measures</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="time-series.html"><a href="time-series.html"><i class="fa fa-check"></i><b>5</b> Time Series and Measures of Central Tendency</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="time-series.html"><a href="time-series.html#preparation-2"><i class="fa fa-check"></i><b>5.1</b> Preparation</a></li>
+<li class="chapter" data-level="5.2" data-path="time-series.html"><a href="time-series.html#download-the-data"><i class="fa fa-check"></i><b>5.2</b> Download the Data</a></li>
+<li class="chapter" data-level="5.3" data-path="time-series.html"><a href="time-series.html#preparing-the-data"><i class="fa fa-check"></i><b>5.3</b> Preparing the Data</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="time-series.html"><a href="time-series.html#renaming-the-file"><i class="fa fa-check"></i><b>5.3.1</b> Renaming the File</a></li>
+<li class="chapter" data-level="5.3.2" data-path="time-series.html"><a href="time-series.html#inserting-a-column-on-mac"><i class="fa fa-check"></i><b>5.3.2</b> Inserting a Column on MAC</a></li>
+<li class="chapter" data-level="5.3.3" data-path="time-series.html"><a href="time-series.html#inserting-a-column-on-pc"><i class="fa fa-check"></i><b>5.3.3</b> Inserting a Column on PC</a></li>
+<li class="chapter" data-level="5.3.4" data-path="time-series.html"><a href="time-series.html#seq-numbers"><i class="fa fa-check"></i><b>5.3.4</b> Creating a List of Sequential Numbers</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="time-series.html"><a href="time-series.html#time-series-1"><i class="fa fa-check"></i><b>5.4</b> Time Series</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="pie-and-pareto-charts.html"><a href="pie-and-pareto-charts.html"><i class="fa fa-check"></i><b>6</b> Pie and Pareto Charts</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="pie-and-pareto-charts.html"><a href="pie-and-pareto-charts.html#preparation-3"><i class="fa fa-check"></i><b>6.1</b> Preparation</a></li>
+<li class="chapter" data-level="6.2" data-path="pie-and-pareto-charts.html"><a href="pie-and-pareto-charts.html#pie-charts"><i class="fa fa-check"></i><b>6.2</b> Pie Charts</a></li>
+<li class="chapter" data-level="6.3" data-path="pie-and-pareto-charts.html"><a href="pie-and-pareto-charts.html#pareto-charts"><i class="fa fa-check"></i><b>6.3</b> Pareto Charts</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="pie-and-pareto-charts.html"><a href="pie-and-pareto-charts.html#sorting-data-1"><i class="fa fa-check"></i><b>6.3.1</b> Sorting Data</a></li>
+<li class="chapter" data-level="6.3.2" data-path="pie-and-pareto-charts.html"><a href="pie-and-pareto-charts.html#building-the-pareto-chart"><i class="fa fa-check"></i><b>6.3.2</b> Building the Pareto Chart</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="measures-of-location.html"><a href="measures-of-location.html"><i class="fa fa-check"></i><b>7</b> Measures of Location</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="measures-of-location.html"><a href="measures-of-location.html#preparation-4"><i class="fa fa-check"></i><b>7.1</b> Preparation</a></li>
+<li class="chapter" data-level="7.2" data-path="measures-of-location.html"><a href="measures-of-location.html#percentiles"><i class="fa fa-check"></i><b>7.2</b> Percentiles</a></li>
+<li class="chapter" data-level="7.3" data-path="measures-of-location.html"><a href="measures-of-location.html#percentile-ranks"><i class="fa fa-check"></i><b>7.3</b> Percentile Ranks</a></li>
+<li class="chapter" data-level="7.4" data-path="measures-of-location.html"><a href="measures-of-location.html#standard-scores"><i class="fa fa-check"></i><b>7.4</b> Standard Scores</a>
+<ul>
+<li class="chapter" data-level="7.4.1" data-path="measures-of-location.html"><a href="measures-of-location.html#mean-st-dev"><i class="fa fa-check"></i><b>7.4.1</b> Calculating the Mean and Standard Deviation</a></li>
+<li class="chapter" data-level="7.4.2" data-path="measures-of-location.html"><a href="measures-of-location.html#converting-to-z-scores"><i class="fa fa-check"></i><b>7.4.2</b> Converting to Z-Scores</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="box-and-whisker-plot.html"><a href="box-and-whisker-plot.html"><i class="fa fa-check"></i><b>8</b> Box and Whisker Plot</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="box-and-whisker-plot.html"><a href="box-and-whisker-plot.html#preparation-5"><i class="fa fa-check"></i><b>8.1</b> Preparation</a></li>
+<li class="chapter" data-level="8.2" data-path="box-and-whisker-plot.html"><a href="box-and-whisker-plot.html#five-number-summary"><i class="fa fa-check"></i><b>8.2</b> Five-Number-Summary</a></li>
+<li class="chapter" data-level="8.3" data-path="box-and-whisker-plot.html"><a href="box-and-whisker-plot.html#the-interquartile-range"><i class="fa fa-check"></i><b>8.3</b> The Interquartile Range</a></li>
+<li class="chapter" data-level="8.4" data-path="box-and-whisker-plot.html"><a href="box-and-whisker-plot.html#box-plot"><i class="fa fa-check"></i><b>8.4</b> Box Plot</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="correlation-and-linear-regression.html"><a href="correlation-and-linear-regression.html"><i class="fa fa-check"></i><b>9</b> Correlation and linear regression</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="correlation-and-linear-regression.html"><a href="correlation-and-linear-regression.html#coin-toss-simulation"><i class="fa fa-check"></i><b>9.1</b> Coin Toss Simulation</a></li>
+<li class="chapter" data-level="9.2" data-path="correlation-and-linear-regression.html"><a href="correlation-and-linear-regression.html#simulating-a-coin-tossing-experiment"><i class="fa fa-check"></i><b>9.2</b> Simulating a Coin Tossing Experiment</a></li>
+<li class="chapter" data-level="9.3" data-path="correlation-and-linear-regression.html"><a href="correlation-and-linear-regression.html#counting-the-number-of-heads-and-the-number-of-tails"><i class="fa fa-check"></i><b>9.3</b> Counting the Number of Heads and the Number of Tails</a></li>
+<li class="chapter" data-level="9.4" data-path="correlation-and-linear-regression.html"><a href="correlation-and-linear-regression.html#calculating-the-empirical-probability"><i class="fa fa-check"></i><b>9.4</b> Calculating the Empirical Probability</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/bsosnovski/Intro-Stats-Excel-Lab-Manual" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Introduction to Statistics: Excel Lab Manual</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="correlation-and-linear-regression" class="section level1 hasAnchor" number="9">
+<h1><span class="header-section-number">Lab 9</span> Correlation and linear regression<a href="correlation-and-linear-regression.html#correlation-and-linear-regression" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>You are going to use Excel to determine the correlation of a data set with pair variables, graph the scatter plot and also determine the line of best-fitting (linear regression).
+Throughout this handout, by “select” I mean for you to left-click with the mouse.
+For extra help with this lab, check Technology sections 10.2 of textbook (about Excel), which contains some of the instructions below.
+Preparation
+Download from Blackboard the data set to be used in this lab.
+Excel Instructions
+Open the Excel file and follow the instructions below.
+Creating a scatter plot:
+Select the data in both columns. Then at the top of the screen, click Insert &gt;Scatter.
+Select the leftmost chart in the top row by clicking on it (Scatter with only markers).
+In the Design ribbon, click the leftmost diagram (Style 1)
+Click Add Chart Element &gt; Axis Title &gt; More Axis Title Options, so that you can add an x-axis title, y-axis title.
+Change Time to Duration of Old Faithful’s Eruptions by Time Until the Next Eruption.
+Click the Y-Axis Title and replace it with Time Until the Next Eruption (in minutes).
+Click X-Axis Title and replace it with Duration (in minutes).
+Adjust the vertical and horizontal axes to best show the plot.
+Using Excel to find Correlation Coefficient:
+Type the label Correlation in empty cell of the worksheet.
+In the cell below the label Correlation, select Formulas and Insert Function.
+Select the Statistical category. Select the CORREL function. Click OK.
+Complete the CORREL dialog box will be similar as shown below.
+For Array 1, select the cells in the first column of the data set.
+For Array 2, select the cells in the second column of the data set</p>
+<p>Using Excel to find a Regression Equation:
+You will be using Excel’s functions to obtain the slope and intercept. Type the label “Slope” and “Intercept” in cells D1 and E1.
+Click in cell D2 where the slope will be placed.
+At the top of the screen, select Formulas and Insert Function.
+Select the Statistical category. Select the SLOPE function. Click OK.</p>
+<pre><code>Complete the SLOPE dialog box with the following:</code></pre>
+<p>Known_y’s B1:B26
+Known_x’s A1:A26
+Click OK.
+Click in cell E2 where the intercept will be placed.
+Again Formulas &gt; Insert Function.
+In the Statistical category, select the INTERCEPT function. Click OK.
+Complete the INTERCEPT dialog box with the following:
+Known_y’s B1:B26
+Known_x’s A1:A26
+Click OK.
+We can find the regression line in another way:
+Click Data &gt; Data Analysis. Select Regression and click OK. Complete the Regression dialog as shown. By selecting Residuals, the output will include y-y ̂ for each observation in the data set. Click OK.</p>
+<pre><code>The intercept and slope of the regression equation are show. </code></pre>
+<p>Using Excel to graph the best-fitting line:
+Right click directly on a point in the scatter plot.
+Select Add Trendline.
+Be sure to have a Linear trend selected.
+Click in the checkbox to display the equation.
+Switching the roles of the variables in the regression:
+Now you are going to switching the explanatory and response variables, that is, you are switching the roles of x and y values for the ordered pairs. Following the guidelines above use Excel to:
+Construct the scatter plot.
+Calculate the correlation coefficient.
+Draw the regression line in your scatter plot
+Answer to the following questions (you may refer to your notes or textbook):</p>
+
+<div id="coin-toss-simulation" class="section level2 hasAnchor" number="9.1">
+<h2><span class="header-section-number">9.1</span> Coin Toss Simulation<a href="correlation-and-linear-regression.html#coin-toss-simulation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>In Lab <strong><a href="number-gen.html#number-gen">2</a></strong> <em>Random Number Generators and Tables</em>, the function <code>RANDBETWEEN(Bottom,Top)</code> was used to obtain a random integer between (and including) the bottom and top numbers.</p>
+<p>We can use the random number generator to simulate experiments such as tossing coins or rolling dice.</p>
+</div>
+<div id="simulating-a-coin-tossing-experiment" class="section level2 hasAnchor" number="9.2">
+<h2><span class="header-section-number">9.2</span> Simulating a Coin Tossing Experiment<a href="correlation-and-linear-regression.html#simulating-a-coin-tossing-experiment" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>To simulate the experiment, assign to the outcome <em>Head</em> the digit <em>1</em> and to <em>Tail</em> the digit <em>2</em>.</p>
+<p>You will draw a random sample of size 30 in Column A from the distributions of integers with a minimum value of 1 to a maximum value of 2.</p>
+<ol style="list-style-type: decimal">
+<li>Write the label <em>Coin Toss</em> in cell A1.</li>
+<li>Type the formula <code>= RANDBETWEEN(1,2)</code> in cell A2 and press <code>Enter/Return</code>.</li>
+<li>Select cell A2 again, position the mouse pointer in the lower right corner of the selected cell until it becomes a <code>+</code> sign, and click-drag downward across until cell A31.</li>
+<li>Ensure that Excel randomizes all the values by going to the <code>Formula</code> tab in the menu bar and clicking the <code>Calculate Now</code> ribbon to apply the randomization. Column A should now have 30 random values.</li>
+</ol>
+</div>
+<div id="counting-the-number-of-heads-and-the-number-of-tails" class="section level2 hasAnchor" number="9.3">
+<h2><span class="header-section-number">9.3</span> Counting the Number of Heads and the Number of Tails<a href="correlation-and-linear-regression.html#counting-the-number-of-heads-and-the-number-of-tails" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Next, you will use Excel to count the <em>1</em>’s and <em>2</em>’s in column A. You will set up a table in Columns C and D to display the results.</p>
+<ol style="list-style-type: decimal">
+<li>Type the label <em>Outcome</em> in Cell C1.</li>
+<li>Type the label <em>Heads</em> in Cell C2.</li>
+<li>Type the label <em>Tails</em> in Cell C3.</li>
+<li>Type the label <em>Frequency</em> in Cell D1.</li>
+</ol>
+<p>You will use the formula <code>COUNTIF(data range, condition)</code> to count the <em>1</em>’s and <em>2</em>’s as the formula’s conditions. Recall that we assigned the number <em>1</em> to the outcome <em>Head</em> and the number <em>2</em> to the <em>Tail</em>.</p>
+<ol style="list-style-type: decimal">
+<li>Select cell D2, and enter the formula <code>= COUNTIF(A2:A31,1)</code>.</li>
+<li>Next, select cell D3, and enter <code>= COUNTIF(A2:A31,2)</code>.</li>
+</ol>
+</div>
+<div id="calculating-the-empirical-probability" class="section level2 hasAnchor" number="9.4">
+<h2><span class="header-section-number">9.4</span> Calculating the Empirical Probability<a href="correlation-and-linear-regression.html#calculating-the-empirical-probability" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><em>Empirical Probability</em> is based on experience or historical data to determine the likelihood of outcomes. It is calculated by determining the relative frequency. You will calculate the observed probabilities of the outcomes <em>Heads</em> and <em>Tails</em> you simulated.</p>
+<p>To calculate the relative frequency of an outcome, calculate the number of times the outcomes appear divided by the total number of all outcomes.</p>
+<ol style="list-style-type: decimal">
+<li>Enter the label <em>Rel Freq</em> in cell E1.</li>
+<li>In cell E2, enter <code>= D2/30</code>.</li>
+<li>In cell E3, enter <code>= D3/30</code>.</li>
+<li>Select the cells E2 and E3 and go to the <code>Home</code> tab, and then adjust the results to have four (4) decimal places in the <code>Number</code> ribbon.</li>
+</ol>
+<p><strong>Practice:</strong></p>
+<p>Repeat this process to generate another simulation with 500 <em>Coin Tosses</em> in any empty cells of the <em>Lab 9</em> worksheet.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="box-and-whisker-plot.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/bsosnovski/Intro-Stats-Excel-Lab-Manual09-correlation-linear-regression.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["excel-lab-manual.pdf", "excel-lab-manual.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

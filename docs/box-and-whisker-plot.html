@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Lab 8 Box and Whisker Plot | Introduction to Statistics: Excel Lab Manual</title>
+  <meta name="description" content="This is an Excel computer lab manual to be used in an Introduction to Statistics course at QCC." />
+  <meta name="generator" content="bookdown 0.29 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Lab 8 Box and Whisker Plot | Introduction to Statistics: Excel Lab Manual" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="This is an Excel computer lab manual to be used in an Introduction to Statistics course at QCC." />
+  <meta name="github-repo" content="https://github.com/bsosnovski/Intro-Stats-Excel-Lab-Manual" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Lab 8 Box and Whisker Plot | Introduction to Statistics: Excel Lab Manual" />
+  
+  <meta name="twitter:description" content="This is an Excel computer lab manual to be used in an Introduction to Statistics course at QCC." />
+  
+
+<meta name="author" content="Bianca Sosnovski" />
+
+
+<meta name="date" content="2022-05-18" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="measures-of-location.html"/>
+<link rel="next" href="linear-regression-and-correlation.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Excel Lab Manual for Intro to Statistics</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#about-this-manual"><i class="fa fa-check"></i>About this Manual</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#about-the-author"><i class="fa fa-check"></i>About the Author</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#license"><i class="fa fa-check"></i>License</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#disclaimer"><i class="fa fa-check"></i>Disclaimer</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i>Introduction</a></li>
+<li class="chapter" data-level="1" data-path="start.html"><a href="start.html"><i class="fa fa-check"></i><b>1</b> Getting Started with Excel</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="start.html"><a href="start.html#the-excel-window"><i class="fa fa-check"></i><b>1.1</b> The Excel Window</a>
+<ul>
+<li class="chapter" data-level="1.1.1" data-path="start.html"><a href="start.html#the-excel-window-on-a-pc"><i class="fa fa-check"></i><b>1.1.1</b> The Excel Window on a PC</a></li>
+<li class="chapter" data-level="1.1.2" data-path="start.html"><a href="start.html#the-excel-window-on-a-mac"><i class="fa fa-check"></i><b>1.1.2</b> The Excel Window on a MAC</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="start.html"><a href="start.html#saving-excel-files"><i class="fa fa-check"></i><b>1.2</b> Saving Excel Files</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="start.html"><a href="start.html#autosave-on-a-pc"><i class="fa fa-check"></i><b>1.2.1</b> AutoSave on a PC</a></li>
+<li class="chapter" data-level="1.2.2" data-path="start.html"><a href="start.html#autosave-on-a-mac"><i class="fa fa-check"></i><b>1.2.2</b> AutoSave on a Mac</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="start.html"><a href="start.html#opening-an-excel-file"><i class="fa fa-check"></i><b>1.3</b> Opening an Excel File</a></li>
+<li class="chapter" data-level="1.4" data-path="start.html"><a href="start.html#toolpak"><i class="fa fa-check"></i><b>1.4</b> The Analysis ToolPak</a>
+<ul>
+<li class="chapter" data-level="1.4.1" data-path="start.html"><a href="start.html#adding-the-analysis-toolpak-on-a-pc"><i class="fa fa-check"></i><b>1.4.1</b> Adding the Analysis ToolPak on a PC</a></li>
+<li class="chapter" data-level="1.4.2" data-path="start.html"><a href="start.html#adding-the-analysis-toolpak-on-a-mac"><i class="fa fa-check"></i><b>1.4.2</b> Adding the Analysis ToolPak on a Mac</a></li>
+</ul></li>
+<li class="chapter" data-level="1.5" data-path="start.html"><a href="start.html#checking-if-the-analysis-toolpak-is-active"><i class="fa fa-check"></i><b>1.5</b> Checking if the Analysis ToolPak is Active</a></li>
+<li class="chapter" data-level="1.6" data-path="start.html"><a href="start.html#workbook"><i class="fa fa-check"></i><b>1.6</b> The Excel Workbook</a>
+<ul>
+<li class="chapter" data-level="1.6.1" data-path="start.html"><a href="start.html#the-cells-in-the-worksheet"><i class="fa fa-check"></i><b>1.6.1</b> The Cells in the Worksheet</a></li>
+<li class="chapter" data-level="1.6.2" data-path="start.html"><a href="start.html#cell-addresses"><i class="fa fa-check"></i><b>1.6.2</b> Cell Addresses</a></li>
+<li class="chapter" data-level="1.6.3" data-path="start.html"><a href="start.html#selecting-cells"><i class="fa fa-check"></i><b>1.6.3</b> Selecting Cells</a></li>
+<li class="chapter" data-level="1.6.4" data-path="start.html"><a href="start.html#formatting-cell-contents"><i class="fa fa-check"></i><b>1.6.4</b> Formatting Cell Contents</a></li>
+<li class="chapter" data-level="1.6.5" data-path="start.html"><a href="start.html#changing-cell-width"><i class="fa fa-check"></i><b>1.6.5</b> Changing Cell Width</a></li>
+</ul></li>
+<li class="chapter" data-level="1.7" data-path="start.html"><a href="start.html#entering-data"><i class="fa fa-check"></i><b>1.7</b> Entering Data</a>
+<ul>
+<li class="chapter" data-level="1.7.1" data-path="start.html"><a href="start.html#entering-and-correcting-data"><i class="fa fa-check"></i><b>1.7.1</b> Entering and Correcting Data</a></li>
+<li class="chapter" data-level="1.7.2" data-path="start.html"><a href="start.html#practice-1"><i class="fa fa-check"></i><b>1.7.2</b> Practice 1</a></li>
+</ul></li>
+<li class="chapter" data-level="1.8" data-path="start.html"><a href="start.html#arithmetic-options-on-the-standard-toolbar"><i class="fa fa-check"></i><b>1.8</b> Arithmetic Options on the Standard Toolbar</a>
+<ul>
+<li class="chapter" data-level="1.8.1" data-path="start.html"><a href="start.html#sum-function"><i class="fa fa-check"></i><b>1.8.1</b> Sum Function</a></li>
+<li class="chapter" data-level="1.8.2" data-path="start.html"><a href="start.html#practice-2"><i class="fa fa-check"></i><b>1.8.2</b> Practice 2</a></li>
+<li class="chapter" data-level="1.8.3" data-path="start.html"><a href="start.html#sorting-data"><i class="fa fa-check"></i><b>1.8.3</b> Sorting Data</a></li>
+<li class="chapter" data-level="1.8.4" data-path="start.html"><a href="start.html#practice-3"><i class="fa fa-check"></i><b>1.8.4</b> Practice 3</a></li>
+<li class="chapter" data-level="1.8.5" data-path="start.html"><a href="start.html#copying-cells"><i class="fa fa-check"></i><b>1.8.5</b> Copying Cells</a></li>
+<li class="chapter" data-level="1.8.6" data-path="start.html"><a href="start.html#practice-4"><i class="fa fa-check"></i><b>1.8.6</b> Practice 4</a></li>
+</ul></li>
+<li class="chapter" data-level="1.9" data-path="start.html"><a href="start.html#using-formulas"><i class="fa fa-check"></i><b>1.9</b> Using Formulas</a>
+<ul>
+<li class="chapter" data-level="1.9.1" data-path="start.html"><a href="start.html#practice-5"><i class="fa fa-check"></i><b>1.9.1</b> Practice 5</a></li>
+</ul></li>
+<li class="chapter" data-level="1.10" data-path="start.html"><a href="start.html#adjustment-to-formulas"><i class="fa fa-check"></i><b>1.10</b> Adjustment to Formulas</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="number-gen.html"><a href="number-gen.html"><i class="fa fa-check"></i><b>2</b> Random Number Generators and Tables</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="number-gen.html"><a href="number-gen.html#random-samples"><i class="fa fa-check"></i><b>2.1</b> Random Samples</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="number-gen.html"><a href="number-gen.html#insert-the-function-randbetween-on-a-pc"><i class="fa fa-check"></i><b>2.1.1</b> Insert the function RANDBETWEEN on a PC</a></li>
+<li class="chapter" data-level="2.1.2" data-path="number-gen.html"><a href="number-gen.html#insert-the-function-randbetween-on-a-mac"><i class="fa fa-check"></i><b>2.1.2</b> Insert the function RANDBETWEEN on a MAC</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="number-gen.html"><a href="number-gen.html#setting-the-workbook-to-manual-calculation"><i class="fa fa-check"></i><b>2.2</b> Setting the Workbook to Manual Calculation</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="number-gen.html"><a href="number-gen.html#manual-calculation-on-a-pc"><i class="fa fa-check"></i><b>2.2.1</b> Manual Calculation on a PC</a></li>
+<li class="chapter" data-level="2.2.2" data-path="number-gen.html"><a href="number-gen.html#manual-calculation-on-a-mac"><i class="fa fa-check"></i><b>2.2.2</b> Manual Calculation on a MAC</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="number-gen.html"><a href="number-gen.html#using-the-recalculation-mode"><i class="fa fa-check"></i><b>2.3</b> Using the Recalculation Mode</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="number-gen.html"><a href="number-gen.html#practice-1-1"><i class="fa fa-check"></i><b>2.3.1</b> Practice 1</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="number-gen.html"><a href="number-gen.html#creating-tables"><i class="fa fa-check"></i><b>2.4</b> Creating Tables</a>
+<ul>
+<li class="chapter" data-level="2.4.1" data-path="number-gen.html"><a href="number-gen.html#practice-2-1"><i class="fa fa-check"></i><b>2.4.1</b> Practice 2</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="frequency-tables-and-histograms.html"><a href="frequency-tables-and-histograms.html"><i class="fa fa-check"></i><b>3</b> Frequency Tables and Histograms</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="frequency-tables-and-histograms.html"><a href="frequency-tables-and-histograms.html#class-limit-calculations"><i class="fa fa-check"></i><b>3.1</b> Class Limit Calculations</a></li>
+<li class="chapter" data-level="3.2" data-path="frequency-tables-and-histograms.html"><a href="frequency-tables-and-histograms.html#creating-the-histogram"><i class="fa fa-check"></i><b>3.2</b> Creating the Histogram</a></li>
+<li class="chapter" data-level="3.3" data-path="frequency-tables-and-histograms.html"><a href="frequency-tables-and-histograms.html#removing-the-more-bar-of-the-histogram"><i class="fa fa-check"></i><b>3.3</b> Removing the <em>More</em> bar of the Histogram</a></li>
+<li class="chapter" data-level="3.4" data-path="frequency-tables-and-histograms.html"><a href="frequency-tables-and-histograms.html#adjusting-the-horizontal-axis"><i class="fa fa-check"></i><b>3.4</b> Adjusting the Horizontal Axis</a>
+<ul>
+<li class="chapter" data-level="3.4.1" data-path="frequency-tables-and-histograms.html"><a href="frequency-tables-and-histograms.html#mac"><i class="fa fa-check"></i><b>3.4.1</b> MAC</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="frequency-tables-and-histograms.html"><a href="frequency-tables-and-histograms.html#practice"><i class="fa fa-check"></i><b>3.5</b> Practice</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="central-tendency-variation.html"><a href="central-tendency-variation.html"><i class="fa fa-check"></i><b>4</b> Measures of Central Tendency and Variation</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="central-tendency-variation.html"><a href="central-tendency-variation.html#preparation"><i class="fa fa-check"></i><b>4.1</b> Preparation</a></li>
+<li class="chapter" data-level="4.2" data-path="central-tendency-variation.html"><a href="central-tendency-variation.html#descriptive-stats"><i class="fa fa-check"></i><b>4.2</b> Using the Descriptive Statistics in Excel to Obtain the Measures</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="central-tendency-variation.html"><a href="central-tendency-variation.html#practice-1-2"><i class="fa fa-check"></i><b>4.2.1</b> Practice 1</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="central-tendency-variation.html"><a href="central-tendency-variation.html#excel-functions"><i class="fa fa-check"></i><b>4.3</b> Using Excel’s Functions to Obtain the Measures</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="central-tendency-variation.html"><a href="central-tendency-variation.html#practice-2-2"><i class="fa fa-check"></i><b>4.3.1</b> Practice 2</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="time-series.html"><a href="time-series.html"><i class="fa fa-check"></i><b>5</b> Time Series</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="time-series.html"><a href="time-series.html#preparation-1"><i class="fa fa-check"></i><b>5.1</b> Preparation</a></li>
+<li class="chapter" data-level="5.2" data-path="time-series.html"><a href="time-series.html#download-the-data"><i class="fa fa-check"></i><b>5.2</b> Download the Data</a></li>
+<li class="chapter" data-level="5.3" data-path="time-series.html"><a href="time-series.html#preparing-the-data"><i class="fa fa-check"></i><b>5.3</b> Preparing the Data</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="time-series.html"><a href="time-series.html#renaming-the-file"><i class="fa fa-check"></i><b>5.3.1</b> Renaming the File</a></li>
+<li class="chapter" data-level="5.3.2" data-path="time-series.html"><a href="time-series.html#inserting-a-column-on-mac"><i class="fa fa-check"></i><b>5.3.2</b> Inserting a Column on MAC</a></li>
+<li class="chapter" data-level="5.3.3" data-path="time-series.html"><a href="time-series.html#inserting-a-column-on-pc"><i class="fa fa-check"></i><b>5.3.3</b> Inserting a Column on PC</a></li>
+<li class="chapter" data-level="5.3.4" data-path="time-series.html"><a href="time-series.html#seq-numbers"><i class="fa fa-check"></i><b>5.3.4</b> Creating a List of Sequential Numbers</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="time-series.html"><a href="time-series.html#time-series-1"><i class="fa fa-check"></i><b>5.4</b> Time Series</a></li>
+<li class="chapter" data-level="5.5" data-path="time-series.html"><a href="time-series.html#practice-1-3"><i class="fa fa-check"></i><b>5.5</b> Practice 1</a></li>
+<li class="chapter" data-level="5.6" data-path="time-series.html"><a href="time-series.html#practice-2-3"><i class="fa fa-check"></i><b>5.6</b> Practice 2</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="pie-and-pareto-charts.html"><a href="pie-and-pareto-charts.html"><i class="fa fa-check"></i><b>6</b> Pie and Pareto Charts</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="pie-and-pareto-charts.html"><a href="pie-and-pareto-charts.html#preparation-2"><i class="fa fa-check"></i><b>6.1</b> Preparation</a>
+<ul>
+<li class="chapter" data-level="6.1.1" data-path="pie-and-pareto-charts.html"><a href="pie-and-pareto-charts.html#practice-1-4"><i class="fa fa-check"></i><b>6.1.1</b> Practice 1</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="pie-and-pareto-charts.html"><a href="pie-and-pareto-charts.html#pareto-charts"><i class="fa fa-check"></i><b>6.2</b> Pareto Charts</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="pie-and-pareto-charts.html"><a href="pie-and-pareto-charts.html#sorting-data-1"><i class="fa fa-check"></i><b>6.2.1</b> Sorting Data</a></li>
+<li class="chapter" data-level="6.2.2" data-path="pie-and-pareto-charts.html"><a href="pie-and-pareto-charts.html#building-the-pareto-chart"><i class="fa fa-check"></i><b>6.2.2</b> Building the Pareto Chart</a></li>
+<li class="chapter" data-level="6.2.3" data-path="pie-and-pareto-charts.html"><a href="pie-and-pareto-charts.html#practice-2-4"><i class="fa fa-check"></i><b>6.2.3</b> Practice 2</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="measures-of-location.html"><a href="measures-of-location.html"><i class="fa fa-check"></i><b>7</b> Measures of Location</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="measures-of-location.html"><a href="measures-of-location.html#preparation-3"><i class="fa fa-check"></i><b>7.1</b> Preparation</a></li>
+<li class="chapter" data-level="7.2" data-path="measures-of-location.html"><a href="measures-of-location.html#percentiles"><i class="fa fa-check"></i><b>7.2</b> Percentiles</a></li>
+<li class="chapter" data-level="7.3" data-path="measures-of-location.html"><a href="measures-of-location.html#percentile-ranks"><i class="fa fa-check"></i><b>7.3</b> Percentile Ranks</a>
+<ul>
+<li class="chapter" data-level="7.3.1" data-path="measures-of-location.html"><a href="measures-of-location.html#practice-1-5"><i class="fa fa-check"></i><b>7.3.1</b> Practice 1</a></li>
+</ul></li>
+<li class="chapter" data-level="7.4" data-path="measures-of-location.html"><a href="measures-of-location.html#standard-scores"><i class="fa fa-check"></i><b>7.4</b> Standard Scores</a>
+<ul>
+<li class="chapter" data-level="7.4.1" data-path="measures-of-location.html"><a href="measures-of-location.html#mean-st-dev"><i class="fa fa-check"></i><b>7.4.1</b> Calculating the Mean and Standard Deviation</a></li>
+<li class="chapter" data-level="7.4.2" data-path="measures-of-location.html"><a href="measures-of-location.html#converting-to-z-scores"><i class="fa fa-check"></i><b>7.4.2</b> Converting to Z-Scores</a></li>
+<li class="chapter" data-level="7.4.3" data-path="measures-of-location.html"><a href="measures-of-location.html#practice-2-5"><i class="fa fa-check"></i><b>7.4.3</b> Practice 2</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="box-and-whisker-plot.html"><a href="box-and-whisker-plot.html"><i class="fa fa-check"></i><b>8</b> Box and Whisker Plot</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="box-and-whisker-plot.html"><a href="box-and-whisker-plot.html#preparation-4"><i class="fa fa-check"></i><b>8.1</b> Preparation</a></li>
+<li class="chapter" data-level="8.2" data-path="box-and-whisker-plot.html"><a href="box-and-whisker-plot.html#five-number-summary"><i class="fa fa-check"></i><b>8.2</b> Five-Number-Summary</a></li>
+<li class="chapter" data-level="8.3" data-path="box-and-whisker-plot.html"><a href="box-and-whisker-plot.html#the-interquartile-range"><i class="fa fa-check"></i><b>8.3</b> The Interquartile Range</a></li>
+<li class="chapter" data-level="8.4" data-path="box-and-whisker-plot.html"><a href="box-and-whisker-plot.html#box-plot"><i class="fa fa-check"></i><b>8.4</b> Box Plot</a></li>
+<li class="chapter" data-level="8.5" data-path="box-and-whisker-plot.html"><a href="box-and-whisker-plot.html#practice-6"><i class="fa fa-check"></i><b>8.5</b> Practice</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="linear-regression-and-correlation.html"><a href="linear-regression-and-correlation.html"><i class="fa fa-check"></i><b>9</b> Linear Regression and Correlation</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="linear-regression-and-correlation.html"><a href="linear-regression-and-correlation.html#preparation-5"><i class="fa fa-check"></i><b>9.1</b> Preparation</a></li>
+<li class="chapter" data-level="9.2" data-path="linear-regression-and-correlation.html"><a href="linear-regression-and-correlation.html#create-scatter-plot"><i class="fa fa-check"></i><b>9.2</b> Creating a Scatter Plot</a></li>
+<li class="chapter" data-level="9.3" data-path="linear-regression-and-correlation.html"><a href="linear-regression-and-correlation.html#calculating-the-correlation-coefficient"><i class="fa fa-check"></i><b>9.3</b> Calculating the Correlation Coefficient</a></li>
+<li class="chapter" data-level="9.4" data-path="linear-regression-and-correlation.html"><a href="linear-regression-and-correlation.html#graphing-the-regression-line"><i class="fa fa-check"></i><b>9.4</b> Graphing the Regression Line</a></li>
+<li class="chapter" data-level="9.5" data-path="linear-regression-and-correlation.html"><a href="linear-regression-and-correlation.html#practice-7"><i class="fa fa-check"></i><b>9.5</b> Practice</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="coin-toss-simulation.html"><a href="coin-toss-simulation.html"><i class="fa fa-check"></i><b>10</b> Coin Toss Simulation</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="coin-toss-simulation.html"><a href="coin-toss-simulation.html#simulating-a-coin-tossing-experiment"><i class="fa fa-check"></i><b>10.1</b> Simulating a Coin Tossing Experiment</a></li>
+<li class="chapter" data-level="10.2" data-path="coin-toss-simulation.html"><a href="coin-toss-simulation.html#counting-the-number-of-heads-and-the-number-of-tails"><i class="fa fa-check"></i><b>10.2</b> Counting the Number of Heads and the Number of Tails</a></li>
+<li class="chapter" data-level="10.3" data-path="coin-toss-simulation.html"><a href="coin-toss-simulation.html#calculating-the-empirical-probability"><i class="fa fa-check"></i><b>10.3</b> Calculating the Empirical Probability</a></li>
+<li class="chapter" data-level="10.4" data-path="coin-toss-simulation.html"><a href="coin-toss-simulation.html#practice-8"><i class="fa fa-check"></i><b>10.4</b> Practice</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="normal-distributions.html"><a href="normal-distributions.html"><i class="fa fa-check"></i><b>11</b> Normal Distributions</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="normal-distributions.html"><a href="normal-distributions.html#preparation-6"><i class="fa fa-check"></i><b>11.1</b> Preparation</a></li>
+<li class="chapter" data-level="11.2" data-path="normal-distributions.html"><a href="normal-distributions.html#calculating-the-mean-and-standard-deviation"><i class="fa fa-check"></i><b>11.2</b> Calculating the Mean and Standard Deviation</a></li>
+<li class="chapter" data-level="11.3" data-path="normal-distributions.html"><a href="normal-distributions.html#graphing-the-normal-distribution"><i class="fa fa-check"></i><b>11.3</b> Graphing the Normal Distribution</a></li>
+<li class="chapter" data-level="11.4" data-path="normal-distributions.html"><a href="normal-distributions.html#calculating-probability-or-cumulative-area"><i class="fa fa-check"></i><b>11.4</b> Calculating Probability or Cumulative Area</a></li>
+<li class="chapter" data-level="11.5" data-path="normal-distributions.html"><a href="normal-distributions.html#finding-raw-scores-from-probabilities"><i class="fa fa-check"></i><b>11.5</b> Finding Raw Scores from Probabilities</a></li>
+<li class="chapter" data-level="11.6" data-path="normal-distributions.html"><a href="normal-distributions.html#converting-to-z-scores-1"><i class="fa fa-check"></i><b>11.6</b> Converting to Z-Scores</a></li>
+<li class="chapter" data-level="11.7" data-path="normal-distributions.html"><a href="normal-distributions.html#practice-9"><i class="fa fa-check"></i><b>11.7</b> Practice</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="the-central-limit-theorem.html"><a href="the-central-limit-theorem.html"><i class="fa fa-check"></i><b>12</b> The Central Limit Theorem</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="the-central-limit-theorem.html"><a href="the-central-limit-theorem.html#preparation-7"><i class="fa fa-check"></i><b>12.1</b> Preparation</a></li>
+<li class="chapter" data-level="12.2" data-path="the-central-limit-theorem.html"><a href="the-central-limit-theorem.html#mean-stdev-population"><i class="fa fa-check"></i><b>12.2</b> Mean and Standard Deviation of the Population</a></li>
+<li class="chapter" data-level="12.3" data-path="the-central-limit-theorem.html"><a href="the-central-limit-theorem.html#generating-random-samples"><i class="fa fa-check"></i><b>12.3</b> Generating Random Samples</a></li>
+<li class="chapter" data-level="12.4" data-path="the-central-limit-theorem.html"><a href="the-central-limit-theorem.html#mean-samples"><i class="fa fa-check"></i><b>12.4</b> Sample Means</a></li>
+<li class="chapter" data-level="12.5" data-path="the-central-limit-theorem.html"><a href="the-central-limit-theorem.html#the-mean-and-standard-deviation-of-the-sampling-distribution"><i class="fa fa-check"></i><b>12.5</b> The Mean and Standard Deviation of the Sampling Distribution</a></li>
+<li class="chapter" data-level="12.6" data-path="the-central-limit-theorem.html"><a href="the-central-limit-theorem.html#practice-10"><i class="fa fa-check"></i><b>12.6</b> Practice</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/bsosnovski/Intro-Stats-Excel-Lab-Manual" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Introduction to Statistics: Excel Lab Manual</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="box-and-whisker-plot" class="section level1 hasAnchor" number="8">
+<h1><span class="header-section-number">Lab 8</span> Box and Whisker Plot<a href="box-and-whisker-plot.html#box-and-whisker-plot" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p><em>Quartiles</em> are quantiles (also percentiles) that divide the data into approximately four equal parts.</p>
+<p>A <em>box and whisker plot</em> is a graph showing the data distribution using the <em>five-number-summary</em>: minimum value, first quartile, median (second quartile), third quartile, and maximum value. This type of graph is also known as a box plot.</p>
+<p>The <em>interquartile range</em> (<em>IQR</em>) represents the spread of the middle half of the data and is calculated as the difference between the third and first quartiles.</p>
+<div id="preparation-4" class="section level2 hasAnchor" number="8.1">
+<h2><span class="header-section-number">8.1</span> Preparation<a href="box-and-whisker-plot.html#preparation-4" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>In this lab, you will use a data set containing NY temperatures in September of 2013.</p>
+<p>Download the data set called <em>Lab 8 NY Temp Sept2013.xlsx</em> from here <a href="https://github.com/bsosnovski/Intro-Stats-Excel-Lab-Manual/blob/main/Data_Sets/Lab-8-NY-Temp-Sept2013.xlsx"><strong>https://github.com/bsosnovski/Intro-Stats-Excel-Lab-Manual/blob/main/Data_Sets/Lab-8-NY-Temp-Sept2013.xlsx</strong></a>.</p>
+<p>Open the Excel file <em>Lab 8 NY Temp Sept2013.xlsx</em> and follow the instructions below.</p>
+</div>
+<div id="five-number-summary" class="section level2 hasAnchor" number="8.2">
+<h2><span class="header-section-number">8.2</span> Five-Number-Summary<a href="box-and-whisker-plot.html#five-number-summary" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Using Excel, you will compute the five-number summary, generate a box plot, and compute the interquartile range (IQR) for <em>Lab 8 NY temperatures in the September 2013</em> workbook.</p>
+<p>Use Excel to compute the following in an empty part of the worksheet.</p>
+<ol style="list-style-type: decimal">
+<li>Choose a cell and type <em>Min</em>, and in the cell next to it, enter <code>= MIN(B3:B32)</code> to find the minimum value of the data set.</li>
+<li>Below <em>Min</em>, type <em>Q1</em>, and in the cell next to it, enter <code>= QUARTILE(B3:B32,1)</code> to find the first quartile.</li>
+<li>Below <em>Q1</em>, type <em>Q2</em>, and in the cell next to it, enter <code>= QUARTILE(B3:B32,2)</code> to find the second quartile.</li>
+<li>Below <em>Q2</em>, type <em>Q3</em>, and in the cell next to it, enter <code>= QUARTILE(B3:B32,3)</code> to find the third quartile.
+5, Below <em>Q3</em>, type <em>Max</em>, and in the cell next to it, enter <code>= Max(B3:B32)</code> to find the maximum value of the data set.</li>
+<li>Below <em>Max</em>, type <em>Median</em>, and enter <code>= MEDIAN(B3:B32)</code> next to it to compute the median.</li>
+</ol>
+<p>Be sure that your five-number summary is organized to display the results. For example:</p>
+<center>
+<table style="width:50%;">
+<caption>
+<span id="tab:unnamed-chunk-1">Table 8.1: </span>Example of a five-number-summary
+</caption>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Min
+</td>
+<td style="text-align:right;">
+18.00
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Q1
+</td>
+<td style="text-align:right;">
+24.50
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Q2
+</td>
+<td style="text-align:right;">
+38.00
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Q3
+</td>
+<td style="text-align:right;">
+44.25
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Max
+</td>
+<td style="text-align:right;">
+58.00
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Median
+</td>
+<td style="text-align:right;">
+38.00
+</td>
+</tr>
+</tbody>
+</table>
+<center>
+<p><strong>Note:</strong> The five-number summary for the NY Temperatures will differ from those shown in Table 1.</p>
+</div>
+<div id="the-interquartile-range" class="section level2 hasAnchor" number="8.3">
+<h2><span class="header-section-number">8.3</span> The Interquartile Range<a href="box-and-whisker-plot.html#the-interquartile-range" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Using Excel compute the <em>IQR</em> of the data set. Recall that the formula for <em>IQR</em> is <code>IQR = Q3 - Q1</code>.</p>
+<p>Use an Excel formula to calculate the <em>IQR</em>. Your formula must use cell addresses in the calculation. Place your formula in empty cells below your five-number summary.</p>
+</div>
+<div id="box-plot" class="section level2 hasAnchor" number="8.4">
+<h2><span class="header-section-number">8.4</span> Box Plot<a href="box-and-whisker-plot.html#box-plot" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ol style="list-style-type: decimal">
+<li>Select the cells with the temperature values in Column B.</li>
+<li>Go to the Insert tab. Select <code>Box and Whisker</code> in the <code>Charts</code> ribbon (Figure <strong><a href="box-and-whisker-plot.html#fig:box-and-whisker-menu">8.1</a></strong>).</li>
+</ol>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:box-and-whisker-menu"></span>
+<img src="box-and-whisker-menu.png" alt="A screenshot of the Box and Whisker option in Chart ribbon of the Insert tab." width="45%" />
+<p class="caption">
+Figure 8.1: Box and Whisker option in the Chart ribbon of the Insert tab.
+</p>
+</div>
+<p>The resulting plot is shown in Figure <strong><a href="box-and-whisker-plot.html#fig:box-and-whisker-plot">8.2</a></strong>.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:box-and-whisker-plot"></span>
+<img src="box-and-whisker-plot.png" alt="A screenshot of  the Box and Whisker created." width="55%" />
+<p class="caption">
+Figure 8.2: Box and Whisker created.
+</p>
+</div>
+<ol start="3" style="list-style-type: decimal">
+<li>Replace <em>Chart Title</em> with <em>NY Temperatures in September 2013</em>.</li>
+<li><code>RIGHT-click</code> on the vertical axis and then select <code>Format Axis</code> to change the axis format in the graph. Set the <em>Minimum Bound</em> as 45. Adjusting the axis removes the unnecessary space in the chart.</li>
+</ol>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:format-axis"></span>
+<img src="format-axis.png" alt="A screenshot of the Format Axis options." width="35%" />
+<p class="caption">
+Figure 8.3: Format Axis options.
+</p>
+</div>
+<p>Use the <code>Chart Design</code> to customize the look of your chart.</p>
+<ol start="5" style="list-style-type: decimal">
+<li>Select the graph, and the tab <code>Chart Design</code> appears in the menu. Click on the <code>Chart Design</code> tab.</li>
+<li>Click <code>Add Chart Element &gt; Data Labels &gt; Right</code>.</li>
+<li>Click <code>Add Chart Element &gt; Axes</code>. Uncheck the option <code>Primary Horizontal</code>.</li>
+</ol>
+<p>The adjusted box plot is shown in Figure <strong><a href="box-and-whisker-plot.html#fig:final-box-plot">8.4</a></strong>.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:final-box-plot"></span>
+<img src="final-box-plot.png" alt="Adjusted box plot." width="55%" />
+<p class="caption">
+Figure 8.4: Adjusted box plot.
+</p>
+</div>
+</div>
+<div id="practice-6" class="section level2 hasAnchor" number="8.5">
+<h2><span class="header-section-number">8.5</span> Practice<a href="box-and-whisker-plot.html#practice-6" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Use Excel to generate the five-number-summary, <em>IQR</em>, and box plot for the financial data you collected for <em>Lab</em> <strong><em><a href="time-series.html#time-series">5</a></em></strong> <em>Time Series and Measures of Central Tendency</em>.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="measures-of-location.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="linear-regression-and-correlation.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/bsosnovski/Intro-Stats-Excel-Lab-Manual08-box-and-whisker.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["excel-lab-manual.pdf", "excel-lab-manual.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

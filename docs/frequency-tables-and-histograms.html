@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Lab 3 Frequency Tables and Histograms | Introduction to Statistics: Excel Lab Manual</title>
+  <meta name="description" content="This is an Excel computer lab manual to be used in an Introduction to Statistics course at QCC." />
+  <meta name="generator" content="bookdown 0.29 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Lab 3 Frequency Tables and Histograms | Introduction to Statistics: Excel Lab Manual" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="This is an Excel computer lab manual to be used in an Introduction to Statistics course at QCC." />
+  <meta name="github-repo" content="https://github.com/bsosnovski/Intro-Stats-Excel-Lab-Manual" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Lab 3 Frequency Tables and Histograms | Introduction to Statistics: Excel Lab Manual" />
+  
+  <meta name="twitter:description" content="This is an Excel computer lab manual to be used in an Introduction to Statistics course at QCC." />
+  
+
+<meta name="author" content="Bianca Sosnovski" />
+
+
+<meta name="date" content="2022-05-18" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="number-gen.html"/>
+<link rel="next" href="central-tendency-variation.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Excel Lab Manual for Intro to Statistics</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#about-this-manual"><i class="fa fa-check"></i>About this Manual</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#about-the-author"><i class="fa fa-check"></i>About the Author</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#license"><i class="fa fa-check"></i>License</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#disclaimer"><i class="fa fa-check"></i>Disclaimer</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i>Introduction</a></li>
+<li class="chapter" data-level="1" data-path="start.html"><a href="start.html"><i class="fa fa-check"></i><b>1</b> Getting Started with Excel</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="start.html"><a href="start.html#the-excel-window"><i class="fa fa-check"></i><b>1.1</b> The Excel Window</a>
+<ul>
+<li class="chapter" data-level="1.1.1" data-path="start.html"><a href="start.html#the-excel-window-on-a-pc"><i class="fa fa-check"></i><b>1.1.1</b> The Excel Window on a PC</a></li>
+<li class="chapter" data-level="1.1.2" data-path="start.html"><a href="start.html#the-excel-window-on-a-mac"><i class="fa fa-check"></i><b>1.1.2</b> The Excel Window on a MAC</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="start.html"><a href="start.html#saving-excel-files"><i class="fa fa-check"></i><b>1.2</b> Saving Excel Files</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="start.html"><a href="start.html#autosave-on-a-pc"><i class="fa fa-check"></i><b>1.2.1</b> AutoSave on a PC</a></li>
+<li class="chapter" data-level="1.2.2" data-path="start.html"><a href="start.html#autosave-on-a-mac"><i class="fa fa-check"></i><b>1.2.2</b> AutoSave on a Mac</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="start.html"><a href="start.html#opening-an-excel-file"><i class="fa fa-check"></i><b>1.3</b> Opening an Excel File</a></li>
+<li class="chapter" data-level="1.4" data-path="start.html"><a href="start.html#toolpak"><i class="fa fa-check"></i><b>1.4</b> The Analysis ToolPak</a>
+<ul>
+<li class="chapter" data-level="1.4.1" data-path="start.html"><a href="start.html#adding-the-analysis-toolpak-on-a-pc"><i class="fa fa-check"></i><b>1.4.1</b> Adding the Analysis ToolPak on a PC</a></li>
+<li class="chapter" data-level="1.4.2" data-path="start.html"><a href="start.html#adding-the-analysis-toolpak-on-a-mac"><i class="fa fa-check"></i><b>1.4.2</b> Adding the Analysis ToolPak on a Mac</a></li>
+</ul></li>
+<li class="chapter" data-level="1.5" data-path="start.html"><a href="start.html#checking-if-the-analysis-toolpak-is-active"><i class="fa fa-check"></i><b>1.5</b> Checking if the Analysis ToolPak is Active</a></li>
+<li class="chapter" data-level="1.6" data-path="start.html"><a href="start.html#workbook"><i class="fa fa-check"></i><b>1.6</b> The Excel Workbook</a>
+<ul>
+<li class="chapter" data-level="1.6.1" data-path="start.html"><a href="start.html#the-cells-in-the-worksheet"><i class="fa fa-check"></i><b>1.6.1</b> The Cells in the Worksheet</a></li>
+<li class="chapter" data-level="1.6.2" data-path="start.html"><a href="start.html#cell-addresses"><i class="fa fa-check"></i><b>1.6.2</b> Cell Addresses</a></li>
+<li class="chapter" data-level="1.6.3" data-path="start.html"><a href="start.html#selecting-cells"><i class="fa fa-check"></i><b>1.6.3</b> Selecting Cells</a></li>
+<li class="chapter" data-level="1.6.4" data-path="start.html"><a href="start.html#formatting-cell-contents"><i class="fa fa-check"></i><b>1.6.4</b> Formatting Cell Contents</a></li>
+<li class="chapter" data-level="1.6.5" data-path="start.html"><a href="start.html#changing-cell-width"><i class="fa fa-check"></i><b>1.6.5</b> Changing Cell Width</a></li>
+</ul></li>
+<li class="chapter" data-level="1.7" data-path="start.html"><a href="start.html#entering-data"><i class="fa fa-check"></i><b>1.7</b> Entering Data</a>
+<ul>
+<li class="chapter" data-level="1.7.1" data-path="start.html"><a href="start.html#entering-and-correcting-data"><i class="fa fa-check"></i><b>1.7.1</b> Entering and Correcting Data</a></li>
+<li class="chapter" data-level="1.7.2" data-path="start.html"><a href="start.html#practice-1"><i class="fa fa-check"></i><b>1.7.2</b> Practice 1</a></li>
+</ul></li>
+<li class="chapter" data-level="1.8" data-path="start.html"><a href="start.html#arithmetic-options-on-the-standard-toolbar"><i class="fa fa-check"></i><b>1.8</b> Arithmetic Options on the Standard Toolbar</a>
+<ul>
+<li class="chapter" data-level="1.8.1" data-path="start.html"><a href="start.html#sum-function"><i class="fa fa-check"></i><b>1.8.1</b> Sum Function</a></li>
+<li class="chapter" data-level="1.8.2" data-path="start.html"><a href="start.html#practice-2"><i class="fa fa-check"></i><b>1.8.2</b> Practice 2</a></li>
+<li class="chapter" data-level="1.8.3" data-path="start.html"><a href="start.html#sorting-data"><i class="fa fa-check"></i><b>1.8.3</b> Sorting Data</a></li>
+<li class="chapter" data-level="1.8.4" data-path="start.html"><a href="start.html#practice-3"><i class="fa fa-check"></i><b>1.8.4</b> Practice 3</a></li>
+<li class="chapter" data-level="1.8.5" data-path="start.html"><a href="start.html#copying-cells"><i class="fa fa-check"></i><b>1.8.5</b> Copying Cells</a></li>
+<li class="chapter" data-level="1.8.6" data-path="start.html"><a href="start.html#practice-4"><i class="fa fa-check"></i><b>1.8.6</b> Practice 4</a></li>
+</ul></li>
+<li class="chapter" data-level="1.9" data-path="start.html"><a href="start.html#using-formulas"><i class="fa fa-check"></i><b>1.9</b> Using Formulas</a>
+<ul>
+<li class="chapter" data-level="1.9.1" data-path="start.html"><a href="start.html#practice-5"><i class="fa fa-check"></i><b>1.9.1</b> Practice 5</a></li>
+</ul></li>
+<li class="chapter" data-level="1.10" data-path="start.html"><a href="start.html#adjustment-to-formulas"><i class="fa fa-check"></i><b>1.10</b> Adjustment to Formulas</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="number-gen.html"><a href="number-gen.html"><i class="fa fa-check"></i><b>2</b> Random Number Generators and Tables</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="number-gen.html"><a href="number-gen.html#random-samples"><i class="fa fa-check"></i><b>2.1</b> Random Samples</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="number-gen.html"><a href="number-gen.html#insert-the-function-randbetween-on-a-pc"><i class="fa fa-check"></i><b>2.1.1</b> Insert the function RANDBETWEEN on a PC</a></li>
+<li class="chapter" data-level="2.1.2" data-path="number-gen.html"><a href="number-gen.html#insert-the-function-randbetween-on-a-mac"><i class="fa fa-check"></i><b>2.1.2</b> Insert the function RANDBETWEEN on a MAC</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="number-gen.html"><a href="number-gen.html#setting-the-workbook-to-manual-calculation"><i class="fa fa-check"></i><b>2.2</b> Setting the Workbook to Manual Calculation</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="number-gen.html"><a href="number-gen.html#manual-calculation-on-a-pc"><i class="fa fa-check"></i><b>2.2.1</b> Manual Calculation on a PC</a></li>
+<li class="chapter" data-level="2.2.2" data-path="number-gen.html"><a href="number-gen.html#manual-calculation-on-a-mac"><i class="fa fa-check"></i><b>2.2.2</b> Manual Calculation on a MAC</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="number-gen.html"><a href="number-gen.html#using-the-recalculation-mode"><i class="fa fa-check"></i><b>2.3</b> Using the Recalculation Mode</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="number-gen.html"><a href="number-gen.html#practice-1-1"><i class="fa fa-check"></i><b>2.3.1</b> Practice 1</a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="number-gen.html"><a href="number-gen.html#creating-tables"><i class="fa fa-check"></i><b>2.4</b> Creating Tables</a>
+<ul>
+<li class="chapter" data-level="2.4.1" data-path="number-gen.html"><a href="number-gen.html#practice-2-1"><i class="fa fa-check"></i><b>2.4.1</b> Practice 2</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="frequency-tables-and-histograms.html"><a href="frequency-tables-and-histograms.html"><i class="fa fa-check"></i><b>3</b> Frequency Tables and Histograms</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="frequency-tables-and-histograms.html"><a href="frequency-tables-and-histograms.html#preparation"><i class="fa fa-check"></i><b>3.1</b> Preparation</a></li>
+<li class="chapter" data-level="3.2" data-path="frequency-tables-and-histograms.html"><a href="frequency-tables-and-histograms.html#initial-computations"><i class="fa fa-check"></i><b>3.2</b> Initial Computations</a></li>
+<li class="chapter" data-level="3.3" data-path="frequency-tables-and-histograms.html"><a href="frequency-tables-and-histograms.html#class-limit-calculations"><i class="fa fa-check"></i><b>3.3</b> Class Limit Calculations</a></li>
+<li class="chapter" data-level="3.4" data-path="frequency-tables-and-histograms.html"><a href="frequency-tables-and-histograms.html#creating-the-histogram"><i class="fa fa-check"></i><b>3.4</b> Creating the Histogram</a></li>
+<li class="chapter" data-level="3.5" data-path="frequency-tables-and-histograms.html"><a href="frequency-tables-and-histograms.html#removing-the-more-bar-of-the-histogram"><i class="fa fa-check"></i><b>3.5</b> Removing the <em>More</em> bar of the Histogram</a></li>
+<li class="chapter" data-level="3.6" data-path="frequency-tables-and-histograms.html"><a href="frequency-tables-and-histograms.html#adjusting-the-horizontal-axis"><i class="fa fa-check"></i><b>3.6</b> Adjusting the Horizontal Axis</a>
+<ul>
+<li class="chapter" data-level="3.6.1" data-path="frequency-tables-and-histograms.html"><a href="frequency-tables-and-histograms.html#mac"><i class="fa fa-check"></i><b>3.6.1</b> MAC</a></li>
+<li class="chapter" data-level="3.6.2" data-path="frequency-tables-and-histograms.html"><a href="frequency-tables-and-histograms.html#pc"><i class="fa fa-check"></i><b>3.6.2</b> PC</a></li>
+</ul></li>
+<li class="chapter" data-level="3.7" data-path="frequency-tables-and-histograms.html"><a href="frequency-tables-and-histograms.html#adjusting-the-title-of-the-histogram"><i class="fa fa-check"></i><b>3.7</b> Adjusting the Title of the Histogram</a></li>
+<li class="chapter" data-level="3.8" data-path="frequency-tables-and-histograms.html"><a href="frequency-tables-and-histograms.html#practice"><i class="fa fa-check"></i><b>3.8</b> Practice</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="central-tendency-variation.html"><a href="central-tendency-variation.html"><i class="fa fa-check"></i><b>4</b> Measures of Central Tendency and Variation</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="central-tendency-variation.html"><a href="central-tendency-variation.html#preparation-1"><i class="fa fa-check"></i><b>4.1</b> Preparation</a></li>
+<li class="chapter" data-level="4.2" data-path="central-tendency-variation.html"><a href="central-tendency-variation.html#descriptive-stats"><i class="fa fa-check"></i><b>4.2</b> Using the Descriptive Statistics in Excel to Obtain the Measures</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="central-tendency-variation.html"><a href="central-tendency-variation.html#practice-1-2"><i class="fa fa-check"></i><b>4.2.1</b> Practice 1</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="central-tendency-variation.html"><a href="central-tendency-variation.html#excel-functions"><i class="fa fa-check"></i><b>4.3</b> Using Excel’s Functions to Obtain the Measures</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="central-tendency-variation.html"><a href="central-tendency-variation.html#practice-2-2"><i class="fa fa-check"></i><b>4.3.1</b> Practice 2</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="time-series.html"><a href="time-series.html"><i class="fa fa-check"></i><b>5</b> Time Series</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="time-series.html"><a href="time-series.html#preparation-2"><i class="fa fa-check"></i><b>5.1</b> Preparation</a></li>
+<li class="chapter" data-level="5.2" data-path="time-series.html"><a href="time-series.html#download-the-data"><i class="fa fa-check"></i><b>5.2</b> Download the Data</a></li>
+<li class="chapter" data-level="5.3" data-path="time-series.html"><a href="time-series.html#preparing-the-data"><i class="fa fa-check"></i><b>5.3</b> Preparing the Data</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="time-series.html"><a href="time-series.html#renaming-the-file"><i class="fa fa-check"></i><b>5.3.1</b> Renaming the File</a></li>
+<li class="chapter" data-level="5.3.2" data-path="time-series.html"><a href="time-series.html#inserting-a-column-on-mac"><i class="fa fa-check"></i><b>5.3.2</b> Inserting a Column on MAC</a></li>
+<li class="chapter" data-level="5.3.3" data-path="time-series.html"><a href="time-series.html#inserting-a-column-on-pc"><i class="fa fa-check"></i><b>5.3.3</b> Inserting a Column on PC</a></li>
+<li class="chapter" data-level="5.3.4" data-path="time-series.html"><a href="time-series.html#seq-numbers"><i class="fa fa-check"></i><b>5.3.4</b> Creating a List of Sequential Numbers</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="time-series.html"><a href="time-series.html#time-series-1"><i class="fa fa-check"></i><b>5.4</b> Time Series</a></li>
+<li class="chapter" data-level="5.5" data-path="time-series.html"><a href="time-series.html#practice-1-3"><i class="fa fa-check"></i><b>5.5</b> Practice 1</a></li>
+<li class="chapter" data-level="5.6" data-path="time-series.html"><a href="time-series.html#practice-2-3"><i class="fa fa-check"></i><b>5.6</b> Practice 2</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="pie-and-pareto-charts.html"><a href="pie-and-pareto-charts.html"><i class="fa fa-check"></i><b>6</b> Pie and Pareto Charts</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="pie-and-pareto-charts.html"><a href="pie-and-pareto-charts.html#preparation-3"><i class="fa fa-check"></i><b>6.1</b> Preparation</a>
+<ul>
+<li class="chapter" data-level="6.1.1" data-path="pie-and-pareto-charts.html"><a href="pie-and-pareto-charts.html#practice-1-4"><i class="fa fa-check"></i><b>6.1.1</b> Practice 1</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="pie-and-pareto-charts.html"><a href="pie-and-pareto-charts.html#pareto-charts"><i class="fa fa-check"></i><b>6.2</b> Pareto Charts</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="pie-and-pareto-charts.html"><a href="pie-and-pareto-charts.html#sorting-data-1"><i class="fa fa-check"></i><b>6.2.1</b> Sorting Data</a></li>
+<li class="chapter" data-level="6.2.2" data-path="pie-and-pareto-charts.html"><a href="pie-and-pareto-charts.html#building-the-pareto-chart"><i class="fa fa-check"></i><b>6.2.2</b> Building the Pareto Chart</a></li>
+<li class="chapter" data-level="6.2.3" data-path="pie-and-pareto-charts.html"><a href="pie-and-pareto-charts.html#practice-2-4"><i class="fa fa-check"></i><b>6.2.3</b> Practice 2</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="measures-of-location.html"><a href="measures-of-location.html"><i class="fa fa-check"></i><b>7</b> Measures of Location</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="measures-of-location.html"><a href="measures-of-location.html#preparation-4"><i class="fa fa-check"></i><b>7.1</b> Preparation</a></li>
+<li class="chapter" data-level="7.2" data-path="measures-of-location.html"><a href="measures-of-location.html#percentiles"><i class="fa fa-check"></i><b>7.2</b> Percentiles</a></li>
+<li class="chapter" data-level="7.3" data-path="measures-of-location.html"><a href="measures-of-location.html#percentile-ranks"><i class="fa fa-check"></i><b>7.3</b> Percentile Ranks</a>
+<ul>
+<li class="chapter" data-level="7.3.1" data-path="measures-of-location.html"><a href="measures-of-location.html#practice-1-5"><i class="fa fa-check"></i><b>7.3.1</b> Practice 1</a></li>
+</ul></li>
+<li class="chapter" data-level="7.4" data-path="measures-of-location.html"><a href="measures-of-location.html#standard-scores"><i class="fa fa-check"></i><b>7.4</b> Standard Scores</a>
+<ul>
+<li class="chapter" data-level="7.4.1" data-path="measures-of-location.html"><a href="measures-of-location.html#mean-st-dev"><i class="fa fa-check"></i><b>7.4.1</b> Calculating the Mean and Standard Deviation</a></li>
+<li class="chapter" data-level="7.4.2" data-path="measures-of-location.html"><a href="measures-of-location.html#converting-to-z-scores"><i class="fa fa-check"></i><b>7.4.2</b> Converting to Z-Scores</a></li>
+<li class="chapter" data-level="7.4.3" data-path="measures-of-location.html"><a href="measures-of-location.html#practice-2-5"><i class="fa fa-check"></i><b>7.4.3</b> Practice 2</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="box-and-whisker-plot.html"><a href="box-and-whisker-plot.html"><i class="fa fa-check"></i><b>8</b> Box and Whisker Plot</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="box-and-whisker-plot.html"><a href="box-and-whisker-plot.html#preparation-5"><i class="fa fa-check"></i><b>8.1</b> Preparation</a></li>
+<li class="chapter" data-level="8.2" data-path="box-and-whisker-plot.html"><a href="box-and-whisker-plot.html#five-number-summary"><i class="fa fa-check"></i><b>8.2</b> Five-Number-Summary</a></li>
+<li class="chapter" data-level="8.3" data-path="box-and-whisker-plot.html"><a href="box-and-whisker-plot.html#the-interquartile-range"><i class="fa fa-check"></i><b>8.3</b> The Interquartile Range</a></li>
+<li class="chapter" data-level="8.4" data-path="box-and-whisker-plot.html"><a href="box-and-whisker-plot.html#box-plot"><i class="fa fa-check"></i><b>8.4</b> Box Plot</a></li>
+<li class="chapter" data-level="8.5" data-path="box-and-whisker-plot.html"><a href="box-and-whisker-plot.html#practice-6"><i class="fa fa-check"></i><b>8.5</b> Practice</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="linear-regression-and-correlation.html"><a href="linear-regression-and-correlation.html"><i class="fa fa-check"></i><b>9</b> Linear Regression and Correlation</a>
+<ul>
+<li class="chapter" data-level="9.1" data-path="linear-regression-and-correlation.html"><a href="linear-regression-and-correlation.html#preparation-6"><i class="fa fa-check"></i><b>9.1</b> Preparation</a></li>
+<li class="chapter" data-level="9.2" data-path="linear-regression-and-correlation.html"><a href="linear-regression-and-correlation.html#create-scatter-plot"><i class="fa fa-check"></i><b>9.2</b> Creating a Scatter Plot</a></li>
+<li class="chapter" data-level="9.3" data-path="linear-regression-and-correlation.html"><a href="linear-regression-and-correlation.html#calculating-the-correlation-coefficient"><i class="fa fa-check"></i><b>9.3</b> Calculating the Correlation Coefficient</a></li>
+<li class="chapter" data-level="9.4" data-path="linear-regression-and-correlation.html"><a href="linear-regression-and-correlation.html#graphing-the-regression-line"><i class="fa fa-check"></i><b>9.4</b> Graphing the Regression Line</a></li>
+<li class="chapter" data-level="9.5" data-path="linear-regression-and-correlation.html"><a href="linear-regression-and-correlation.html#practice-7"><i class="fa fa-check"></i><b>9.5</b> Practice</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="coin-toss-simulation.html"><a href="coin-toss-simulation.html"><i class="fa fa-check"></i><b>10</b> Coin Toss Simulation</a>
+<ul>
+<li class="chapter" data-level="10.1" data-path="coin-toss-simulation.html"><a href="coin-toss-simulation.html#simulating-a-coin-tossing-experiment"><i class="fa fa-check"></i><b>10.1</b> Simulating a Coin Tossing Experiment</a></li>
+<li class="chapter" data-level="10.2" data-path="coin-toss-simulation.html"><a href="coin-toss-simulation.html#counting-the-number-of-heads-and-the-number-of-tails"><i class="fa fa-check"></i><b>10.2</b> Counting the Number of Heads and the Number of Tails</a></li>
+<li class="chapter" data-level="10.3" data-path="coin-toss-simulation.html"><a href="coin-toss-simulation.html#calculating-the-empirical-probability"><i class="fa fa-check"></i><b>10.3</b> Calculating the Empirical Probability</a></li>
+<li class="chapter" data-level="10.4" data-path="coin-toss-simulation.html"><a href="coin-toss-simulation.html#practice-8"><i class="fa fa-check"></i><b>10.4</b> Practice</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="normal-distributions.html"><a href="normal-distributions.html"><i class="fa fa-check"></i><b>11</b> Normal Distributions</a>
+<ul>
+<li class="chapter" data-level="11.1" data-path="normal-distributions.html"><a href="normal-distributions.html#preparation-7"><i class="fa fa-check"></i><b>11.1</b> Preparation</a></li>
+<li class="chapter" data-level="11.2" data-path="normal-distributions.html"><a href="normal-distributions.html#calculating-the-mean-and-standard-deviation"><i class="fa fa-check"></i><b>11.2</b> Calculating the Mean and Standard Deviation</a></li>
+<li class="chapter" data-level="11.3" data-path="normal-distributions.html"><a href="normal-distributions.html#graphing-the-normal-distribution"><i class="fa fa-check"></i><b>11.3</b> Graphing the Normal Distribution</a></li>
+<li class="chapter" data-level="11.4" data-path="normal-distributions.html"><a href="normal-distributions.html#calculating-probability-or-cumulative-area"><i class="fa fa-check"></i><b>11.4</b> Calculating Probability or Cumulative Area</a></li>
+<li class="chapter" data-level="11.5" data-path="normal-distributions.html"><a href="normal-distributions.html#finding-raw-scores-from-probabilities"><i class="fa fa-check"></i><b>11.5</b> Finding Raw Scores from Probabilities</a></li>
+<li class="chapter" data-level="11.6" data-path="normal-distributions.html"><a href="normal-distributions.html#converting-to-z-scores-1"><i class="fa fa-check"></i><b>11.6</b> Converting to Z-Scores</a></li>
+<li class="chapter" data-level="11.7" data-path="normal-distributions.html"><a href="normal-distributions.html#practice-9"><i class="fa fa-check"></i><b>11.7</b> Practice</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="the-central-limit-theorem.html"><a href="the-central-limit-theorem.html"><i class="fa fa-check"></i><b>12</b> The Central Limit Theorem</a>
+<ul>
+<li class="chapter" data-level="12.1" data-path="the-central-limit-theorem.html"><a href="the-central-limit-theorem.html#preparation-8"><i class="fa fa-check"></i><b>12.1</b> Preparation</a></li>
+<li class="chapter" data-level="12.2" data-path="the-central-limit-theorem.html"><a href="the-central-limit-theorem.html#mean-stdev-population"><i class="fa fa-check"></i><b>12.2</b> Mean and Standard Deviation of the Population</a></li>
+<li class="chapter" data-level="12.3" data-path="the-central-limit-theorem.html"><a href="the-central-limit-theorem.html#generating-random-samples"><i class="fa fa-check"></i><b>12.3</b> Generating Random Samples</a></li>
+<li class="chapter" data-level="12.4" data-path="the-central-limit-theorem.html"><a href="the-central-limit-theorem.html#mean-samples"><i class="fa fa-check"></i><b>12.4</b> Sample Means</a></li>
+<li class="chapter" data-level="12.5" data-path="the-central-limit-theorem.html"><a href="the-central-limit-theorem.html#the-mean-and-standard-deviation-of-the-sampling-distribution"><i class="fa fa-check"></i><b>12.5</b> The Mean and Standard Deviation of the Sampling Distribution</a></li>
+<li class="chapter" data-level="12.6" data-path="the-central-limit-theorem.html"><a href="the-central-limit-theorem.html#practice-10"><i class="fa fa-check"></i><b>12.6</b> Practice</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/bsosnovski/Intro-Stats-Excel-Lab-Manual" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Introduction to Statistics: Excel Lab Manual</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="frequency-tables-and-histograms" class="section level1 hasAnchor" number="3">
+<h1><span class="header-section-number">Lab 3</span> Frequency Tables and Histograms<a href="frequency-tables-and-histograms.html#frequency-tables-and-histograms" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>You will construct a histogram with 5 classes (bars) using Excel. Start by determining minimum and maximum values in a data set, class width, the lower and upper limits of classes of values, class boundaries, midpoints, etc. This is similar in Excel. You will need the upper-class limits and the midpoints for adjusting the graph created with Excel.</p>
+<p>Throughout this manual, Select means to left-click with the mouse/pad.</p>
+<div id="preparation" class="section level2 hasAnchor" number="3.1">
+<h2><span class="header-section-number">3.1</span> Preparation<a href="frequency-tables-and-histograms.html#preparation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>In this lab, you will use a data set that contains scores received on an MA-336 Exam. Download the data set. called <em>Lab 3 Exam Scores.xlsx</em> from here: <a href="https://github.com/bsosnovski/Intro-Stats-Excel-Lab-Manual/blob/main/Data_Sets/Lab-3-Exam-Scores.xlsx"><strong>https://github.com/bsosnovski/Intro-Stats-Excel-Lab-Manual/blob/main/Data_Sets/Lab-3-Exam-Scores.xlsx</strong></a></p>
+<p>Open the Excel file you downloaded and follow the instructions below.</p>
+</div>
+<div id="initial-computations" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> Initial Computations<a href="frequency-tables-and-histograms.html#initial-computations" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ol style="list-style-type: decimal">
+<li>Select cell C1 and in the formula bar type in <code>=COUNT(A2:A33)</code>.</li>
+</ol>
+<p><strong>Note:</strong> You can fill in the input range, A2:A33, in the formula count above by manually typing the address of the cells containing the data values. Alternatively, you can select cells that form the Input Range by clicking on A2, holding, and dragging downward until you reach cell A33. Then release.</p>
+<ol start="2" style="list-style-type: decimal">
+<li>Type in cell D1 the label <em>Total number of data entries</em>.</li>
+<li>Select cell C2 and in the formula bar type in <code>=MIN(A2:A33)</code>.</li>
+<li>Type in cell D2 the label <em>Min</em>.</li>
+<li>Select cell C3 and in the formula bar type in <code>=MAX(A2:A33)</code>.</li>
+<li>Type in cell D3 the label <em>Max</em>.</li>
+<li>Select cell C4 and in the formula bar type in <code>=(C3-C2)/5</code>.</li>
+<li>Type in cell D4 the label <em>Width Computation</em>.</li>
+<li><ol start="9" style="list-style-type: decimal">
+<li>Round up the value resulting in cell C4 to the next whole number by using the formula <code>=ROUNDUP(C4,0)</code> in cell C5 the adjusted value for the width.</li>
+</ol></li>
+</ol>
+<p><strong>Note:</strong> The formula above uses the cell address (C4) to identify the number to be rounded up with 0 decimal places.</p>
+<ol start="10" style="list-style-type: decimal">
+<li>Type in cell D5 the label <em>Width</em>.</li>
+</ol>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:initial-comp"></span>
+<img src="initial-comp.png" alt="A screenshot of the initial computations for constructiong a hstogram." width="60%" />
+<p class="caption">
+Figure 3.1: Initial computations for constructing a histogram.
+</p>
+</div>
+</div>
+<div id="class-limit-calculations" class="section level2 hasAnchor" number="3.3">
+<h2><span class="header-section-number">3.3</span> Class Limit Calculations<a href="frequency-tables-and-histograms.html#class-limit-calculations" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ol style="list-style-type: decimal">
+<li>Type in cell C7 the label <em>Lower Limits</em>.</li>
+<li>In cell C8, type the formula <code>= C2</code>. This will copy the value in cell C2 as the histogram’s lower limit for the first class.</li>
+<li><ol start="3" style="list-style-type: decimal">
+<li>Select cell C9, and in the formula bar, type <code>=SUM(C8,$C$5)</code>. Remember the <code>dollar sign</code> because the value in C5, the width, is a fixed value for all formulas you use here.</li>
+</ol></li>
+</ol>
+<p><strong>Note:</strong> You may also do the computation in Step 3 above using the keyboard key <code>+</code>.</p>
+<ol start="4" style="list-style-type: decimal">
+<li>Position the mouse pointer in the lower right corner of cell C9 until it becomes a <code>+</code> sign and click, hold, and drag downward until you reach cell C12. Then release.</li>
+</ol>
+<p><strong>Note:</strong> You should have a total of 5 class limits since your histogram has 5 classes.</p>
+<p><strong>Note:</strong> If the formulas do not update automatically, do Step 5 below. Otherwise, skip to Step 6.</p>
+<ol start="5" style="list-style-type: decimal">
+<li>Select <code>Formulas&gt;Calculate Now</code>.</li>
+<li>Type in cell D7 the label <em>Upper Limits</em>.</li>
+</ol>
+<p>7.Type the values of the upper limits of each class in cells D8 through D12.</p>
+<p><strong>Note:</strong> You can also be creative and use a formula to do the work in this step. There are different ways of entering the upper limits using formulas, but that is not being requested from you for this lab.</p>
+<ol start="8" style="list-style-type: decimal">
+<li>Type in cell E7 the label <em>Midpoints</em>.</li>
+<li>Compute the values of the midpoints (lower limit + upper limit)/2 of each class in cells E8 through E12 by using Excel formulas.</li>
+</ol>
+<p><strong>Note:</strong> To do this step, use the techniques and Excel functions presented above (create the Excel formula!)</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:class-limits-comp"></span>
+<img src="class-limits-comp.png" alt="A screenshot of the class limits computations." width="50%" />
+<p class="caption">
+Figure 3.2: Class limits computations.
+</p>
+</div>
+</div>
+<div id="creating-the-histogram" class="section level2 hasAnchor" number="3.4">
+<h2><span class="header-section-number">3.4</span> Creating the Histogram<a href="frequency-tables-and-histograms.html#creating-the-histogram" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ol style="list-style-type: decimal">
+<li>Select <code>Data&gt;Data Analysis&gt;Histogram</code> and click <code>OK</code>.</li>
+</ol>
+<p><strong>Note:</strong> If <code>Data Analysis</code> does not appear in the Data menu, refer to the instructions in <em>Lab</em> <strong><em><a href="start.html#start">1</a></em></strong> <em>Getting Started with Excel</em> how to make it available.</p>
+<ol start="2" style="list-style-type: decimal">
+<li>In the dialog window, first click in the <code>Input Range</code> field then type in <code>$A$2:$A$33</code>.</li>
+</ol>
+<p><strong>Note:</strong> Instead of typing, you can <em>select cells</em> that form the Input Range by clicking on A2, holding, and dragging downward until you reach cell A33. Then release.</p>
+<ol start="3" style="list-style-type: decimal">
+<li><ol start="3" style="list-style-type: decimal">
+<li>Click the <code>Bin Range</code> field in the dialog window first, then type in <code>$D$8:$D$12</code>.</li>
+</ol></li>
+</ol>
+<p><strong>Note:</strong> You can also select cells containing the upper limits instead of typing‼!</p>
+<ol start="4" style="list-style-type: decimal">
+<li>You have the option to have the graph placed in a specific cell or range of cells (for this option check <code>Output Range</code> as in the picture above, you may select a different cell address) or in a new worksheet (for this check option <code>New Worksheet Ply</code>).</li>
+<li>In the pop-up window, Check the boxes for <code>Cumulative Percentage</code> and <code>Chart Output</code>.</li>
+<li>Then click <code>OK</code>.</li>
+</ol>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:histogram-mac"></span>
+<img src="histogram-mac.png" alt="A screenshot showing the dialog window with histogram options." width="60%" />
+<p class="caption">
+Figure 3.3: Dialog window with the histogram options.
+</p>
+</div>
+<p>After the steps above, Excel presents a frequency table and the corresponding graph. Excel counts the frequency of each class based on the <em>Bins</em> values you entered in the dialog window for the histogram. Thus, it counts how many values are in the date set (Input Range) up to the upper limits.</p>
+<p>The graph is a <em>raw histogram</em> that needs to be adjusted to resemble an actual histogram.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:raw-histogram"></span>
+<img src="raw-histogram.png" alt="A screenshot showing the resulting histogram graph." width="80%" />
+<p class="caption">
+Figure 3.4: Resulting histogram.
+</p>
+</div>
+</div>
+<div id="removing-the-more-bar-of-the-histogram" class="section level2 hasAnchor" number="3.5">
+<h2><span class="header-section-number">3.5</span> Removing the <em>More</em> bar of the Histogram<a href="frequency-tables-and-histograms.html#removing-the-more-bar-of-the-histogram" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ol style="list-style-type: decimal">
+<li>If you chose <code>New Worksheet Ply</code> in Step 4 above, select the Worksheet that contains the graph. Otherwise, go to next Step 2 below.</li>
+<li>You may resize the graph by clicking anywhere within the figure. Handles appear along the perimeter of the graph. You can change the shape of the figure by clicking on a handle and dragging it. Make your graph to be displayed in an appropriate size.</li>
+<li>A frequency table was created with the graph in the process. That table controls some aspects of the graph. Select the cells in the last row of the frequency table, the one that contains the word <em>More</em>.</li>
+<li>Select <code>&gt;Home&gt;Delete</code> (you can also do this by <code>RIGHT-clicking</code> on the selected cells and then the option <code>Delete</code>).</li>
+</ol>
+<p><strong>Note:</strong> If you do not delete the row in the table, the graph will contain an extra bar on the right of the graph with a frequency equal to zero. <strong>Be sure to delete the cells and not just delete the contents in those cells.</strong></p>
+<ol start="5" style="list-style-type: decimal">
+<li>If the graph doesn’t update automatically, select <code>Formulas&gt;Calculate Now</code>.</li>
+</ol>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:delete-more-row"></span>
+<img src="delete-more-row.png" alt="A screenshot showing how to delete the row labeled More." width="100%" />
+<p class="caption">
+Figure 3.5: Deleting the <em>More</em> row from the frequency table of the histogram.
+</p>
+</div>
+<p>After Steps 4-5, the last column in the graph, labeled <em>More</em> will no longer be displayed in the graph.</p>
+<ol start="6" style="list-style-type: decimal">
+<li><code>RIGHT-click</code> on any one of the vertical bars of the graph and then select <code>Format Data Point</code> (or <code>Format Data Series</code>). Alternatively, you can also double-click with your mouse on a vertical for that.</li>
+<li>Move <code>Gap Width</code> to position <code>0%</code> (this makes the bars of the graph touch).</li>
+</ol>
+</div>
+<div id="adjusting-the-horizontal-axis" class="section level2 hasAnchor" number="3.6">
+<h2><span class="header-section-number">3.6</span> Adjusting the Horizontal Axis<a href="frequency-tables-and-histograms.html#adjusting-the-horizontal-axis" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="mac" class="section level3 hasAnchor" number="3.6.1">
+<h3><span class="header-section-number">3.6.1</span> MAC<a href="frequency-tables-and-histograms.html#mac" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ol style="list-style-type: decimal">
+<li><code>RIGHT-click</code> on any vertical bar of the graph. From the menu, click the option <code>Select Data</code>.</li>
+<li>Click <code>Edit</code> under <em>Horizontal (Category) Axis Labels</em>. Click and drag over the range <code>E8:E12</code> (midpoints).</li>
+<li>Click <code>OK</code>. This is to re-label the x-axis with the midpoints replacing the upper limits.</li>
+<li>Click OK again.</li>
+</ol>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:adjusting-horizontal-axis-mac"></span>
+<img src="adjusting-horizontal-axis-mac.png" alt="A screenshot of the dialog window on a MAC to adjust the horizontal axis of the graph." width="100%" />
+<p class="caption">
+Figure 3.6: Adjusting the horizontal axis on a MAC.
+</p>
+</div>
+</div>
+<div id="pc" class="section level3 hasAnchor" number="3.6.2">
+<h3><span class="header-section-number">3.6.2</span> PC<a href="frequency-tables-and-histograms.html#pc" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<ol style="list-style-type: decimal">
+<li><code>RIGHT-click</code> on any vertical bar of the graph. From the menu, click the option <code>Select Data</code>.</li>
+<li>Click <code>Edit</code> under <em>Horizontal (Category) Axis Labels</em>.</li>
+</ol>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:adjusting-horizontal-axis-pc"></span>
+<img src="adjusting-horizontal-axis-pc.png" alt="A screenshot of the dialog window on a PC to adjust the horizontal axis of the graph." width="90%" />
+<p class="caption">
+Figure 3.7: Adjusting the horizontal axis on a MAC.
+</p>
+</div>
+<ol start="3" style="list-style-type: decimal">
+<li>Click in the filed <em>Axis label range</em>, delete whatever values are in there, and drag over the range <code>E8:E12</code> to select midpoints cells.</li>
+<li>Click <code>OK</code>. This is to re-label the x-axis with the midpoints instead of the upper limits.</li>
+<li>Click <code>OK</code> again.</li>
+</ol>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:relabel-horiontal-axis-pc"></span>
+<img src="relabel-horiontal-axis-pc.png" alt="A screenshot of the dialog window to relabel the horizontal axis on a PC." width="70%" />
+<p class="caption">
+Figure 3.8: Relabeling the horizontal axis on a PC.
+</p>
+</div>
+</div>
+</div>
+<div id="adjusting-the-title-of-the-histogram" class="section level2 hasAnchor" number="3.7">
+<h2><span class="header-section-number">3.7</span> Adjusting the Title of the Histogram<a href="frequency-tables-and-histograms.html#adjusting-the-title-of-the-histogram" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<ol style="list-style-type: decimal">
+<li>To change the histogram title, click on the word <em>Histogram</em>, which appears
+in a window. Change the title to <em>MA336 Exam Scores</em>.</li>
+<li>Click on the word <em>Bin</em> and change the x-axis label to <em>Scores</em>.</li>
+</ol>
+<p>After all the adjustments are made, the graph will look like the one below.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:adjusted-histogram"></span>
+<img src="adjusted-histogram.png" alt="The adjusted histogram." width="70%" />
+<p class="caption">
+Figure 3.9: Adjusted histogram.
+</p>
+</div>
+</div>
+<div id="practice" class="section level2 hasAnchor" number="3.8">
+<h2><span class="header-section-number">3.8</span> Practice<a href="frequency-tables-and-histograms.html#practice" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Practice:
+Dan gathered data about the number of minutes per day that a sample of teenagers spends in doing a physical activity.</p>
+<p>15, 30, 45, 25, 30, 15, 20, 10, 30, 40, 25, 15, 20, 25, 25, 29, 40, 10, 20, 27, 10, 15, 20, 20, 30, 25, 20, 60, 60, 75, 50, 45</p>
+<p>Use the data and the techniques learned in these lab instructions to build a histogram with five classes and descriptive statistics.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="number-gen.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="central-tendency-variation.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/bsosnovski/Intro-Stats-Excel-Lab-Manual03-histograms.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["excel-lab-manual.pdf", "excel-lab-manual.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

@@ -300,3 +300,4 @@ TSWLatexianTemp*
 # Uncomment the next line to have this generated file ignored.
 #*Notes.bib
 .nojekyll.Rmd
+.DS_Store

@@ -42,7 +42,7 @@ You will simulate the sampling distribution by generating only 10 random samples
 6. Repeat the process for *Sample 2* through *Sample 10*. 
 
 ```{r data-analysis-sampling, echo=FALSE, fig.align = 'center', out.width='75%', fig.show='hold', fig.cap='Sampling window in Data Analysis ribbon', fig.alt = 'A screenshot of the sampling window in Data Analysis ribbon.'}
-knitr::include_graphics('data-analysis-sampling.png')
+knitr::include_graphics('images/data-analysis-sampling.png')
 ```
 
 ## Sample Means {#mean-samples}
@@ -53,7 +53,7 @@ Now you will calculate the mean for each sample you generated.
 2. Highlight the results to distinguish them from the values in the sample.
 
 ```{r simualation-sampling-distribution, echo=FALSE, fig.align = 'center', out.width='100%', fig.show='hold', fig.cap='An example of the sampling mean distribution generated.', fig.alt = 'A screenshot of an example of the sampling mean distribution generated.'}
-knitr::include_graphics('simualation-sampling-distribution.png')
+knitr::include_graphics('images/simualation-sampling-distribution.png')
 ```
 
 ## The Mean and Standard Deviation of the Sampling Distribution

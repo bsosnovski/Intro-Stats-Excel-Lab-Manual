@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta property="og:title" content="2.1 Random Samples | Introduction to Statistics: Excel Lab Manual" />
 <meta property="og:type" content="book" />
-
+<meta property="og:image" content="/images/cover-page.png" />
 <meta property="og:description" content="This is an Excel computer lab manual to be used in an Introduction to Statistics course at QCC." />
 <meta name="github-repo" content="https://github.com/bsosnovski/Intro-Stats-Excel-Lab-Manual" />
 
@@ -279,20 +279,20 @@ details > summary {
 <div class="col-sm-12">
 <div id="random-samples" class="section level2" number="2.1">
 <h2><span class="header-section-number">2.1</span> Random Samples</h2>
-<p>Excel has few random number generators. The other random functions are <code>RAND()</code>, which returns an evenly distributed random real number greater than or equal to 0 and less than 1, and <code>RANDARRAY(rows,columns,min,max,integer)</code>, which Returns an array of random numbers. For RANDARRAY, you can specify the number of rows and columns to fill, minimum and maximum values, and whether to return whole numbers or decimal values.</p>
+<p>The one you will find most convenient for our labs is the function RANDBETWEENN(bottom,top), which Returns a random integer number between the numbers specified in the function’s arguments. The other random functions are <code>RAND()</code>, which returns an evenly distributed random real number greater than or equal to 0 and less than 1, and <code>RANDARRAY(rows,columns,min,max,integer)</code>, which Returns an array of random numbers. For RANDARRAY, you can specify the number of rows and columns to fill, minimum and maximum values, and whether to return whole numbers or decimal values.</p>
 <p>We focus now on the <code>RANDBETWEEN</code> function.</p>
 <div id="insert-the-function-randbetween-on-a-pc" class="section level3" number="2.1.1">
 <h3><span class="header-section-number">2.1.1</span> Insert the function RANDBETWEEN on a PC</h3>
 <p>To use <code>RANDBETWEEN</code>, select a cell in the active worksheet. Click in the formula tab and then click the <code>Insert Function</code> ribbon.</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:function-button"></span>
-<img src="fx-pc.png" alt="The Insert Function ribbon is depicted." width="10%" />
+<img src="images/fx-pc.png" alt="The Insert Function ribbon is depicted." width="10%" />
 <p class="caption">
 Figure 2.1: Insert Function ribbon.
 </p>
 </div>
 <p>Select the category <code>All</code> in the dialog window. Then select <code>RANDBETWEEN</code> and then fill in the bottom and top numbers. Returns a random integer number between the numbers you specify.</p>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:irandbetween-pc"></span>
-<img src="randbetween-pc.png" alt="The dialog box of the Insert Function in Excel on a PC." width="60%" />
+<img src="images/randbetween-pc.png" alt="The dialog box of the Insert Function in Excel on a PC." width="60%" />
 <p class="caption">
 Figure 2.2: The dialog window of Insert Function on PC.
 </p>
@@ -309,7 +309,7 @@ Figure 2.2: The dialog window of Insert Function on PC.
 <li>Adjust the arguments of the formula (top and bottom numbers) as needed.</li>
 </ol>
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:insert-function-dialog-mac"></span>
-<img src="insert-function-dialog-mac.png" alt="The dialog box of the Insert Function in Excel on a MAC." width="90%" />
+<img src="images/insert-function-dialog-mac.png" alt="The dialog box of the Insert Function in Excel on a MAC." width="90%" />
 <p class="caption">
 Figure 2.3: Dialog window of Insert Function on MAC.
 </p>

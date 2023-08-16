@@ -54,7 +54,7 @@ fig:sorting-earn-degree-data
 fig:percentiles
 fig:percentranks
 fig:number-ribon-percentages
-tab:unnamed-chunk-1
+tab:unnamed-chunk-2
 fig:box-and-whisker-menu
 fig:box-and-whisker-plot
 fig:format-axis

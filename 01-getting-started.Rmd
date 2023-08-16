@@ -9,14 +9,14 @@ If obtaining Excel via Microsoft 365, download the software to your machine. Do 
 Note that in the Excel Windows shown in Figures **\@ref(fig:window-pc)** and **\@ref(fig:window-mac)**, the title bar shows `Book1` as a temporary name for the file. When opening a new Excel file (also called a Workbook, see *Section* ***\@ref(workbook)***), it has a suggested temporary name, `Book1`, `Book2`, etc, depending on how many new files are open before saving them. When saying it for the first, Excel will prompt the user to rename it.
 
 ### The Excel Window on a PC
-```{r window-pc, echo=FALSE, fig.align = 'center', out.width='150%', fig.show='hold', fig.cap='Excel Window on a PC.', fig.alt = 'Excel Window as shown on a PC.'}
-knitr::include_graphics('window-pc.png')
+```{r window-pc, echo=FALSE, fig.align = 'center', out.width='100%', fig.show='hold', fig.cap='Excel Window on a PC.', fig.alt = 'Excel Window as shown on a PC.'}
+knitr::include_graphics('images/window-pc.png')
 ```
 
 ### The Excel Window on a MAC
 
-```{r window-mac, echo=FALSE, fig.align = 'center', out.width='140%', fig.show='hold', fig.cap='Excel Window on a MAC (in Dark Mode).', fig.alt = 'Excel Window as shown on a MAC.'}
-knitr::include_graphics('window-mac.png')
+```{r window-mac, echo=FALSE, fig.align = 'center', out.width='100%', fig.show='hold', fig.cap='Excel Window on a MAC (in Dark Mode).', fig.alt = 'Excel Window as shown on a MAC.'}
+knitr::include_graphics('images/window-mac.png')
 ```
 
 ## Saving Excel Files
@@ -24,16 +24,16 @@ On the main menu, click `File > Save As` when saving for the first time. A dialo
 
 
 ```{r saving-dialog-box-pc, echo=FALSE, fig.align = 'center', out.width='45%', fig.show='hold', fig.cap='Dialog window when saving a workbook on a PC.', fig.alt = 'A dialog box on a PC showing where to enter file name, select the directory and file type.'}
-knitr::include_graphics('saving-pc2.png')
+knitr::include_graphics('images/saving-pc2.png')
 ```
 
 ```{r saving-dialog-box-mac, echo=FALSE, fig.align = 'center', out.width='60%', fig.show='hold', fig.cap='Dialog window when saving a workbook on a MAC.', fig.alt = 'A dialog box on a MAC showing where to enter file name, select the directory and file type.'}
-knitr::include_graphics('saving-mac2.png')
+knitr::include_graphics('images/saving-mac2.png')
 ```
 After using the `Save As` feature, you can use the `Save` command to overwrite your previously saved file with the file in its current state.  After saving the Excel file for the first time, you can save the updates during your working session using the save button on the title toolbar.
 
 ```{r saving-options, echo=FALSE, fig.align = 'center', out.width='85%', fig.show='hold', fig.cap='Saving options.', fig.alt = 'A screenshot displaying saving options in Excel.'}
-knitr::include_graphics('saving-options.png')
+knitr::include_graphics('images/saving-options.png')
 ```
 
 It is essential to save your Excel files whenever you start a new project or periodically when you make changes to an existing file. Saving early and often can prevent your work from being lost. You'll also need to pay close attention to where you save the workbook so it will be easy to find later.
@@ -49,7 +49,7 @@ You can also turn on the *AutoSave* feature to save your data automatically whil
 5. Then click `Ok`.
 
 ```{r autosave-pc, echo=FALSE, fig.align = 'center', out.width='85%', fig.show='hold', fig.cap='AutoSave option on PC.', fig.alt = 'Excel AutoSave option on PC.'}
-knitr::include_graphics('autosave-pc.png')
+knitr::include_graphics('images/autosave-pc.png')
 ```
 
 ### AutoSave on a Mac
@@ -59,18 +59,18 @@ knitr::include_graphics('autosave-pc.png')
 3. Select the `AutoSave` or `AutoRecover` info in every check window, and then enter how frequently you want to save the Excel files.
 
 ```{r autosave-mac1a, echo=FALSE, fig.align = 'center', out.width='45%', fig.show='hold', fig.cap='Dropdown menu in the Excel title bar.', fig.alt = 'A screenshot showing the Preferences in Excel.'}
-knitr::include_graphics('autosave-mac1a.png')
+knitr::include_graphics('images/autosave-mac1a.png')
 ```
 
 
 ```{r autosave-mac1b, echo=FALSE, fig.align = 'center', out.width='55%', fig.show='hold', fig.cap='Save option in Excel Preferences', fig.alt = 'A screenshot showing the Save options in Excel.'}
-knitr::include_graphics('autosave-mac1b.png')
+knitr::include_graphics('images/autosave-mac1b.png')
 ```
 
 A shortcut is available on Mac to activate the AutoSave. You can just toggle `ON` the `AutoSave` option in the Toolbar of the program.
 
 ```{r autosave-mac2, echo=FALSE, fig.align = 'center', out.width='50%', fig.show='hold', fig.cap='AutoSave option in the Toolbar.', fig.alt = 'A screenshot showing the AutoSave option in the Toolbar of Excel.'}
-knitr::include_graphics('autosave-mac2.png')
+knitr::include_graphics('images/autosave-mac2.png')
 ```
 
 **Note:** AutoSave in Excel is a special feature for Microsoft 365 subscription accounts. When you save your Excel spreadsheet online on OneDrive or SharePoint, Excel activates the AutoSave feature. AutoSave in Excel saves your progress every few seconds so that all changes appear online if someone else is working on the same file.
@@ -96,10 +96,10 @@ With an Excel worksheet open:
 6. Click `OK`.
 
 ```{r analysis-toolpak-pc1, echo=FALSE, fig.align = 'center', out.width='75%', fig.show='hold', fig.cap= 'Excel Options on a PC.', fig.alt = 'A dialog box showing Excel Options on a PC.'}
-knitr::include_graphics('toolpak-pc1.png')
+knitr::include_graphics('images/toolpak-pc1.png')
 ```
 ```{r analysis-toolpak-pc2, echo=FALSE, fig.align = 'center', out.width='35%', fig.show='hold', fig.cap='Add-ins Options on a PC.', fig.alt = 'Dialog box showing Add-ins Options on a PC.'}
-knitr::include_graphics('toolpak-pc2.png')
+knitr::include_graphics('images/toolpak-pc2.png')
 ```
 
 ### Adding the Analysis ToolPak on a Mac
@@ -111,10 +111,10 @@ With an Excel worksheet open:
 3. Click `OK`.
 
 ```{r analysis-toolpak-mac1, echo=FALSE, fig.align = 'center', out.width='75%', fig.show='hold', fig.cap='Excel Tools on a MAC.', fig.alt = 'A dialog box showing Excel Tools on a MAC.'}
-knitr::include_graphics('toolpak_mac1.png')
+knitr::include_graphics('images/toolpak_mac1.png')
 ```
 ```{r analysis-toolpak-mac2, echo=FALSE, fig.align = 'center', out.width='40%', fig.show='hold', fig.cap='Add-ins Options on a MAC.', fig.alt = 'A dialog box showing Add-ins Options on a MAC.'}
-knitr::include_graphics('toolpak_mac2.png')
+knitr::include_graphics('images/toolpak_mac2.png')
 ```
 
 
@@ -123,7 +123,7 @@ knitr::include_graphics('toolpak_mac2.png')
 2.	You should be able to see it as a ribbon on the top right of your Excel Window.
 
 ```{r check-toolpak-mac, echo=FALSE, fig.align = 'center', out.width='90%', fig.show='hold', fig.cap='Data tab and Analysis ToolPak ribbon.', fig.alt = 'Excel Window with highlighted Data tab and Analysis ToolPak ribbon.'}
-knitr::include_graphics('check_toolpak_mac.png')
+knitr::include_graphics('images/check_toolpak_mac.png')
 ```
 
 
@@ -140,7 +140,7 @@ When you look at a worksheet, you should see horizontal and vertical grid lines.
 3. Be sure that the `Gridlines` option is checked or selected.
 
 ```{r gridlines-mac, echo=FALSE, fig.align = 'center', out.width='60%', fig.show='hold', fig.cap='Gridlines option in the View tab.', fig.alt = 'A screenshot showing the View tab with the Gridlines option.'}
-knitr::include_graphics('gridlines-mac.png')
+knitr::include_graphics('images/gridlines-mac.png')
 ```
 
 ### Cell Addresses
@@ -154,7 +154,7 @@ To select a cell, position the cursor in the cell and click the left mouse butto
 To select a rectangular block of cells, position the cursor in a corner cell, hold down the left mouse button, drag the cursor to the cell in the opposite corner of the block, and release the button.
 
 ```{r cell-sellection, echo=FALSE, fig.align = 'center', out.width='40%', fig.show='hold', fig.cap='A block of cells selected in the worksheet.', fig.alt = 'A screenshot of a block of selected cells.'}
-knitr::include_graphics('cell-selection.png')
+knitr::include_graphics('images/cell-selection.png')
 ```
 
 To select an entire column, click on the letter above the column to be selected; to select an entire row, click on the number to its left. 
@@ -168,13 +168,13 @@ You can also select a block of cells by typing the two corner cells into the act
 In Excel, you may place text or numbers in a cell. As in other Windows applications, you can format the text or numbers by using the formatting toolbar buttons for bold (B), italics (I), underline (U), etc. Other options include left, right, and centered alignment within a cell.
 
 ```{r text-formatting, echo=FALSE, fig.align = 'center', out.width='40%', fig.show='hold', fig.cap='Text Formatting ribbon in the Home tab.', fig.alt = 'A screenshot of Text Formatting ribbon in the Home tab.'}
-knitr::include_graphics('text-formatting.png')
+knitr::include_graphics('images/text-formatting.png')
 ```
 
 Numbers can be formatted to represent dollar amounts ($) or percent form (%) and can be shown with commas in large numbers (,). The number of decimal places to which numbers are carried is also adjustable. All these options appear on the formatting menu bar. Other options are accessible by `RIGHT-clicking` on a cell and selecting Format Cells.
 
 ```{r number-formatting, echo=FALSE, fig.align = 'center', out.width='40%', fig.show='hold', fig.cap='Number Formatting ribbon in the Home tab.', fig.alt = 'A screenshot of Number Formatting ribbon in the Home tab.'}
-knitr::include_graphics('number-formatting.png')
+knitr::include_graphics('images/number-formatting.png')
 ```
 
 ### Changing Cell Width
@@ -206,8 +206,8 @@ The `Clear > Clear Formats` option keeps the content but clears the format. The 
 
 The number of ads and the time devoted to ads were recorded for every twenty hours of prime-time viewing. Enter the data as shown in Figure **\@ref(fig:entering-data)** in your Excel workbook.
 
-```{r entering-data, echo=FALSE, fig.align = 'center', out.width='45%', fig.show='hold', fig.cap='Excel worksheet with data.', fig.alt = 'Excel worksheet with some data typed in.'}
-knitr::include_graphics('entering_data.png')
+```{r entering-data, echo=FALSE, fig.align = 'center', out.width='35%', fig.show='hold', fig.cap='Excel worksheet with data.', fig.alt = 'Excel worksheet with some data typed in.'}
+knitr::include_graphics('images/entering_data.png')
 ```
 
 ## Arithmetic Options on the Standard Toolbar
@@ -218,7 +218,7 @@ On the `Formula` Menu, the button you see in Figure **\@ref(fig:autosum)** autom
 
 
 ```{r autosum, echo=FALSE, fig.align = 'center', out.width='10%', fig.show='hold', fig.cap='Autosum button.', fig.alt = 'A screenshot of the Autosum button in Excel.'}
-knitr::include_graphics('autosum.png')
+knitr::include_graphics('images/autosum.png')
 ```
 
 When we sum the contents of an entire column, Excel places the sum under the selected cells. It is a good idea to type the label *Total* next to the cell where the total appears. 
@@ -233,7 +233,7 @@ The `Sort` and `Filter` ribbon on the `Home` tab shown in Figure **\@ref(fig:sor
 
 
 ```{r sorting, echo=FALSE, fig.align = 'center', out.width='30%', fig.show='hold', fig.cap='Sort and Filter buttons.', fig.alt = 'A screenshot showing the Sort and Filter buttons in Excel.'}
-knitr::include_graphics('sorting.png')
+knitr::include_graphics('images/sorting.png')
 ```
 
 To sort just one column, highlight that column and press the button and select the sort order. To sort two or more columns by ascending or descending order of the data in the first column, highlight all the columns and click the appropriate button. In general, we will sort one column of data.

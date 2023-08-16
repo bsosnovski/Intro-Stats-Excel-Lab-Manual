@@ -1,0 +1,2787 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  12pt,
+  letterpaper,
+]{book}
+\usepackage{amsmath,amssymb}
+\usepackage{setspace}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+  \setmainfont[]{Arial}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\usepackage{float}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage[]{natbib}
+\bibliographystyle{apalike}
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+% Make links footnotes instead of hotlinks:
+\DeclareRobustCommand{\href}[2]{#2\footnote{\url{#1}}}
+\hypersetup{
+  pdftitle={Introduction to Statistics: Excel Lab Manual},
+  pdfauthor={Bianca Sosnovski},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Introduction to Statistics: Excel Lab Manual}
+\author{Bianca Sosnovski}
+\date{05/18/2022}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\listoftables
+\setstretch{1.5}
+\hypertarget{preface}{%
+\chapter*{Preface}\label{preface}}
+\addcontentsline{toc}{chapter}{Preface}
+
+Statistics is present in many ways in our lives. Statistical methodology can be found in surveys, sampling, clinical trials, studies of biomedical treatments, digital marketing, finance, etc. In recent years, Statistics has undergone changes in its techniques and approaches because of the need to analyze exceptionally large and complex data sets that arise all around us but cannot be done by hand. Since we have more powerful computers available to us at the present time, we can employ them to analyze these large data sets. Thus, it is even more important to learn how to use computer applications for statistical analysis, enhancing technology skills effectively for academic research and lifelong learning.
+
+\hypertarget{about-this-manual}{%
+\section*{About this Manual}\label{about-this-manual}}
+\addcontentsline{toc}{section}{About this Manual}
+
+This manual has been written as a companion text for an introductory statistics course using Excel software. Topics include descriptive statistics; probability; binomial and normal distributions; sampling; confidence intervals and tests of hypotheses.
+
+This text is to be used as a tutorial on how to use Excel to learn some fundamentals concepts covered in a typical Introduction to Statistics course and as a tool to advance technology skills effectively for academic research and lifelong learning. It is to be used alongside lectures and/or textbooks in such a course. This text is not a comprehensive introduction to Excel or Statistics.
+
+The mathematical equations required for statistical concepts such as the mean and the standard deviation have not been provided as these are easily performed with functions in Excel.
+
+\hypertarget{about-the-author}{%
+\section*{About the Author}\label{about-the-author}}
+\addcontentsline{toc}{section}{About the Author}
+
+Bianca Sosnovski (\textbf{\url{https://www.qcc.cuny.edu/mathcs/people/BSosnovski.html}}) is an Assistant Professor for the Department of Mathematics and Computer Science at Queensborough Community College, CUNY. (\textbf{\url{https://www.qcc.cuny.edu}}). She earned her Ph.D.~and M.Phil. in Mathematics from the Department of Mathematics at the Graduate Center, CUNY in New York, and her M.S. in Applied Mathematics from the Department of Mathematics at the State University of Campinas (UNICAMP) in Brazil. In addition to her interest in mathematics education, she is also interested in abstract algebra and cryptography.
+
+She also shares some other resources on GitHub \href{https://github.com/bsosnovski}{(\textbf{https://github.com/bsosnovski})}. In her free time, she enjoys photography and traveling.
+
+\hypertarget{license}{%
+\section*{License}\label{license}}
+\addcontentsline{toc}{section}{License}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.25\textwidth,height=\textheight]{images/CC-BY-NC-SA.png}
+\caption{Creative Commons License}
+\end{figure}
+
+\emph{Introduction to Statistics: Excel Lab Manual} is copyrighted by Bianca Sosnovski. The online version of this book is licensed under the \href{http://creativecommons.org/licenses/by-nc-sa/4.0/}{\textbf{Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License}}. You may freely share this content for non-commercial purposes, with a source credit to \href{https://bsosnovski.github.io/Intro-Stats-Excel-Lab-Manual/}{\textbf{https://bsosnovski.github.io/Intro-Stats-Excel-Lab-Manual/}}.
+
+\hypertarget{disclaimer}{%
+\section*{Disclaimer}\label{disclaimer}}
+\addcontentsline{toc}{section}{Disclaimer}
+
+The information in this book is provided without warranty. The author and publisher have neither liability nor responsibility to any person or entity related to any loss or damages arising from the information contained in this book.
+
+\hypertarget{introduction}{%
+\chapter*{Introduction}\label{introduction}}
+\addcontentsline{toc}{chapter}{Introduction}
+
+Microsoft Excel® is a spreadsheet software for business applications available in the Microsoft Office® package. Excel enables users to format, organize, and calculate data with formulas and functions.
+
+This basic Excel lab manual provides students and the novice with the skills needed to use Excel's built-in statistical functions and how to produce some useful graphs. It also prepares them for more advanced skills using the Excel software.
+
+Although Excel is a powerful tool for executing many personal and professional activities, it is not a statistical data analysis package. It was never designed to be one, but it has the \emph{Data Analysis ToolPak}, an extra feature extending Excel's standard capabilities. Data Analysis ToolPak enables users to perform various statistical analyses in Excel. In many cases, macros (automated actions that can be used repeatedly to perform a task or tasks) can be created to produce special graphs, such as box-and-whisker plots.
+However, this manual only shows how to use some of the existing built-in features and the Data Analysis ToolPak.
+
+The Analysis ToolPak is part of Excel and can be added to the basic Excel program as an option on the program's list of Add-ins. The details for getting started with the Analysis ToolPak are presented in Chapter \textbf{\ref{start}} of this manual. No additional software is required to use the Excel functions described.
+
+Excel runs slightly differently on MACs and PCs. Whenever there is a difference between Excel for Mac and PC on performing a task, each system's instructions in this lab will be provided separately. Otherwise, the same set of instructions is applied to both systems.
+
+\hypertarget{start}{%
+\chapter{Getting Started with Excel}\label{start}}
+
+City University of New York (CUNY) Students can access Excel via Microsoft 365. On most campuses, students can also remotely access a computer lab at their specific campus.
+
+If obtaining Excel via Microsoft 365, download the software to your machine. Do not run Excel from the cloud. Running it from the cloud does not give students access to the \emph{Analysis ToolPak} (see \emph{Section} \textbf{\emph{\ref{toolpak}}}).
+
+\hypertarget{the-excel-window}{%
+\section{The Excel Window}\label{the-excel-window}}
+
+Note that in the Excel Windows shown in Figures \textbf{\ref{fig:window-pc}} and \textbf{\ref{fig:window-mac}}, the title bar shows \texttt{Book1} as a temporary name for the file. When opening a new Excel file (also called a Workbook, see \emph{Section} \textbf{\emph{\ref{workbook}}}), it has a suggested temporary name, \texttt{Book1}, \texttt{Book2}, etc, depending on how many new files are open before saving them. When saying it for the first, Excel will prompt the user to rename it.
+
+\hypertarget{the-excel-window-on-a-pc}{%
+\subsection{The Excel Window on a PC}\label{the-excel-window-on-a-pc}}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{images/window-pc} 
+
+}
+
+\caption{Excel Window on a PC.}\label{fig:window-pc}
+\end{figure}
+
+\hypertarget{the-excel-window-on-a-mac}{%
+\subsection{The Excel Window on a MAC}\label{the-excel-window-on-a-mac}}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{images/window-mac} 
+
+}
+
+\caption{Excel Window on a MAC (in Dark Mode).}\label{fig:window-mac}
+\end{figure}
+
+\hypertarget{saving-excel-files}{%
+\section{Saving Excel Files}\label{saving-excel-files}}
+
+On the main menu, click \texttt{File\ \textgreater{}\ Save\ As} when saving for the first time. A dialog will appear, similar to the one in figure \textbf{\ref{fig:saving-dialog-box-pc}}. Fill in the file name, select the directory of your choice where the file will be saved on your machine, and the file type, for example, file with extensions \texttt{.xlsx} or \texttt{.xls}.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.45\linewidth]{images/saving-pc2} 
+
+}
+
+\caption{Dialog window when saving a workbook on a PC.}\label{fig:saving-dialog-box-pc}
+\end{figure}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.6\linewidth]{images/saving-mac2} 
+
+}
+
+\caption{Dialog window when saving a workbook on a MAC.}\label{fig:saving-dialog-box-mac}
+\end{figure}
+
+After using the \texttt{Save\ As} feature, you can use the \texttt{Save} command to overwrite your previously saved file with the file in its current state. After saving the Excel file for the first time, you can save the updates during your working session using the save button on the title toolbar.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.85\linewidth]{images/saving-options} 
+
+}
+
+\caption{Saving options.}\label{fig:saving-options}
+\end{figure}
+
+It is essential to save your Excel files whenever you start a new project or periodically when you make changes to an existing file. Saving early and often can prevent your work from being lost. You'll also need to pay close attention to where you save the workbook so it will be easy to find later.
+
+You can also turn on the \emph{AutoSave} feature to save your data automatically while working on Excel. The following are the steps to turn on Auto-save.
+
+\hypertarget{autosave-on-a-pc}{%
+\subsection{AutoSave on a PC}\label{autosave-on-a-pc}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Click the \texttt{File} tab.
+\item
+  Click on \texttt{Options}.
+\item
+  In the Options dialog window, click on the \texttt{Save} option on the left.
+\item
+  Check the option \texttt{Save\ AutoRecover\ information\ every}. By default, the value is 10 minutes, but you can choose a lower or higher value.
+\item
+  Then click \texttt{Ok}.
+\end{enumerate}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.85\linewidth]{images/autosave-pc} 
+
+}
+
+\caption{AutoSave option on PC.}\label{fig:autosave-pc}
+\end{figure}
+
+\hypertarget{autosave-on-a-mac}{%
+\subsection{AutoSave on a Mac}\label{autosave-on-a-mac}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  On the Excel title bar, click \texttt{Preferences}.
+\item
+  Under the category \texttt{Sharing\ and\ Privacy}, click \texttt{Save}.
+\item
+  Select the \texttt{AutoSave} or \texttt{AutoRecover} info in every check window, and then enter how frequently you want to save the Excel files.
+\end{enumerate}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.45\linewidth]{images/autosave-mac1a} 
+
+}
+
+\caption{Dropdown menu in the Excel title bar.}\label{fig:autosave-mac1a}
+\end{figure}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.55\linewidth]{images/autosave-mac1b} 
+
+}
+
+\caption{Save option in Excel Preferences}\label{fig:autosave-mac1b}
+\end{figure}
+
+A shortcut is available on Mac to activate the AutoSave. You can just toggle \texttt{ON} the \texttt{AutoSave} option in the Toolbar of the program.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.5\linewidth]{images/autosave-mac2} 
+
+}
+
+\caption{AutoSave option in the Toolbar.}\label{fig:autosave-mac2}
+\end{figure}
+
+\textbf{Note:} AutoSave in Excel is a special feature for Microsoft 365 subscription accounts. When you save your Excel spreadsheet online on OneDrive or SharePoint, Excel activates the AutoSave feature. AutoSave in Excel saves your progress every few seconds so that all changes appear online if someone else is working on the same file.
+
+\hypertarget{opening-an-excel-file}{%
+\section{Opening an Excel File}\label{opening-an-excel-file}}
+
+To open an Excel file, go to the main menu and click \texttt{File\ \textgreater{}\ Open}. Select the directory containing the file, then select the file you want to open.
+
+\hypertarget{toolpak}{%
+\section{The Analysis ToolPak}\label{toolpak}}
+
+You may need to install the \emph{Analysis ToolPak} from the original Excel software if your computer does not have it.
+
+\hypertarget{adding-the-analysis-toolpak-on-a-pc}{%
+\subsection{Adding the Analysis ToolPak on a PC}\label{adding-the-analysis-toolpak-on-a-pc}}
+
+With an Excel worksheet open:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Click on \texttt{File} in the main menu.
+\item
+  Click on \texttt{Options}.
+\item
+  Click \texttt{Add-ins} (left side menu) to see if the ToolPak is listed in the Active Application Add-ins. If it is, the ToolPak is installed. If you do not see a listing for Analysis ToolPak in Active Application Add-ins, it may be under the list of inactive applications. IYou must install it from the original Excel installation source if you do not see it.
+\item
+  To install or activate it, click \texttt{Go}.
+\item
+  Check the box next to \texttt{Analysis\ ToolPak}.
+\item
+  Click \texttt{OK}.
+\end{enumerate}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.75\linewidth]{images/toolpak-pc1} 
+
+}
+
+\caption{Excel Options on a PC.}\label{fig:analysis-toolpak-pc1}
+\end{figure}
+\begin{figure}
+
+{\centering \includegraphics[width=0.35\linewidth]{images/toolpak-pc2} 
+
+}
+
+\caption{Add-ins Options on a PC.}\label{fig:analysis-toolpak-pc2}
+\end{figure}
+
+\hypertarget{adding-the-analysis-toolpak-on-a-mac}{%
+\subsection{Adding the Analysis ToolPak on a Mac}\label{adding-the-analysis-toolpak-on-a-mac}}
+
+With an Excel worksheet open:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Click on \texttt{Tools} in the main menu.
+\item
+  Click on \texttt{Add-ins} and see if the \texttt{Analysis\ ToolPak} is listed as an active application. If it is not, check the box next to it.
+\item
+  Click \texttt{OK}.
+\end{enumerate}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.75\linewidth]{images/toolpak_mac1} 
+
+}
+
+\caption{Excel Tools on a MAC.}\label{fig:analysis-toolpak-mac1}
+\end{figure}
+\begin{figure}
+
+{\centering \includegraphics[width=0.4\linewidth]{images/toolpak_mac2} 
+
+}
+
+\caption{Add-ins Options on a MAC.}\label{fig:analysis-toolpak-mac2}
+\end{figure}
+
+\hypertarget{checking-if-the-analysis-toolpak-is-active}{%
+\section{Checking if the Analysis ToolPak is Active}\label{checking-if-the-analysis-toolpak-is-active}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Click on the tab \texttt{Data}.
+\item
+  You should be able to see it as a ribbon on the top right of your Excel Window.
+\end{enumerate}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.9\linewidth]{images/check_toolpak_mac} 
+
+}
+
+\caption{Data tab and Analysis ToolPak ribbon.}\label{fig:check-toolpak-mac}
+\end{figure}
+
+\hypertarget{workbook}{%
+\section{The Excel Workbook}\label{workbook}}
+
+The workbook is an Excel file that consists of one or more worksheets. The tabs near the bottom of the screen show that we are working with Sheet 1 (check Figures \textbf{\ref{fig:window-pc}} and \textbf{\ref{fig:window-mac}}) . To change worksheets, click on the corresponding worksheet tab. Alternatively, you can \texttt{RIGHT-click} (or \texttt{Control\ +\ click}) the arrows just to the left of the worksheet tabs to get a list of all the worksheets in the projects and select a worksheet.
+
+\hypertarget{the-cells-in-the-worksheet}{%
+\subsection{The Cells in the Worksheet}\label{the-cells-in-the-worksheet}}
+
+When you look at a worksheet, you should see horizontal and vertical grid lines. Grid lines are light grey lines that appear around cells on Microsoft Excel worksheets. If they are missing, you will need to activate that feature. To do so, see lines:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Select the \texttt{View} tab.
+\item
+  Click the \texttt{Show} group on the tab.
+\item
+  Be sure that the \texttt{Gridlines} option is checked or selected.
+\end{enumerate}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.6\linewidth]{images/gridlines-mac} 
+
+}
+
+\caption{Gridlines option in the View tab.}\label{fig:gridlines-mac}
+\end{figure}
+
+\hypertarget{cell-addresses}{%
+\subsection{Cell Addresses}\label{cell-addresses}}
+
+Intersecting rows and columns form the cells. A cell's address consists of a column letter followed by a row number. For example, address B3 designates the cell in Column B, Row 3. When Cell B3 is highlighted, it is the active cell, which means we can enter text or numbers into Cell B3.
+
+\hypertarget{selecting-cells}{%
+\subsection{Selecting Cells}\label{selecting-cells}}
+
+To select a cell, position the cursor in the cell and click the left mouse button (or click on your computer's trackpad). Sometimes you will want to select several cells simultaneously to format them (as described next).
+
+To select a rectangular block of cells, position the cursor in a corner cell, hold down the left mouse button, drag the cursor to the cell in the opposite corner of the block, and release the button.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.4\linewidth]{images/cell-selection} 
+
+}
+
+\caption{A block of cells selected in the worksheet.}\label{fig:cell-sellection}
+\end{figure}
+
+To select an entire column, click on the letter above the column to be selected; to select an entire row, click on the number to its left.
+
+To select every cell in the worksheet, click on the blank gray rectangle in the upper left corner of the worksheet (above row header 1 and left of column header A).
+
+You can also select a block of cells by typing the two corner cells into the active cell address window. For example, typing B3:E4 and pressing \texttt{Enter} would select the rectangular block of cells from B3 to the opposite corner E4.
+
+\hypertarget{formatting-cell-contents}{%
+\subsection{Formatting Cell Contents}\label{formatting-cell-contents}}
+
+In Excel, you may place text or numbers in a cell. As in other Windows applications, you can format the text or numbers by using the formatting toolbar buttons for bold (B), italics (I), underline (U), etc. Other options include left, right, and centered alignment within a cell.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.4\linewidth]{images/text-formatting} 
+
+}
+
+\caption{Text Formatting ribbon in the Home tab.}\label{fig:text-formatting}
+\end{figure}
+
+Numbers can be formatted to represent dollar amounts (\$) or percent form (\%) and can be shown with commas in large numbers (,). The number of decimal places to which numbers are carried is also adjustable. All these options appear on the formatting menu bar. Other options are accessible by \texttt{RIGHT-clicking} on a cell and selecting Format Cells.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.4\linewidth]{images/number-formatting} 
+
+}
+
+\caption{Number Formatting ribbon in the Home tab.}\label{fig:number-formatting}
+\end{figure}
+
+\hypertarget{changing-cell-width}{%
+\subsection{Changing Cell Width}\label{changing-cell-width}}
+
+Column widths and row heights can be adjusted by placing the cursor between two columns' letters or row numbers. Hold the left mouse button down when the cursor changes appearance, move the column or row boundary, and release.
+All these instructions may seem a little mysterious, but once you try them, you will find that they are fairly easy to remember.
+
+\hypertarget{entering-data}{%
+\section{Entering Data}\label{entering-data}}
+
+In Excel, we enter data and labels in the cells. It is common to select a column for the data and place a label as the first entry of the column.
+
+\hypertarget{entering-and-correcting-data}{%
+\subsection{Entering and Correcting Data}\label{entering-and-correcting-data}}
+
+To select a cell for content entry, move the mouse pointer to the cell and click. Then type the label or data and press Enter. Excel automatically moves to select the next cell in the same column. If you want to enter information in a different cell, click on it.
+
+Errors are easily fixed. If you notice a mistake before you press Enter, back-arrow to the mistake and correct it. If you see the error after you have pressed Enter, select the affected cell, and then click on the formula bar to add a typing cursor to the cell contents displayed. Use standard keyboard editing techniques to make corrections, then press \texttt{Enter}.
+
+If you want to erase the contents of a cell or range of cells but keep the formatting:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Select the cells and click \texttt{Home}
+\item
+  Click the arrow next to \texttt{Clear}
+\item
+  Select \texttt{Clear\ Content} (or press \texttt{Delete})
+\end{enumerate}
+
+The \texttt{Clear\ \textgreater{}\ Clear\ Formats} option keeps the content but clears the format. The \texttt{Clear\ \textgreater{}\ Clear\ All} option removes both content and format.
+
+\textbf{Note:} \texttt{Clear\ \textgreater{}\ Formats} is handy for changing percent data back into decimal format.
+
+\hypertarget{practice-1}{%
+\subsection{Practice 1}\label{practice-1}}
+
+The number of ads and the time devoted to ads were recorded for every twenty hours of prime-time viewing. Enter the data as shown in Figure \textbf{\ref{fig:entering-data}} in your Excel workbook.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.35\linewidth]{images/entering_data} 
+
+}
+
+\caption{Excel worksheet with data.}\label{fig:entering-data}
+\end{figure}
+
+\hypertarget{arithmetic-options-on-the-standard-toolbar}{%
+\section{Arithmetic Options on the Standard Toolbar}\label{arithmetic-options-on-the-standard-toolbar}}
+
+\hypertarget{sum-function}{%
+\subsection{Sum Function}\label{sum-function}}
+
+On the \texttt{Formula} Menu, the button you see in Figure \textbf{\ref{fig:autosum}} automatically sums the values in the selected cells.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.1\linewidth]{images/autosum} 
+
+}
+
+\caption{Autosum button.}\label{fig:autosum}
+\end{figure}
+
+When we sum the contents of an entire column, Excel places the sum under the selected cells. It is a good idea to type the label \emph{Total} next to the cell where the total appears.
+
+\hypertarget{practice-2}{%
+\subsection{Practice 2}\label{practice-2}}
+
+For the data you entered in your worksheet (see Practice 1), select cells in Column A containing numerical values (a2:a21). Press the button \texttt{AutoSum}, then type the word \emph{Total} in the corresponding row of Column C. We see that the sum of Column A is 419.
+
+\hypertarget{sorting-data}{%
+\subsection{Sorting Data}\label{sorting-data}}
+
+The \texttt{Sort} and \texttt{Filter} ribbon on the \texttt{Home} tab shown in Figure \textbf{\ref{fig:sorting}} can be used to sort the data in ascending or descending depending on the selection from the sub-menu.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.3\linewidth]{images/sorting} 
+
+}
+
+\caption{Sort and Filter buttons.}\label{fig:sorting}
+\end{figure}
+
+To sort just one column, highlight that column and press the button and select the sort order. To sort two or more columns by ascending or descending order of the data in the first column, highlight all the columns and click the appropriate button. In general, we will sort one column of data.
+
+\hypertarget{practice-3}{%
+\subsection{Practice 3}\label{practice-3}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Sort the data in the first column in ascending order.
+\item
+  Now undo the ordering you just did to your data.
+  -- If you have not made any other changes since you did the sort, you can use \texttt{Undo} function of Excel from the \texttt{Title\ Bar} from the main menu. The data will appear in their original order.
+  -- Another option to undo actions in Excel, use the keys \texttt{CRTL-Z} on a PC keyboard or \texttt{Command-Z} on a MAC.
+\end{enumerate}
+
+After Step 2 above, your data set should be in the original form.
+
+\hypertarget{copying-cells}{%
+\subsection{Copying Cells}\label{copying-cells}}
+
+To copy one cell or a block of cells to another location on the worksheet:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Select the cells you wish to copy.
+\item
+  From the \texttt{Home} tab, select \texttt{Copy} (the shortcut with the keyboard for this process is \texttt{CRTL-C} on PC or \texttt{Command-C} on MAC). Notice that the range of cells being copied now has a blinking border around it.
+\item
+  Select the upper-left cell of the block that will receive the copy.
+\item
+  Press Enter. When you press Enter, the copy process is complete, and the blinking border around the original cells disappears.
+\end{enumerate}
+
+\textbf{Note:} Even if you use the command \texttt{Paste} or the shortcut \texttt{CRTL-V} on PC or \texttt{Command-V} on MAC to paste, you must still press Enter to remove the blinking border around the original cells. To copy one cell or a range of cells to another worksheet or workbook, follow Steps 1 and 2 above. For Step
+3, be sure you are in the destination worksheet or workbook and that the worksheet or workbook is activated. Then proceed to Step 4.
+
+\hypertarget{practice-4}{%
+\subsection{Practice 4}\label{practice-4}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Copy the contents of columns A and B and paste them into columns F and G. Then sort the data in Column F in descending order
+\item
+  Also, copy the contents of columns A and B and paste them into columns J and K. Then custom sort the data in Columns J and K by the values in Column J in ascending order
+\end{enumerate}
+
+After Step 2 above, your worksheet should have 3 sets of data where the two (2) rightmost ones have modifications in the ordering of the columns according to the instructions in the practice above.
+
+\hypertarget{using-formulas}{%
+\section{Using Formulas}\label{using-formulas}}
+
+A formula is an expression that generates a numerical value in a cell (like a calculator), usually based on values in other cells.
+Formulas usually involve standard arithmetic operations. Excel uses + for addition, \texttt{-} (hyphen) for subtraction, \texttt{*} for multiplication, \texttt{/} for division, and \texttt{\^{}} (carat) for exponentiation (raising to a power). For instance, if we want to divide the contents of Cell A2 by the contents of Cell B2 and place the results in Cell C2, we do the following:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Make Cell C2 the active cell.
+\item
+  Click in the formula bar and type \texttt{=A2/B2}.
+\item
+  Press \texttt{Enter}.
+\end{enumerate}
+
+Cell C2 will be the quotient of the values in Cells A2 and B2.
+If for a whole series of rows, we wanted to divide the entry in Column A by the entry in Column B and put the results in Column C, we could repeat the above process over and over. However, the typing would be tedious. We can accomplish the same thing more easily by replicating the formula in one cell in other cells.
+
+\hypertarget{practice-5}{%
+\subsection{Practice 5}\label{practice-5}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Enter \texttt{=A2/B2} in Cell C2 as described above.
+\item
+  Move the cursor to the lower right corner of Cell C2. The cursor should change shape to a small black cross (+). Hold down the left mouse button and drag the + down until all the cells in Column C where you want the calculation done are highlighted.
+\item
+  Release the mouse button (you may need to press \texttt{Enter} right after, depending on how your Excel program is configured). The cell entries in Column C should equal the quotients of the same-row entries in Columns A and B.
+\end{enumerate}
+
+\hypertarget{adjustment-to-formulas}{%
+\section{Adjustment to Formulas}\label{adjustment-to-formulas}}
+
+Now, if you click on one of the lower cells in Column C, you will see that the row number in the cell addresses is not 2, but rather the number of the new cell's row. Generally, when a formula is copied from one cell to another, the cell addresses in the formula are automatically adjusted. For example, if the formula \texttt{=D3+C7} is copied to a new cell, three columns right and two rows up from the old one, the pasted formula comes out as \texttt{=G1+F5}. (Three columns right from D is G, two rows up from 3 is 1, and so on.)
+
+Sometimes you will want to prevent the automatic address adjustment. To do this, put a dollar sign before any row or column number you want to keep from changing. When the formula \texttt{=D\$3+\$C7} is copied to a new cell, three columns right and two rows up from the old one, the pasted formula comes out as \texttt{=G\$3+\$C5}. We will call an address with two \texttt{\$} signs in an absolute address because it always refers to the same cell (\texttt{\$} fix the addresses in a formula), no matter where the formula is copied/pasted. For a cell with only one \texttt{\$} sign in it or none, we will call a relative address because the cell referred to can change as the formula is pasted from one location to another.
+
+\hypertarget{number-gen}{%
+\chapter{Random Number Generators and Tables}\label{number-gen}}
+
+There may be cases when you need to generate random numbers in Excel. Excel has a few random number generators: \texttt{RANDBETWEEN}, \texttt{RAND}, and \texttt{RANDARRAY}. In this manual, you will get acquainted with the \texttt{RANDBETWEEN} function.
+
+Tables are one of the most powerful Excel features. This lab shows you what you can do with a table. You will learn how to insert tables in Excel, table formatting and gain an understanding of Excel table functions and formulas.
+
+\hypertarget{random-samples}{%
+\section{Random Samples}\label{random-samples}}
+
+The one you will find most convenient for our labs is the function RANDBETWEENN(bottom,top), which Returns a random integer number between the numbers specified in the function's arguments. The other random functions are \texttt{RAND()}, which returns an evenly distributed random real number greater than or equal to 0 and less than 1, and \texttt{RANDARRAY(rows,columns,min,max,integer)}, which Returns an array of random numbers. For RANDARRAY, you can specify the number of rows and columns to fill, minimum and maximum values, and whether to return whole numbers or decimal values.
+
+We focus now on the \texttt{RANDBETWEEN} function.
+
+\hypertarget{insert-the-function-randbetween-on-a-pc}{%
+\subsection{Insert the function RANDBETWEEN on a PC}\label{insert-the-function-randbetween-on-a-pc}}
+
+To use \texttt{RANDBETWEEN}, select a cell in the active worksheet. Click in the formula tab and then click the \texttt{Insert\ Function} ribbon.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.1\linewidth]{images/fx-pc} 
+
+}
+
+\caption{Insert Function ribbon.}\label{fig:function-button}
+\end{figure}
+
+Select the category \texttt{All} in the dialog window. Then select \texttt{RANDBETWEEN} and then fill in the bottom and top numbers. Returns a random integer number between the numbers you specify.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.6\linewidth]{images/randbetween-pc} 
+
+}
+
+\caption{The dialog window of Insert Function on PC.}\label{fig:irandbetween-pc}
+\end{figure}
+
+\hypertarget{insert-the-function-randbetween-on-a-mac}{%
+\subsection{Insert the function RANDBETWEEN on a MAC}\label{insert-the-function-randbetween-on-a-mac}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Click on the \texttt{Formula} tab.
+\item
+  Click the \texttt{Insert\ Function} ribbon.
+\item
+  You will see on the right side of the Excel window that the \texttt{Formula\ Builder} appears.
+\item
+  In the search box, start to type a keyword for the function you are looking for. Excel will list functions that match the criteria of the search you type.
+\item
+  Then select the function you wish to insert in the worksheet. In this case, the \texttt{RANDBETWEEN} function.
+\item
+  Adjust the arguments of the formula (top and bottom numbers) as needed.
+\end{enumerate}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.9\linewidth]{images/insert-function-dialog-mac} 
+
+}
+
+\caption{Dialog window of Insert Function on MAC.}\label{fig:insert-function-dialog-mac}
+\end{figure}
+
+\textbf{Note:} Alternatively, you can simply type \texttt{=RANDBETWEEN(bottom,top)} in the formula bar, with numbers in place of \emph{bottom} and \emph{top} for the arguments of the formula.
+
+\hypertarget{setting-the-workbook-to-manual-calculation}{%
+\section{Setting the Workbook to Manual Calculation}\label{setting-the-workbook-to-manual-calculation}}
+
+The random number generators of Excel have the characteristic that whenever a command is entered anywhere in the active workbook, the random numbers change because they are recalculated. To prevent this from happening, change the recalculate mode from automatic to manual.
+
+\hypertarget{manual-calculation-on-a-pc}{%
+\subsection{Manual Calculation on a PC}\label{manual-calculation-on-a-pc}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Select \texttt{File} then \texttt{Options}.
+\item
+  Click on the tab labeled \texttt{Formulas}.
+\item
+  Select \texttt{Manual\ Calculation} for \texttt{Workbook\ Calculation} and uncheck the option \texttt{Recalculate\ workbook\ before\ saving}.
+\item
+  Then press \texttt{OK}.
+\end{enumerate}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.8\linewidth]{images/manualcalc-pc} 
+
+}
+
+\caption{Calculation options under Formulas in a PC.}\label{fig:manualcalc-pc}
+\end{figure}
+
+\hypertarget{manual-calculation-on-a-mac}{%
+\subsection{Manual Calculation on a MAC}\label{manual-calculation-on-a-mac}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Go to \texttt{Excel\ Menu} then select \texttt{Preferences}
+\end{enumerate}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.9\linewidth]{images/manual-calculation1} 
+
+}
+
+\caption{Preferences in the Excel Menu on a MAC.}\label{fig:manual-calculation1}
+\end{figure}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  Under \texttt{Formulas\ and\ Lists}, click on \texttt{Calculation}
+\end{enumerate}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.6\linewidth]{images/manual-calculation2} 
+
+}
+
+\caption{Formulas and Lists in Preferences on a MAC.}\label{fig:manual-calculation2}
+\end{figure}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  For \texttt{Workbook\ Calculation}, select \texttt{Manual\ calculation} and uncheck the option \texttt{Recalculate\ workbook\ before\ saving}.
+\end{enumerate}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.6\linewidth]{images/manual-calculation3} 
+
+}
+
+\caption{Calculation Options on a MAC.}\label{fig:manual-calculation3}
+\end{figure}
+
+\hypertarget{using-the-recalculation-mode}{%
+\section{Using the Recalculation Mode}\label{using-the-recalculation-mode}}
+
+Even if the \texttt{Calculation} option is set for \texttt{Manual}, you can use a ribbon command or keyboard shortcut to force a recalculation when needed.
+
+You can still recalculate by pressing the keys \texttt{Shift} + \texttt{F9} on the keyboard on a PC (For MAC, use keys \texttt{Command} + \texttt{=} ) or pressing the button \texttt{Calculate\ Now} in the \texttt{Formulas} Menu.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.3\linewidth]{images/recalc-pc} 
+
+}
+
+\caption{Calculation ribbon.}\label{fig:calculation-ribbons}
+\end{figure}
+
+\hypertarget{practice-1-1}{%
+\subsection{Practice 1}\label{practice-1-1}}
+
+Suppose that there are 95 students enrolled in a section of the course Introductory Statistics. Draw a random sample of fifteen (15) of the students.
+
+To draw the sample, assign each of the students a distinct number between 1 and 95. To find the numbers of the 15 students to be included in the sample, do the following steps.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Change the calculation mode to \texttt{Manual} (as described above).
+\item
+  Type the label \emph{Sample} in Cell A1 ,
+\item
+  Select Cell A2.
+\item
+  Type \texttt{=RANDBETWEEN(1,95)} in the formula bar and press Enter.
+\item
+  Position the mouse pointer in the lower right corner of Cell A2 until it becomes a \textbf{\texttt{+}} sign, and click-drag downward until you reach Cell A16. Release. Then press the key \texttt{F9} (or \texttt{Calculate\ Now} button).
+\item
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii})}
+  \setcounter{enumii}{5}
+  \tightlist
+  \item
+    Use one of the \texttt{Sort} buttons to sort the data to easily check for repetitions. If there are repetitions, press \texttt{Shift} + \texttt{F9} (or \texttt{Calculate\ Now}) again and re-sort. Below, with the data sorted, we can verify that there are no repetitions
+  \end{enumerate}
+\end{enumerate}
+
+\hypertarget{creating-tables}{%
+\section{Creating Tables}\label{creating-tables}}
+
+To make working with data easier, you can organize data in a table format on a worksheet.
+
+You are going to use Excel's random number generator and tables to create a fictional grade book.
+
+\hypertarget{practice-2-1}{%
+\subsection{Practice 2}\label{practice-2-1}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Select the block of cells D1:H11.
+\item
+  On the \texttt{Home} tab, in the \texttt{Styles} ribbon, click \texttt{Format\ as\ Table}, and then click the table style of your choice.
+\end{enumerate}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.9\linewidth]{images/style-pc} 
+
+}
+
+\caption{Style ribbon.}\label{fig:table-style-group}
+\end{figure}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  Select the \texttt{My\ table\ has\ headers} check box in the \texttt{Format\ as\ Table} dialog window.
+\end{enumerate}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{images/format-table} 
+
+}
+
+\caption{32: Format As Table window.}\label{fig:format-as-table}
+\end{figure}
+
+\textbf{Note:} When you select a table by clicking the mouse pointer, the \texttt{Table\ Tools} menu becomes available, and a \texttt{Design} tab is displayed. To get a good idea of what you can add to or change in your table, click the \texttt{Design} tab, then explore the groups and options provided on this tab.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{3}
+\tightlist
+\item
+  Replace the table headers. Instead of \texttt{Columns1} through \texttt{Column5}, replace headers by typing in them the following: \emph{Name}, \emph{Exam 1}, \emph{Exam 2}, \emph{Exam 3} and \emph{Final Exam}.
+\item
+  Under header \emph{Name}, in cells 2-11, create 10 students' names, writing last name, and first name.
+\item
+  Now select the block of cells D2:D11. Click \texttt{Home\ \textgreater{}\ Sort\ \&\ Filter\ \textgreater{}\ Select\ A\ to\ Z}. The fictional names should then appear in alphabetical order.
+\item
+  Select cell E2. Click on the \texttt{Formula} bar, type in \texttt{=RANDBETWEEN(0,100)}.
+\item
+  Position the mouse pointer in the lower right corner of cell E2 until it becomes a \textbf{\texttt{+}} sign and click-drag downward until you reach cell E11. Release (\emph{Note:} Sometimes this feature is not needed within a formatted table).
+\item
+  Repeat the process above for Column F using \texttt{=RANDBETWEEN(40,98)}.
+\item
+  Repeat the process above for Column G using \texttt{=RANDBETWEEN(64,105)}.
+\item
+  Repeat the process above for Column H using \texttt{=RANDBETWEEN(37,100)}.
+\item
+  If the list of numbers is not randomized, click the button \texttt{Calculate\ Now}.
+\end{enumerate}
+
+\hypertarget{frequency-tables-and-histograms}{%
+\chapter{Frequency Tables and Histograms}\label{frequency-tables-and-histograms}}
+
+You will construct a histogram with 5 classes (bars) using Excel.
+Graphing a histogram manually requires determining minimum and maximum values in a data set, class width, the lower and upper limits of classes of values, class boundaries, midpoints, etc. This is similar in Excel. You will need the upper-class limits and the midpoints for adjusting the graph created with Excel.
+
+Throughout this manual, \emph{Select} means to left-click with the mouse/pad.
+
+\hypertarget{preparation}{%
+\section{Preparation}\label{preparation}}
+
+In this lab, you will use a data set that contains scores received on an MA-336 Exam. Download the data set. called \emph{Lab 3 Exam Scores.xlsx} from here: \href{https://github.com/bsosnovski/Intro-Stats-Excel-Lab-Manual/blob/main/Data_Sets/Lab-3-Exam-Scores.xlsx}{\textbf{https://github.com/bsosnovski/Intro-Stats-Excel-Lab-Manual/blob/main/Data\_Sets/Lab-3-Exam-Scores.xlsx}}
+
+Open the Excel file you downloaded and follow the instructions below.
+
+\hypertarget{initial-computations}{%
+\section{Initial Computations}\label{initial-computations}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Select cell C1 and in the formula bar type in \texttt{=COUNT(A2:A33)}.
+\end{enumerate}
+
+\textbf{Note:} You can fill in the input range, A2:A33, in the formula count above by manually typing the address of the cells containing the data values. Alternatively, you can select cells that form the Input Range by clicking on A2, holding, and dragging downward until you reach cell A33. Then release.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\item
+  Type in cell D1 the label \emph{Total number of data entries}.
+\item
+  Select cell C2 and in the formula bar type in \texttt{=MIN(A2:A33)}.
+\item
+  Type in cell D2 the label \emph{Min}.
+\item
+  Select cell C3 and in the formula bar type in \texttt{=MAX(A2:A33)}.
+\item
+  Type in cell D3 the label \emph{Max}.
+\item
+  Select cell C4 and in the formula bar type in \texttt{=(C3-C2)/5}.
+\item
+  Type in cell D4 the label \emph{Width Computation}.
+\item
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii})}
+  \setcounter{enumii}{8}
+  \tightlist
+  \item
+    Round up the value resulting in cell C4 to the next whole number by using the formula \texttt{=ROUNDUP(C4,0)} in cell C5 the adjusted value for the width.
+  \end{enumerate}
+\end{enumerate}
+
+\textbf{Note:} The formula above uses the cell address (C4) to identify the number to be rounded up with 0 decimal places.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{9}
+\tightlist
+\item
+  Type in cell D5 the label \emph{Width}.
+\end{enumerate}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.6\linewidth]{images/initial-comp} 
+
+}
+
+\caption{Initial computations for constructing a histogram.}\label{fig:initial-comp}
+\end{figure}
+
+\hypertarget{class-limit-calculations}{%
+\section{Class Limit Calculations}\label{class-limit-calculations}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Type in cell C7 the label \emph{Lower Limits}.
+\item
+  In cell C8, type the formula \texttt{=\ C2}. This will copy the value in cell C2 as the histogram's lower limit for the first class.
+\item
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii})}
+  \setcounter{enumii}{2}
+  \tightlist
+  \item
+    Select cell C9, and in the formula bar, type \texttt{=SUM(C8,\$C\$5)}. Remember the \texttt{dollar\ sign} because the value in C5, the width, is a fixed value for all formulas you use here.
+  \end{enumerate}
+\end{enumerate}
+
+\textbf{Note:} You may also do the computation in Step 3 above using the keyboard key \texttt{+}.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{3}
+\tightlist
+\item
+  Position the mouse pointer in the lower right corner of cell C9 until it becomes a \texttt{+} sign and click, hold, and drag downward until you reach cell C12. Then release.
+\end{enumerate}
+
+\textbf{Note:} You should have a total of 5 class limits since your histogram has 5 classes.
+
+\textbf{Note:} If the formulas do not update automatically, do Step 5 below. Otherwise, skip to Step 6.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{4}
+\tightlist
+\item
+  Select \texttt{Formulas\textgreater{}Calculate\ Now}.
+\item
+  Type in cell D7 the label \emph{Upper Limits}.
+\end{enumerate}
+
+7.Type the values of the upper limits of each class in cells D8 through D12.
+
+\textbf{Note:} You can also be creative and use a formula to do the work in this step. There are different ways of entering the upper limits using formulas, but that is not being requested from you for this lab.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{7}
+\tightlist
+\item
+  Type in cell E7 the label \emph{Midpoints}.
+\item
+  Compute the values of the midpoints (lower limit + upper limit)/2 of each class in cells E8 through E12 by using Excel formulas.
+\end{enumerate}
+
+\textbf{Note:} To do this step, use the techniques and Excel functions presented above (create the Excel formula!)
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.5\linewidth]{images/class-limits-comp} 
+
+}
+
+\caption{Class limits computations.}\label{fig:class-limits-comp}
+\end{figure}
+
+\hypertarget{creating-the-histogram}{%
+\section{Creating the Histogram}\label{creating-the-histogram}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Select \texttt{Data\textgreater{}Data\ Analysis\textgreater{}Histogram} and click \texttt{OK}.
+\end{enumerate}
+
+\textbf{Note:} If \texttt{Data\ Analysis} does not appear in the Data menu, refer to the instructions in \emph{Lab} \textbf{\emph{\ref{start}}} \emph{Getting Started with Excel} how to make it available.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  In the dialog window, first click in the \texttt{Input\ Range} field then type in \texttt{\$A\$2:\$A\$33}.
+\end{enumerate}
+
+\textbf{Note:} Instead of typing, you can \emph{select cells} that form the Input Range by clicking on A2, holding, and dragging downward until you reach cell A33. Then release.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\item
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii})}
+  \setcounter{enumii}{2}
+  \tightlist
+  \item
+    Click the \texttt{Bin\ Range} field in the dialog window first, then type in \texttt{\$D\$8:\$D\$12}.
+  \end{enumerate}
+\end{enumerate}
+
+\textbf{Note:} You can also select cells containing the upper limits instead of typing‼!
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{3}
+\tightlist
+\item
+  You have the option to have the graph placed in a specific cell or range of cells (for this option check \texttt{Output\ Range} as in the picture above, you may select a different cell address) or in a new worksheet (for this check option \texttt{New\ Worksheet\ Ply}).
+\item
+  In the pop-up window, Check the boxes for \texttt{Cumulative\ Percentage} and \texttt{Chart\ Output}.
+\item
+  Then click \texttt{OK}.
+\end{enumerate}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.6\linewidth]{images/histogram-mac} 
+
+}
+
+\caption{Dialog window with the histogram options.}\label{fig:histogram-mac}
+\end{figure}
+
+After the steps above, Excel presents a frequency table and the corresponding graph. Excel counts the frequency of each class based on the \emph{Bins} values you entered in the dialog window for the histogram. Thus, it counts how many values are in the date set (Input Range) up to the upper limits.
+
+The graph is a \emph{raw histogram} that needs to be adjusted to resemble an actual histogram.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.8\linewidth]{images/raw-histogram} 
+
+}
+
+\caption{Resulting histogram.}\label{fig:raw-histogram}
+\end{figure}
+
+\hypertarget{removing-the-more-bar-of-the-histogram}{%
+\section{\texorpdfstring{Removing the \emph{More} bar of the Histogram}{Removing the More bar of the Histogram}}\label{removing-the-more-bar-of-the-histogram}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  If you chose \texttt{New\ Worksheet\ Ply} in Step 4 above, select the Worksheet that contains the graph. Otherwise, go to next Step 2 below.
+\item
+  You may resize the graph by clicking anywhere within the figure. Handles appear along the perimeter of the graph. You can change the shape of the figure by clicking on a handle and dragging it. Make your graph to be displayed in an appropriate size.
+\item
+  A frequency table was created with the graph in the process. That table controls some aspects of the graph. Select the cells in the last row of the frequency table, the one that contains the word \emph{More}.
+\item
+  Select \texttt{\textgreater{}Home\textgreater{}Delete} (you can also do this by \texttt{RIGHT-clicking} on the selected cells and then the option \texttt{Delete}).
+\end{enumerate}
+
+\textbf{Note:} If you do not delete the row in the table, the graph will contain an extra bar on the right of the graph with a frequency equal to zero. \textbf{Be sure to delete the cells and not just delete the contents in those cells.}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{4}
+\tightlist
+\item
+  If the graph doesn't update automatically, select \texttt{Formulas\textgreater{}Calculate\ Now}.
+\end{enumerate}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{images/delete-more-row} 
+
+}
+
+\caption{Deleting the *More* row from the frequency table of the histogram.}\label{fig:delete-more-row}
+\end{figure}
+
+After Steps 4-5, the last column in the graph, labeled \emph{More} will no longer be displayed in the graph.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{5}
+\tightlist
+\item
+  \texttt{RIGHT-click} on any one of the vertical bars of the graph and then select \texttt{Format\ Data\ Point} (or \texttt{Format\ Data\ Series}). Alternatively, you can also double-click with your mouse on a vertical for that.
+\item
+  Move \texttt{Gap\ Width} to position \texttt{0\%} (this makes the bars of the graph touch).
+\end{enumerate}
+
+\hypertarget{adjusting-the-horizontal-axis}{%
+\section{Adjusting the Horizontal Axis}\label{adjusting-the-horizontal-axis}}
+
+\hypertarget{mac}{%
+\subsection{MAC}\label{mac}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \texttt{RIGHT-click} on any vertical bar of the graph. From the menu, click the option \texttt{Select\ Data}.
+\item
+  Click \texttt{Edit} under \emph{Horizontal (Category) Axis Labels}. Click and drag over the range \texttt{E8:E12} (midpoints).
+\item
+  Click \texttt{OK}. This is to re-label the x-axis with the midpoints replacing the upper limits.
+\item
+  Click OK again.
+\end{enumerate}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{images/adjusting-horizontal-axis-mac} 
+
+}
+
+\caption{Adjusting the horizontal axis on a MAC.}\label{fig:adjusting-horizontal-axis-mac}
+\end{figure}
+
+\hypertarget{pc}{%
+\subsection{PC}\label{pc}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \texttt{RIGHT-click} on any vertical bar of the graph. From the menu, click the option \texttt{Select\ Data}.
+\item
+  Click \texttt{Edit} under \emph{Horizontal (Category) Axis Labels}.
+\end{enumerate}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.9\linewidth]{images/adjusting-horizontal-axis-pc} 
+
+}
+
+\caption{Adjusting the horizontal axis on a MAC.}\label{fig:adjusting-horizontal-axis-pc}
+\end{figure}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  Click in the filed \emph{Axis label range}, delete whatever values are in there, and drag over the range \texttt{E8:E12} to select midpoints cells.
+\item
+  Click \texttt{OK}. This is to re-label the x-axis with the midpoints instead of the upper limits.
+\item
+  Click \texttt{OK} again.
+\end{enumerate}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{images/relabel-horiontal-axis-pc} 
+
+}
+
+\caption{Relabeling the horizontal axis on a PC.}\label{fig:relabel-horiontal-axis-pc}
+\end{figure}
+
+\hypertarget{adjusting-the-title-of-the-histogram}{%
+\section{Adjusting the Title of the Histogram}\label{adjusting-the-title-of-the-histogram}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  To change the histogram title, click on the word \emph{Histogram}, which appears
+  in a window. Change the title to \emph{MA336 Exam Scores}.
+\item
+  Click on the word \emph{Bin} and change the x-axis label to \emph{Scores}.
+\end{enumerate}
+
+After all the adjustments are made, the graph will look like the one below.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{images/adjusted-histogram} 
+
+}
+
+\caption{Adjusted histogram.}\label{fig:adjusted-histogram}
+\end{figure}
+
+\hypertarget{practice}{%
+\section{Practice}\label{practice}}
+
+Practice:
+Dan gathered data about the number of minutes per day that a sample of teenagers spends in doing a physical activity.
+
+15, 30, 45, 25, 30, 15, 20, 10, 30, 40, 25, 15, 20, 25, 25, 29, 40, 10, 20, 27, 10, 15, 20, 20, 30, 25, 20, 60, 60, 75, 50, 45
+
+Use the data and the techniques learned in these lab instructions to build a histogram with five classes and descriptive statistics.
+
+\hypertarget{central-tendency-variation}{%
+\chapter{Measures of Central Tendency and Variation}\label{central-tendency-variation}}
+
+In this lab, you will use Excel to determine a data set's mean, median, mode, and standard deviation. A measure of central tendency shows where the center or middle of the data set is located. A measure of variation shows the spread among data values.
+
+Throughout these instructions, \emph{Select} means to left-click with the mouse/pad.
+
+\hypertarget{preparation-1}{%
+\section{Preparation}\label{preparation-1}}
+
+In this lab, you will use a data set that contains three samples. You will compute descriptive statistics in different ways. Download the data set called \emph{Lab 4 Samples.xlsx} from here: \href{https://github.com/bsosnovski/Intro-Stats-Excel-Lab-Manual/blob/main/Data_Sets/Lab-4-Samples.xlsx}{\textbf{https://github.com/bsosnovski/Intro-Stats-Excel-Lab-Manual/blob/main/Data\_Sets/Lab-4-Samples.xlsx}}
+
+\begin{itemize}
+\tightlist
+\item
+  Sample 1 contains 100 data values.
+\item
+  Sample 2 contains 120 data values.
+\item
+  Sample 3 contains 95 data values.
+\end{itemize}
+
+Open the Excel file you downloaded and follow the instructions below.
+
+\hypertarget{descriptive-stats}{%
+\section{Using the Descriptive Statistics in Excel to Obtain the Measures}\label{descriptive-stats}}
+
+\textbf{\emph{Sample 1}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Go to \texttt{Data\ \textgreater{}\ Data\ Analysis}.
+\item
+  Select \texttt{Descriptive\ Statistics} and click \texttt{OK}.
+\end{enumerate}
+
+\textbf{Note:} If \texttt{Data\ Analysis} does not appear in the Data menu, refer to the instructions in \emph{Lab} \textbf{\emph{\ref{start}}} \emph{Getting Started with Excel} how to make it available.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.8\linewidth]{images/descriptive-stats1} 
+
+}
+
+\caption{Data Analysis dialog window.}\label{fig:descriptive-stats1}
+\end{figure}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  The \emph{Descriptive Statistics} window should appear. Complete the Descriptive Statistics window with the information needed from the data in Sample 1.
+\item
+  The \texttt{Input\ Range} for Sample 1 has cell address \texttt{\$A\$2:\$A\$101} (not including the label). If you include the label cell in the address, the address is \texttt{\$A\$1:\$A\$101} (the first cell address is different). You may want to fill in the input range by manually typing the address or by selecting the cells.
+\item
+  If the data values are stacked in a column, then check the options \texttt{Grouped\ by\ Columns}. If they were entered into \emph{Rows} instead, then you would select the rows option.
+\item
+  After you filled in the input range field, check or uncheck the box \texttt{Labels\ in\ the\ first\ row} according to what is in the input range.
+\item
+  Check the option \texttt{Output\ Range} and select a cell in a blank area of your worksheet.
+  8.Check the option \texttt{Summary\ statistics}.
+\end{enumerate}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.8\linewidth]{images/descriptive-stats2} 
+
+}
+
+\caption{Descriptive Statistics dialog window.}\label{fig:descriptive-stats2}
+\end{figure}
+
+These options give you the statistics of Sample 1 such as mean, median, standard deviation, and others.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.4\linewidth]{images/summary-stats} 
+
+}
+
+\caption{The resulting summary statistics for Sample 1.}\label{fig:summary-stats}
+\end{figure}
+
+\hypertarget{practice-1-2}{%
+\subsection{Practice 1}\label{practice-1-2}}
+
+Now you will do the same work above (Steps 1-8) for \emph{Samples 2} and \emph{3}.
+
+\textbf{Note:} In the instructions above, you must adjust the cell addresses for Samples 2 and 3.
+
+\hypertarget{excel-functions}{%
+\section{Using Excel's Functions to Obtain the Measures}\label{excel-functions}}
+
+\textbf{\emph{Sample 1}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Next to the column containing Sample 1 (between Sample 1 and Sample 2), click on an empty cell of the worksheet and type \emph{Mean}.
+\item
+  Click on the cell right next to it and type \texttt{=AVERAGE(A2:A101)}.
+\end{enumerate}
+
+\textbf{Note:} You can also use the Excel function Average by clicking: \texttt{Formulas\ \textgreater{}\ Insert\ Function}.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  Below the cell \emph{Mean}, type the word \emph{Median}.
+\item
+  Click on the cell right next to it and type \texttt{=MEDIAN(A2:A101)}.
+\item
+  Below the cell \emph{Median}, type \emph{Stand. Dev.}
+\item
+  Click on the cell right next to it and type \texttt{=STDEV.S(A2:A101)} (sample standard deviation).
+\end{enumerate}
+
+\textbf{Note:} The \texttt{STDEV.P} calculates the standard deviation based on the entire population given as arguments and the \texttt{STDEV.S} estimates the standard deviation base on a sample.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{6}
+\tightlist
+\item
+  Excel does not have a \emph{Range} function, so below the standard deviation type the word \emph{Range} and next to it compute the range by using the formula \texttt{Range\ =\ Max\ –\ Min}.
+\item
+  Below the cell \emph{Range}, type \emph{Mode(s)}.
+\end{enumerate}
+
+You will investigate the many modes in the data set and what they are. For that, you will use the function \texttt{MODE.MULT()}. This function returns a vertical array of the most frequently occurring, that is, the mode(s) of the data set.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{8}
+\tightlist
+\item
+  Starting with the cell next to the word \emph{Mode(s)}, select a vertical range of cells (a block of any number of vertical cells).
+\item
+  While the block of cells is selected, type the function \texttt{MODE.MULT(A2:A101)} into the Formula bar.
+\item
+  Press the keys \texttt{Control} + \texttt{Shift} + \texttt{Enter} (For MAC, use the keys \texttt{Command} + \texttt{Shift} + \texttt{Enter}).
+\end{enumerate}
+
+\textbf{Note:} Be careful! If you only press Enter or use the function MODE, Excel will only display one value for the mode even if there are multiple modes.
+
+\textbf{Note:} If there is no mode, \#N/A will appear as a result. If there is only one mode, MODE.MULT returns the same value repeatedly.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.6\linewidth]{images/excel-functions} 
+
+}
+
+\caption{The results from the Excel functions used above..}\label{fig:excel-functions}
+\end{figure}
+
+\hypertarget{practice-2-2}{%
+\subsection{Practice 2}\label{practice-2-2}}
+
+Now you will do the same work above (Steps 1-10) for \emph{Samples 2} and \emph{3}.
+
+\textbf{Note:} In the instructions above, you must adjust the cell addresses for Samples 2 and 3.
+
+Compare the results obtained in \emph{Section} \textbf{\emph{\ref{descriptive-stats}}} with the results obtained in \emph{Section} \textbf{\emph{\ref{excel-functions}}}. The results should be the same.
+
+\hypertarget{time-series}{%
+\chapter{Time Series}\label{time-series}}
+
+A \emph{time series} is a series of data points indexed (or listed or graphed) at successive equally spaced points in time.
+
+In this lab, you will build a time series using Excel. In addition, as practice, you will use Excel to calculate the measures of tendency and variation.
+
+\hypertarget{preparation-2}{%
+\section{Preparation}\label{preparation-2}}
+
+Below are some sources you can use for this lab. The websites below are financial sites for stock or index (a financial assest) prices and business information. Choose one asset and collect \emph{30 related values or more data values} to complete this lab.
+
+\begin{itemize}
+\tightlist
+\item
+  \href{www.nasdaq.com}{\textbf{www.nasdaq.com}}
+\end{itemize}
+
+Select a stock. On the left side menu in the webpage, there is the option for its historical quote, then download data.
+
+\begin{itemize}
+\tightlist
+\item
+  \href{www.finance.yahoo.com}{\textbf{www.finance.yahoo.com}}
+\end{itemize}
+
+Go to the tab \emph{Markets}, select the type of asset (e.g., \emph{Trending Tickets}), then go to the tab \emph{Historical Data} to download the data.
+
+\begin{itemize}
+\tightlist
+\item
+  \href{https://www.investing.com}{\textbf{https://www.investing.com}}
+\end{itemize}
+
+Select an asset available on the website. Go to \emph{Historical Data} in the tab \emph{General} to obtain the data set.
+
+\hypertarget{download-the-data}{%
+\section{Download the Data}\label{download-the-data}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  After choosing one of the financial sites to obtain your data, select an asset to download its prices.
+\item
+  Once you have selected an asset , choose a range of 30 or more consecutive days of prices.
+\item
+  Download the data into an Excel file.
+\end{enumerate}
+
+\hypertarget{preparing-the-data}{%
+\section{Preparing the Data}\label{preparing-the-data}}
+
+You will label each day in the data set with sequential numbers from 1 to 30 (or more than 30, depending on your data).
+The asset's \emph{Close}, \emph{Open}, \emph{Low}, and \emph{High} values are contained in the file.
+
+\hypertarget{renaming-the-file}{%
+\subsection{Renaming the File}\label{renaming-the-file}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Open the file you downloaded from the website.
+\item
+  Go to \texttt{File\ \textgreater{}\ Save\ As}. Include \emph{Lab 5} in the file's name and save it with the extension \emph{.xlsx}.
+\end{enumerate}
+
+\hypertarget{inserting-a-column-on-mac}{%
+\subsection{Inserting a Column on MAC}\label{inserting-a-column-on-mac}}
+
+Next, you will insert a new column between the columns with \emph{Dates} and \emph{Prices}. The following steps will prompt Excel to insert a new column with all the columns with prices to the right of it.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Hold down \texttt{CONTROL} and simultaneously click the first column with Prices (e.g., Open).
+\item
+  Then on the pop-up menu, click \texttt{Insert}.
+\item
+  Type the label \emph{Day} at the top of the new column.
+\end{enumerate}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.6\linewidth]{images/insert-column-mac} 
+
+}
+
+\caption{Insert column menu on MAC.}\label{fig:insert-column-mac}
+\end{figure}
+
+\hypertarget{inserting-a-column-on-pc}{%
+\subsection{Inserting a Column on PC}\label{inserting-a-column-on-pc}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \texttt{RIGHT-click} the top of the first column with Prices.
+\item
+  Select \texttt{Insert}.
+\item
+  Type the label \emph{Day} at the top of the new column.
+\end{enumerate}
+
+\hypertarget{seq-numbers}{%
+\subsection{Creating a List of Sequential Numbers}\label{seq-numbers}}
+
+Next, you will create a list in the new column with numbers 1 to 30 (or more, depending on your data).
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Enter 1 (starting value of the series) in the cell below the label Day in the new column.
+\end{enumerate}
+
+\textbf{Note:} If the number 1 changes to a date format, select the column and change it to the \texttt{General} format in the \texttt{Number} ribbon.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.35\linewidth]{images/numbers-ribbon} 
+
+}
+
+\caption{Numbers ribbon in the Home tab.}\label{fig:numbers-ribbon}
+\end{figure}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  Type the number \emph{2} in the next cell below to establish a pattern.
+\item
+  Select the cells that contain the two starting values.
+\item
+  Position the mouse pointer in the lower right corner of the selected cells until it becomes a \texttt{+} sign and click-drag downward across the range you want to fill.
+\end{enumerate}
+
+\hypertarget{time-series-1}{%
+\section{Time Series}\label{time-series-1}}
+
+The following steps will guide you to build a time series for displaying your data. Use the asset's \emph{Close} prices to build the time series.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Select all cells in both Days and Close columns.
+\end{enumerate}
+
+\textbf{Note:} If the columns with \emph{Days} and \emph{Close} prices are not adjacent (separate), first select the cells in one column, and then while holding the \texttt{Control} key on MAC (\texttt{Control} or \texttt{CTRL} on PC), select the cells in the other column.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  Click \texttt{Insert\ \textgreater{}\ Scatter\ \textgreater{}\ Scatter\ with\ Straight\ Lines\ and\ Markers}.
+\end{enumerate}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.95\linewidth]{images/scatter-options} 
+
+}
+
+\caption{Scatter options in the Insert tab.}\label{fig:scatter-options}
+\end{figure}
+
+The resulting graph needed to be adjusted.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  Select the chart created.
+\item
+  Replace the \emph{Chart Title} with an appropriate title for your time series. This depends on your data set.
+\item
+  With the graph selected, go to the \texttt{Chart\ Desig}n tab.
+\item
+  To add axis titles, click \texttt{Add\ Chart\ Element\ \textgreater{}\ Axis\ Titles\ \textgreater{}\ Primary\ Horizontal} and then \texttt{Add\ Chart\ Element\ \textgreater{}\ Axis\ Titles\ \textgreater{}\ Primary\ Vertical}.
+\item
+  Replace the Y-axis Title with an appropriate name for the vertical axis.
+\item
+  Replace the X-axis Title with the word \emph{Day}.
+\end{enumerate}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.95\linewidth]{images/adjust-scatter} 
+
+}
+
+\caption{Chart adjustment options Chart Design.}\label{fig:adjust-scatter}
+\end{figure}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{8}
+\tightlist
+\item
+  Make any adjustments necessary to the chart's vertical and horizontal axes by \texttt{RIGHT-clicking} on them and selecting \texttt{Format\ Axis}.
+\end{enumerate}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.8\linewidth]{images/adjust-axis} 
+
+}
+
+\caption{Chart adjustment of the horizontal axis.}\label{fig:adjust-axis}
+\end{figure}
+
+\hypertarget{practice-1-3}{%
+\section{Practice 1}\label{practice-1-3}}
+
+Use Excel to build a time series for the \emph{High} prices in your data set.
+
+\hypertarget{practice-2-3}{%
+\section{Practice 2}\label{practice-2-3}}
+
+Use Excel to calculate your data set's mean, mode, median and sample standard deviation of the \emph{Close} prices. Use \emph{Lab} \textbf{\emph{\ref{central-tendency-variation}}} \emph{Measures of Central Tendency and Variation}'s instructions on how to calculate these measures.
+
+\hypertarget{pie-and-pareto-charts}{%
+\chapter{Pie and Pareto Charts}\label{pie-and-pareto-charts}}
+
+In this lab, you will generate pie and Pareto charts using Excel.
+
+A \emph{pie chart} is a tool to display basic statistical information for qualitative data, and is one of the easier charts to make in Excel.
+
+A \emph{Pareto chart} is a bar graph that visually depicts which situations are more significant.
+
+\hypertarget{preparation-3}{%
+\section{Preparation}\label{preparation-3}}
+
+In this lab, you will use a data set that provides a snapshot of a sample Netflix user base. The data set includes information such as the user's subscription type, device type, and the country in which they are located.
+
+Download the data set called \emph{Lab 6 Netflix Sample.xlsx} from here: \href{https://github.com/bsosnovski/Intro-Stats-Excel-Lab-Manual/blob/main/Data_Sets/Lab-6-Netflix-Sample.xlsx}{\textbf{https://github.com/bsosnovski/Intro-Stats-Excel-Lab-Manual/blob/main/Data\_Sets/Lab-6-Netflix-Sample.xlsx}}.
+
+\hypertarget{pie-charts}{%
+\section{Pie Charts}\label{pie-charts}}
+
+A \emph{pie chart} (or a circle chart) is a circular statistical graphic that is divided into slices (or wedges) to illustrate numerical proportions.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Open a new Excel worksheet and enter \emph{Earned Degree} data, as shown below.
+\end{enumerate}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.5\linewidth]{images/degree-earned-data} 
+
+}
+
+\caption{Earned degree data.}\label{fig:degree-earned-data}
+\end{figure}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  Select the cells A1:B6.
+\item
+  Go to the \texttt{Insert} tab. Select the \texttt{leftmost\ 2D\ Pie\ diagram} in the top row in the \texttt{Charts} ribbon.
+\end{enumerate}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.4\linewidth]{images/pie-chart} 
+
+}
+
+\caption{Pie chart options in the Insert tab.}\label{fig:pie-chart}
+\end{figure}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{3}
+\tightlist
+\item
+  If your graph does noy appear with a title and legend, do Steps 5 and 6 below.
+\item
+  When you select the graph, the tab \texttt{Chart\ Design} appears in the menu bar (you must select the graph for this tool to appear).
+\item
+  Choose Style 3 for your pie chart.
+\end{enumerate}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{images/pie-chart-design} 
+
+}
+
+\caption{Options in the Chart Design tab for pie charts.}\label{fig:pie-chart-design}
+\end{figure}
+
+\textbf{Note:} Style 3 includes titles, legends, and labels in percent form. Check other styles to see the differences among them.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{6}
+\tightlist
+\item
+  Replace \emph{Number (in thousands)} with the title \emph{Earned Degrees Conferred in 2000}.
+\end{enumerate}
+
+\textbf{Note:} You can \texttt{RIGHT-click} on one of the data labels (e.g., on the percent of 45\%) and then select \texttt{Format\ Data\ Labels} to change the format of the labels in your graph.
+
+\hypertarget{practice-1-4}{%
+\subsection{Practice 1}\label{practice-1-4}}
+
+Use Excel to build a pie chart for the data containing \emph{Device Type} in the \emph{Lab 6 Netflix Sample.xlsx} file.
+
+\hypertarget{pareto-charts}{%
+\section{Pareto Charts}\label{pareto-charts}}
+
+A \emph{Pareto chart} is a bar graph with the bars arranged from the tallest bar to the shortest bar. Because of that, we need first to put the data in descending order.
+
+\hypertarget{sorting-data-1}{%
+\subsection{Sorting Data}\label{sorting-data-1}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Highlight the cells A1:B6 again.
+\item
+  \texttt{Copy} (\texttt{CTRL} + \texttt{C}) the data, click on cell E1 (or any empty cells of the worksheet), and \texttt{Paste} (\texttt{CTRL} + \texttt{V}) the data.
+\item
+  Highlight the cells E1:F6 (or the cells that contain the copy of the data). Select \texttt{Custom\ Sort} in the \emph{Sort \& Filter} ribbon in the \texttt{Home} tab in the menu bar.
+\item
+  In the Sort dialog window that appears. Select the following options:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \emph{Sort by} -\textgreater{} \texttt{Number\ (in\ thousands)}
+  \item
+    \emph{Sort on} -\textgreater{} \texttt{Values}
+  \item
+    \emph{Order} -\textgreater{} \texttt{Largest\ to\ Smallest}
+  \end{itemize}
+\end{enumerate}
+
+This will sort both highlighted columns concerning the highest frequencies.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{4}
+\tightlist
+\item
+  Check the box to the left on \texttt{My\ list\ has\ headers}. Click \texttt{OK}.
+\end{enumerate}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{images/sorting-earn-degree-data} 
+
+}
+
+\caption{Custom sort options..}\label{fig:sorting-earn-degree-data}
+\end{figure}
+
+\hypertarget{building-the-pareto-chart}{%
+\subsection{Building the Pareto Chart}\label{building-the-pareto-chart}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Select the cells E1:F6 (or the cells containing the copy of the data) that have been sorted.
+\item
+  Go to \texttt{Insert\ \textgreater{}\ Column\ chart} and choose the leftmost top type.
+\item
+  Change the title of the graph to \emph{Earned Degrees conferred in 2000}.
+\item
+  With the graph selected, go to the \texttt{Chart\ Design} tab.
+\item
+  To add axis titles, click \texttt{Add\ Chart\ Element\ \textgreater{}\ Axis\ Titles\ \textgreater{}\ Primary\ Horizontal} and then \texttt{Add\ Chart\ Element\ \textgreater{}\ Axis\ Titles\ \textgreater{}\ Primary\ Vertical}.
+\item
+  Replace the horizontal axis title with the \emph{Type of Degree}.
+\item
+  Replace the vertical axis title with \emph{In Thousands}.
+\end{enumerate}
+
+\hypertarget{practice-2-4}{%
+\subsection{Practice 2}\label{practice-2-4}}
+
+Use Excel to build a Pareto chart for the data containing \emph{Country} in the \emph{Lab 6 Netflix Sample.xlsx} file.
+
+\hypertarget{measures-of-location}{%
+\chapter{Measures of Location}\label{measures-of-location}}
+
+\emph{Measures of location} are numbers that indicate the position of data values in a data set. In this lab, you will use Excel to determine measures of location in a distribution: percentiles and standard scores (\emph{z}-scores).
+
+A \emph{percentile} represents the location of a value as a cumulative percentage. The \emph{k}-th (where 1 ≤ \emph{k} ≤ 99) percentile is the data value that indicates the \emph{k}\% percentage of all values in the data set that falls at or below it, and (100-\emph{k})\% of all data falls above it.
+
+Another common measure of location is the standard value score, which relates to the distribution's spread. A \emph{standard score} (or \emph{z-score}) indicates the position of a value in terms of its distance to the mean in units of standard deviation.
+
+\hypertarget{preparation-4}{%
+\section{Preparation}\label{preparation-4}}
+
+You will use a data set that provides measures of global atmospheric concentrations of carbon dioxide from 2002 to 2019.
+
+Download the data set called Lab 7 Carbon Dioxide Concentrations.xlsx from here \href{https://github.com/bsosnovski/Intro-Stats-Excel-Lab-Manual/blob/main/Data_Sets/Lab-7-carbon-dioxide-concentrations.xlsx}{\textbf{https://github.com/bsosnovski/Intro-Stats-Excel-Lab-Manual/blob/main/Data\_Sets/Lab-7-carbon-dioxide-concentrations.xlsx}}.
+
+Open the Excel file \emph{Lab 7 Carbon Dioxide Concentrations.xlsx} and follow the instructions below.
+
+\hypertarget{percentiles}{%
+\section{Percentiles}\label{percentiles}}
+
+The function \texttt{PERCENTILE.INC(array,k)} returns the \emph{k}-th percentile of values in a data set, where \emph{k} is in the range 0..1, inclusive, representing the decimal form of the percentage. The function \texttt{PERCENTILE.EXC(array,k)} works similarly, but \emph{k} is exclusive in the range 0..1.
+
+\emph{Example:} Suppose a data set contains the test scores for a class of 20 students, and you want to calculate the 80th percentile score. Assuming the test scores are in cells A1:A20, you would use the formula \texttt{=PERCENTILE.INC(A1:A20,\ 0.80)}. This formula will return the value at the 80th percentile in the data set, representing the score separating the top 20\% of students from the rest.
+
+The following are instructions for you to find all percentiles of the carbon dioxide measured in \emph{Mauna Loa, Hawaii}, contained in the file you downloaded.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Go to the top of an empty column and type \emph{Percentiles- Mauna Loa, Hawaii} as the column's header.
+\item
+  Below \emph{Percentiles- Mauna Loa, Hawaii}, create a list of numbers from 1 to 99 (use the instructions in \emph{Section} \textbf{\emph{\ref{seq-numbers}}} from \emph{Lab} \textbf{\emph{\ref{time-series}}} \emph{Time Series and Measures of Central Tendency}).
+\item
+  In the column next to it, type the header \emph{Hawaii Measure}.
+\item
+  Below \emph{Hawaii Measure}, enter the formula \texttt{=PERCENTILE.INC(\$C\$4:\$C\$21,L2/100)}.
+\item
+  Select the cell containing the formula in Step 4.
+\item
+  Position the mouse pointer in the lower right corner of the selected cell until it becomes a \texttt{+} sign and click-drag downward across the range that covers all the values of the \emph{Hawaii measure}.
+\end{enumerate}
+
+\textbf{Note:} In the formula above, the address of the cells containing the data set has dollar signs (\texttt{\$}) before the row and the column number to keep the calculations from changing the location of the data set.
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{images/percentiles} 
+
+}
+
+\caption{Percentiles calculations for Hawaii measures.}\label{fig:percentiles}
+\end{figure}
+
+\textbf{Note:} \texttt{PERCENTRANK.INC} uses interpolation to find percentiles for values that are not originally in the data set.
+
+\hypertarget{percentile-ranks}{%
+\section{Percentile Ranks}\label{percentile-ranks}}
+
+The function \texttt{PERCENTRANK.INC(array,\ x,\ {[}significance{]})} calculates a specific value's relative position within a data set, expressed as a percentile rank between 0 and 1, inclusive. \emph{Significance} is an optional argument. that identifies the number of significant digits for the returned percentage value. If omitted, \texttt{PERCENTRANK.INC} uses three digits (0.xxx).
+
+\emph{Example:} Suppose that a data set contains the test scores for a class of 20 students, and you want to find the percentile rank of the value in cell A1. You would use the following formula \texttt{=PERCENTRANK.INC(A1)}. This formula will return the corresponding percentile of the value with three (3) decimal places.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Go to the top of another empty column and type \emph{Hawaii Measure} as the header of the column.
+\item
+  Copy the values in cells C4:C21 and paste them below the header \emph{Hawaii Measure}.
+\item
+  Below \emph{Percentile Rank}, enter the formula \texttt{=PERCENTRANK.INC\ (\$O\$2:\$O\$19,O2)}.
+\item
+  Select the cell containing the formula above.
+\item
+  Position the mouse pointer in the lower right corner of the selected cell until it becomes a \texttt{+} sign and click-drag downward across the range that covers all the values in Step 3. The results are in the decimal form.
+\end{enumerate}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.35\linewidth]{images/percentranks} 
+
+}
+
+\caption{Percentile rank calculations for the Hawaii measures.}\label{fig:percentranks}
+\end{figure}
+
+\textbf{Note:} To convert the results to percentages, select the values in the column \emph{Percentile Rank}, go to the \texttt{Home} tab, and then change the format to \texttt{Percentages} in the \texttt{Number} ribbon.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.35\linewidth]{images/number-ribon-percentages} 
+
+}
+
+\caption{Numbers ribbon in the Home tab displaying the Percentage format.}\label{fig:number-ribon-percentages}
+\end{figure}
+
+\hypertarget{practice-1-5}{%
+\subsection{Practice 1}\label{practice-1-5}}
+
+Use Excel to calculate the percentiles and percentile ranks of the values in the column \emph{South Pole, Antarctica}, in \emph{Lab 7 Carbon Dioxide Concentrations.xlsx}.
+
+\hypertarget{standard-scores}{%
+\section{Standard Scores}\label{standard-scores}}
+
+The \emph{standard score} (\emph{z}) indicates the location of a value in the distribution as a function of how far the value is from the mean of the distribution in terms of the standard deviation.
+
+\hypertarget{mean-st-dev}{%
+\subsection{Calculating the Mean and Standard Deviation}\label{mean-st-dev}}
+
+In this part of the lab, you will compute the mean and the standard deviation of the distribution of \emph{Hawaii Measures}.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  In an empty cell, type \emph{Mean} and next to the cell, compute the mean using the function \texttt{=AVERAGE(C4:C21)}.
+\item
+  In another empty cell type \emph{Stand Dev} and next to the cell, compute the standard deviation using the function \texttt{=STDEV.S(C4:C21)}.
+\item
+  In the \texttt{Number} ribbon, adjust the standard deviation value to have two (2) decimal places.
+\end{enumerate}
+
+The result for the mean is 391.51, and the standard deviation is 11.78.
+
+\hypertarget{converting-to-z-scores}{%
+\subsection{Converting to Z-Scores}\label{converting-to-z-scores}}
+
+The function \texttt{STANDARDIZE(x,\ mean,\ stand\_dev)} returns a normalized value \emph{x} from a distribution characterized by mean and standard deviation. The normalized value is the same as the \emph{z}-score of the value.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Go to the top of an empty column and type \emph{Z-Scores} as the column's header.
+\item
+  Below \emph{Z-Scores}, use the function \texttt{=\ STANDARDIZE(C4,\ mean,\ stand\_dev)} to convert the value in cell C4 in the data set. In the formula, replace mean with the cell address containing the mean value from calculations in \emph{Section} \textbf{\emph{\ref{mean-st-dev}}}, and replace \texttt{stand\_dev} with the cell address with the standard deviation calculated. Include \texttt{\$} in the mean and standard deviation addresses since they are fixed for all data values.
+\item
+  Adjust the \emph{z}-score to have two (2) decimal places.
+\item
+  Select the cell containing the formula in Step 2.
+\item
+  Position the mouse pointer in the lower right corner of the selected cell until it becomes a \texttt{+} sign and click-drag downward across the range that covers all the \emph{Hawaii measures}.
+\end{enumerate}
+
+As a result, the \emph{z}-scores range from -1.55 to 1.69.
+
+\hypertarget{practice-2-5}{%
+\subsection{Practice 2}\label{practice-2-5}}
+
+Use Excel to calculate the \emph{z}-scores of the values in the column \emph{South Pole, Antarctica} in \emph{Lab 7 Carbon Dioxide Concentrations.xlsx}.
+
+\hypertarget{box-and-whisker-plot}{%
+\chapter{Box and Whisker Plot}\label{box-and-whisker-plot}}
+
+\emph{Quartiles} are quantiles (also percentiles) that divide the data into approximately four equal parts.
+
+A \emph{box and whisker plot} is a graph showing the data distribution using the \emph{five-number-summary}: minimum value, first quartile, median (second quartile), third quartile, and maximum value. This type of graph is also known as a box plot.
+
+The \emph{interquartile range} (\emph{IQR}) represents the spread of the middle half of the data and is calculated as the difference between the third and first quartiles.
+
+\hypertarget{preparation-5}{%
+\section{Preparation}\label{preparation-5}}
+
+In this lab, you will use a data set containing NY temperatures in September of 2013.
+
+Download the data set called \emph{Lab 8 NY Temp Sept2013.xlsx} from here \href{https://github.com/bsosnovski/Intro-Stats-Excel-Lab-Manual/blob/main/Data_Sets/Lab-8-NY-Temp-Sept2013.xlsx}{\textbf{https://github.com/bsosnovski/Intro-Stats-Excel-Lab-Manual/blob/main/Data\_Sets/Lab-8-NY-Temp-Sept2013.xlsx}}.
+
+Open the Excel file \emph{Lab 8 NY Temp Sept2013.xlsx} and follow the instructions below.
+
+\hypertarget{five-number-summary}{%
+\section{Five-Number-Summary}\label{five-number-summary}}
+
+Using Excel, you will compute the five-number summary, generate a box plot, and compute the interquartile range (IQR) for \emph{Lab 8 NY temperatures in the September 2013} workbook.
+
+Use Excel to compute the following in an empty part of the worksheet.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Choose a cell and type \emph{Min}, and in the cell next to it, enter \texttt{=\ MIN(B3:B32)} to find the minimum value of the data set.
+\item
+  Below \emph{Min}, type \emph{Q1}, and in the cell next to it, enter \texttt{=\ QUARTILE(B3:B32,1)} to find the first quartile.
+\item
+  Below \emph{Q1}, type \emph{Q2}, and in the cell next to it, enter \texttt{=\ QUARTILE(B3:B32,2)} to find the second quartile.
+\item
+  Below \emph{Q2}, type \emph{Q3}, and in the cell next to it, enter \texttt{=\ QUARTILE(B3:B32,3)} to find the third quartile.
+  5, Below \emph{Q3}, type \emph{Max}, and in the cell next to it, enter \texttt{=\ Max(B3:B32)} to find the maximum value of the data set.
+\item
+  Below \emph{Max}, type \emph{Median}, and enter \texttt{=\ MEDIAN(B3:B32)} next to it to compute the median.
+\end{enumerate}
+
+Be sure that your five-number summary is organized to display the results. For example:
+
+\label{tab:unnamed-chunk-2}Example of a five-number-summary
+
+Min
+
+18.00
+
+Q1
+
+24.50
+
+Q2
+
+38.00
+
+Q3
+
+44.25
+
+Max
+
+58.00
+
+Median
+
+38.00
+
+\textbf{Note:} The five-number summary for the NY Temperatures will differ from those shown in Table 1.
+
+\hypertarget{the-interquartile-range}{%
+\section{The Interquartile Range}\label{the-interquartile-range}}
+
+Using Excel compute the \emph{IQR} of the data set. Recall that the formula for \emph{IQR} is \texttt{IQR\ =\ Q3\ -\ Q1}.
+
+Use an Excel formula to calculate the \emph{IQR}. Your formula must use cell addresses in the calculation. Place your formula in empty cells below your five-number summary.
+
+\hypertarget{box-plot}{%
+\section{Box Plot}\label{box-plot}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Select the cells with the temperature values in Column B.
+\item
+  Go to the Insert tab. Select \texttt{Box\ and\ Whisker} in the \texttt{Charts} ribbon (Figure \textbf{\ref{fig:box-and-whisker-menu}}).
+\end{enumerate}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.45\linewidth]{images/box-and-whisker-menu} 
+
+}
+
+\caption{Box and Whisker option in the Chart ribbon of the Insert tab.}\label{fig:box-and-whisker-menu}
+\end{figure}
+
+The resulting plot is shown in Figure \textbf{\ref{fig:box-and-whisker-plot}}.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.55\linewidth]{images/box-and-whisker-plot} 
+
+}
+
+\caption{Box and Whisker created.}\label{fig:box-and-whisker-plot}
+\end{figure}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  Replace \emph{Chart Title} with \emph{NY Temperatures in September 2013}.
+\item
+  \texttt{RIGHT-click} on the vertical axis and then select \texttt{Format\ Axis} to change the axis format in the graph. Set the \emph{Minimum Bound} as 45. Adjusting the axis removes the unnecessary space in the chart.
+\end{enumerate}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.35\linewidth]{images/format-axis} 
+
+}
+
+\caption{Format Axis options.}\label{fig:format-axis}
+\end{figure}
+
+Use the \texttt{Chart\ Design} to customize the look of your chart.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{4}
+\tightlist
+\item
+  Select the graph, and the tab \texttt{Chart\ Design} appears in the menu. Click on the \texttt{Chart\ Design} tab.
+\item
+  Click \texttt{Add\ Chart\ Element\ \textgreater{}\ Data\ Labels\ \textgreater{}\ Right}.
+\item
+  Click \texttt{Add\ Chart\ Element\ \textgreater{}\ Axes}. Uncheck the option \texttt{Primary\ Horizontal}.
+\end{enumerate}
+
+The adjusted box plot is shown in Figure \textbf{\ref{fig:final-box-plot}}.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.55\linewidth]{images/final-box-plot} 
+
+}
+
+\caption{Adjusted box plot.}\label{fig:final-box-plot}
+\end{figure}
+
+\hypertarget{practice-6}{%
+\section{Practice}\label{practice-6}}
+
+Use Excel to generate the five-number-summary, \emph{IQR}, and box plot for the financial data you collected for \emph{Lab} \textbf{\emph{\ref{time-series}}} \emph{Time Series and Measures of Central Tendency}.
+
+\hypertarget{linear-regression-and-correlation}{%
+\chapter{Linear Regression and Correlation}\label{linear-regression-and-correlation}}
+
+\emph{Linear regression} (also known as linear regression) is a statistical method used to determine whether a linear relationship (correlation) between variables exists. It is used to predict a variable's value based on another variable's value.
+
+You will use Excel to determine the correlation of a data set with a pair of variables, graph its scatter plot, and determine the best-fitting line (linear regression equations).
+
+\hypertarget{preparation-6}{%
+\section{Preparation}\label{preparation-6}}
+
+In this lab, you will use a file containing data about the eruptions of the Old Faithful Geyser in Yellowstone National Park. Each row in the file represents an observed eruption of the Old Faithful Geyser. The \emph{Eruptions} column represents the duration of the eruption in minutes, and the \emph{Waiting} column represents the duration in minutes until the next eruption.
+
+Download the data set called \emph{Lab 9 Old Faithful.xlsx} from here \href{https://github.com/bsosnovski/Intro-Stats-Excel-Lab-Manual/blob/main/Data_Sets/Lab-9-Old-Faithful.xlsx}{\textbf{https://github.com/bsosnovski/Intro-Stats-Excel-Lab-Manual/blob/main/Data\_Sets/Lab-9-Old-Faithful.xlsx}}.
+
+Open the Excel file \emph{Lab 9 Old Faithful.xlsx} and follow the instructions below.
+
+\hypertarget{create-scatter-plot}{%
+\section{Creating a Scatter Plot}\label{create-scatter-plot}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Select the cells in the Columns \emph{Eruptions} and \emph{Waiting}.
+\item
+  Go to the \texttt{Insert} tab. Select \texttt{Scatter} in the \texttt{Charts} ribbon. Select the leftmost chart in the top row by clicking on it (Figure \textbf{\ref{fig:scatter-plot}}).
+\end{enumerate}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.65\linewidth]{images/scatter-plot} 
+
+}
+
+\caption{ Scatter option in the Chart ribbon of the Insert tab.}\label{fig:scatter-plot}
+\end{figure}
+
+The resulting plot is shown in Figure \textbf{\ref{fig:resulting-scatter-plot}}. The \texttt{Chart\ Design} tab shows that the leftmost diagram style is selected (Style 1).
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.65\linewidth]{images/resulting-scatter-plot} 
+
+}
+
+\caption{ Scatter plot created.}\label{fig:resulting-scatter-plot}
+\end{figure}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  For the title, replace \emph{Waiting} with \emph{Old Faithful Data}.
+\item
+  Click \texttt{Add\ Chart\ Element\ \textgreater{}\ Axis\ Title\ \textgreater{}\ More\ Axis\ Title\ Options}. This will add an automatic \emph{x}-axis title and \emph{y}-axis title.
+\item
+  Click the \emph{x}-axis title and replace it with \emph{Duration of Eruptions (in Minutes)}.
+\item
+  Click the \emph{y}-axis title and replace it with \emph{Time Until the Next Eruption (in Minutes)}.
+\item
+  \texttt{RIGHT-click} on the horizontal axis and then select \texttt{Format\ Axis} to change the axis format in the plot. Set the \emph{Minimum Bound} as 1. Adjusting the axis removes
+\item
+  \texttt{RIGHT-click} on the vertical axis and then select \texttt{Format\ Axis} to change the axis format. Set the \emph{Minimum Bound} as 30 and \emph{Maximum Bound} as 100.
+\end{enumerate}
+
+The adjusted box plot is shown in Figure \textbf{\ref{fig:final-scatter-plot}}.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.65\linewidth]{images/final-scatter-plot} 
+
+}
+
+\caption{ Adjusted scatter plot.}\label{fig:final-scatter-plot}
+\end{figure}
+
+\hypertarget{calculating-the-correlation-coefficient}{%
+\section{Calculating the Correlation Coefficient}\label{calculating-the-correlation-coefficient}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Type the label \emph{Correlation} in an empty cell in the worksheet.
+\item
+  In the cell below \emph{Correlation}, go to the \texttt{Formulas} tab and click the \texttt{Insert\ Function} ribbon.
+\item
+  In the dialog window, search for the \texttt{CORREL} function. Click \texttt{OK}.
+\item
+  For \texttt{Array\ 1}, select the cells in Column A of the data set.
+\item
+  For \texttt{Array\ 2}, select the cells in Column B of the data set.
+\end{enumerate}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.5\linewidth]{images/correl-funciton-mac} 
+
+}
+
+\caption{Dialog window of the Correl function on MAC.}\label{fig:correl-funciton-mac}
+\end{figure}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.5\linewidth]{images/correl-funciton-mac} 
+
+}
+
+\caption{Dialog window of the Correl function on PC.}\label{fig:correl-funciton-pc}
+\end{figure}
+
+Up to 4 decimal places, the correlation coefficient is 0.9008.
+
+\#\#Determining the Regression Line Equation
+
+The \emph{regression line equation} (or \emph{least squares line}) is a straight line that best fits the data set. The equation of the line has the form \(\hat{y}-bx+a\) where \(b\) is the slope and \(a\) is the \emph{y}-intercept. The regression line explains the relationship between the independent variable (explanatory variable) and one or more dependent variables (response variable(s)).
+
+The \texttt{LINEST(known\_y\textquotesingle{}s,\ known\_x\textquotesingle{}s,\ {[}const{]},\ {[}stats{]})} function calculates the slope and \emph{y}-intercept of the regression line. The last two arguments in the formula are optional.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Type the label \emph{Regression Line} in an empty cell in the worksheet.
+\item
+  Type the formula `\texttt{=\ LINEST(B1:B273,\ A1:A273)} in the cell below \emph{Regression Line}.
+\end{enumerate}
+
+\textbf{Note:} Alternatively, go to \texttt{Formulas\ \textgreater{}\ Insert\ Function} and search for the \texttt{LINEST} function.
+
+The results output by the \texttt{LINEST} function is a slope equal to 10.7296414 and a y-intercept equal to 33.47439702.
+
+\hypertarget{graphing-the-regression-line}{%
+\section{Graphing the Regression Line}\label{graphing-the-regression-line}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \texttt{RIGHT-click} on any point plotted in the scatter plot (blue points).
+\item
+  Select \texttt{Add\ Trendline}.
+\item
+  Select the \texttt{Linear} trend.
+\item
+  Check the box to \texttt{Display\ Equation\ on\ chart}.
+\end{enumerate}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.4\linewidth]{images/trendline} 
+
+}
+
+\caption{Trendline options.}\label{fig:trendline}
+\end{figure}
+
+\hypertarget{practice-7}{%
+\section{Practice}\label{practice-7}}
+
+For this exercise, you will switch the explanatory and response variables. That means changing the roles of \emph{x} and \emph{y} values for the same data set. Following the guidelines above, use Excel to:
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\tightlist
+\item
+  Construct the scatter plot.
+\item
+  Calculate the correlation coefficient.
+\item
+  Determine the regression line's slope and y-intercept.
+\item
+  Draw the regression line in the scatter plot.
+\end{enumerate}
+
+\hypertarget{coin-toss-simulation}{%
+\chapter{Coin Toss Simulation}\label{coin-toss-simulation}}
+
+In \emph{Lab} \textbf{\emph{\ref{number-gen}}} \emph{Random Number Generators and Tables}, the function \texttt{RANDBETWEEN(Bottom,Top)} was used to obtain a random integer between (and including) the bottom and top numbers.
+
+You will use the random number generator to simulate probability experiments such as tossing coins. The goal of this lab is to verify the Law of Large Numbers. Recall that the \emph{Law of Large Numbers} states that in the long run, as the sample size increases and increases, the relative frequencies of outcomes get closer and closer to the theoretical or actual probability values. The goal of this lab is to verify the Law of Large Numbers.
+
+\hypertarget{simulating-a-coin-tossing-experiment}{%
+\section{Simulating a Coin Tossing Experiment}\label{simulating-a-coin-tossing-experiment}}
+
+To simulate the experiment, assign to the outcome \emph{Head} the digit \emph{1} and to \emph{Tail} the digit \emph{2}.
+
+You will draw a random sample of size 30 in Column A from the distributions of integers with a minimum value of 1 to a maximum value of 2.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Write the label \emph{Coin Toss} in cell A1.
+\item
+  Type the formula \texttt{=\ RANDBETWEEN(1,2)} in cell A2 and press \texttt{Enter/Return}.
+\item
+  Select cell A2 again, position the mouse pointer in the lower right corner of the selected cell until it becomes a \texttt{+} sign, and click-drag downward across until cell A31.
+\item
+  Ensure that Excel randomizes all the values by going to the \texttt{Formula} tab in the menu bar and clicking the \texttt{Calculate\ Now} ribbon to apply the randomization. Column A should now have 30 random values.
+\end{enumerate}
+
+\hypertarget{counting-the-number-of-heads-and-the-number-of-tails}{%
+\section{Counting the Number of Heads and the Number of Tails}\label{counting-the-number-of-heads-and-the-number-of-tails}}
+
+Next, you will use Excel to count the \emph{1}'s and \emph{2}'s in column A. You will set up a table in Columns C and D to display the results.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Type the label \emph{Outcome} in Cell C1.
+\item
+  Type the label \emph{Heads} in Cell C2.
+\item
+  Type the label \emph{Tails} in Cell C3.
+\item
+  Type the label \emph{Frequency} in Cell D1.
+\end{enumerate}
+
+You will use the formula \texttt{COUNTIF(data\ range,\ condition)} to count the \emph{1}'s and \emph{2}'s as the formula's conditions. Recall that we assigned the number \emph{1} to the outcome \emph{Head} and the number \emph{2} to the \emph{Tail}.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Select cell D2, and enter the formula \texttt{=\ COUNTIF(A2:A31,1)}.
+\item
+  Next, select cell D3, and enter \texttt{=\ COUNTIF(A2:A31,2)}.
+\end{enumerate}
+
+\hypertarget{calculating-the-empirical-probability}{%
+\section{Calculating the Empirical Probability}\label{calculating-the-empirical-probability}}
+
+\emph{Empirical Probability} is based on experience or historical data to determine the likelihood of outcomes. It is calculated by determining the relative frequency. You will calculate the observed probabilities of the outcomes \emph{Heads} and \emph{Tails} you simulated.
+
+To calculate the relative frequency of an outcome, calculate the number of times the outcomes appear divided by the total number of all outcomes.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Enter the label \emph{Rel Freq} in cell E1.
+\item
+  In cell E2, enter \texttt{=\ D2/30}.
+\item
+  In cell E3, enter \texttt{=\ D3/30}.
+\item
+  Select the cells E2 and E3 and go to the \texttt{Home} tab, and then adjust the results to have four (4) decimal places in the \texttt{Number} ribbon.
+\end{enumerate}
+
+\hypertarget{practice-8}{%
+\section{Practice}\label{practice-8}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Repeat this process to generate another simulation with 100 \emph{Coin Tosses} in any empty space of the \emph{Lab 9} worksheet.
+\item
+  Repeat this process to generate another simulation with 500 \emph{Coin Tosses} in any empty space of the worksheet.
+\end{enumerate}
+
+\hypertarget{normal-distributions}{%
+\chapter{Normal Distributions}\label{normal-distributions}}
+
+A \emph{normal distribution} is a continuous probability distribution for a random variable that describes the frequency of the outcomes of the variable. The mean and the standard deviation parameters determine the normal distribution.
+
+In this lab, you will use the \texttt{AVERAGE} and \texttt{STDEV.S} functions to calculate the data's mean and standard deviation, respectively.
+
+The \texttt{NORM.DIST(x,mean,standard\_dev,cumulative)} function returns the normal distribution for the specified mean and standard deviation. In this case, we will use the \emph{false} argument for \emph{cumulative} since we will get the corresponding probability for the respective \emph{x} values.
+
+The \texttt{NORM.INV(probability,mean,standard\_dev)} function returns the \emph{z}-score in a normal cumulative distribution for the specified mean and standard deviation.
+
+The \texttt{STANDARDIZE(x,\ mean,\ standard\_dev)} function returns a normalized value from a mean and standard deviation distribution.
+
+\hypertarget{preparation-7}{%
+\section{Preparation}\label{preparation-7}}
+
+You will use a data set on baby birth, including the variables birthweight, mother's age, mother's weight, mother's height, and whether the mother is a smoker. There are one thousand (1000) cases included in this data set.
+
+Download the data set called \emph{Lab 11 Babies.xlsx} from here \href{https://github.com/bsosnovski/Intro-Stats-Excel-Lab-Manual/blob/main/Data_Sets/Lab-11-Babies.xlsx}{\textbf{https://github.com/bsosnovski/Intro-Stats-Excel-Lab-Manual/blob/main/Data\_Sets/Lab-11-Babies.xlsx}}.
+
+Open the Excel file \emph{Lab 11 Babies.xlsx} and follow the instructions below.
+
+\hypertarget{calculating-the-mean-and-standard-deviation}{%
+\section{Calculating the Mean and Standard Deviation}\label{calculating-the-mean-and-standard-deviation}}
+
+First, you will make a copy of the data on birthweight and sort the values from the smallest to the largest. Then you will calculate the mean and standard deviation. These Excel functions were covered in \emph{Lab} \textbf{\ref{central-tendency-variation}} \emph{Measures of Central Tendency and Variation}.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Select the cells in Column B (cells B1:B1001).
+\end{enumerate}
+
+\textbf{Note:} A shortcut to select data in a range, click on the first cell in the range and press the \texttt{Shift} + \texttt{Arrow\ Down} keys to select a range of data.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  \texttt{Copy} (\texttt{CRTL-C} on PC or \texttt{Command-C} on MAC) the selected data, click on cell J1 (or any empty cells of the worksheet), and \texttt{Paste} (\texttt{CRTL-V} on PC or \texttt{Command-V} on MAC) the data.
+\item
+  Select the cells J1:J1001 (or the cells that contain the copy of the data). Go to \texttt{Sort\ \&\ Filter} ribbon in the \texttt{Home} tab and select \texttt{Sort\ Smallest\ to\ Largest}.
+\item
+  Type the label \emph{Mean} in cell H1.
+\item
+  Select cell H2, then enter the formula \texttt{=\ AVERAGE(J2:J101)}.
+\item
+  Adjust the mean value to one (1) decimal place.
+\item
+  Type the label \emph{Stand Dev} in cell H3.
+\item
+  Select cell H4, then enter \texttt{=\ STDEV(J2:J101)}.
+\item
+  Adjust the standard deviation value to two (2) decimal places.
+\end{enumerate}
+
+The data's mean is 119.9, and the standard deviation is 17.99.
+
+\hypertarget{graphing-the-normal-distribution}{%
+\section{Graphing the Normal Distribution}\label{graphing-the-normal-distribution}}
+
+The \texttt{NORM.DIST(x,mean,standard\_dev,FALSE)} function calculates the normal probability density function that can be used to plot the bell-shaped curve. To graph the normal curve, we need \emph{x} and \emph{y} values. The \emph{x} values correspond to the birthweights. The \emph{y} values are values of the probability density functions.
+
+First, you will generate the \emph{y}-values and then use a scatter plot to display the bell-shaped curve.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Select the cell K1 and type the label \emph{Y-Values}.
+\item
+  Below \emph{Y-Values}, enter the formula \texttt{=\ NORM.DIST(J2,\$H\$2,\$H\$4,\ FALSE)}.
+\item
+  Select cell K2 and place the mouse pointer in the lower right corner of the selected cell until it becomes a \texttt{+} sign, and click-drag downward across the range that covers all the values in column K.
+\end{enumerate}
+
+The \emph{y}-values range from \(3.34\) x \(10^{-5}\) to \(1.71\) x \(10^{-4}\).
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{3}
+\tightlist
+\item
+  Select all cells in the \emph{birthweight} and \emph{Y-Values} columns (select the first cells in columns J and K, then press the \texttt{Shift} + \texttt{Arrow\ Down} keys to select the whole range of data).
+\item
+  Click \texttt{Insert\ \textgreater{}\ Scatter\ \textgreater{}\ Scatter\ with\ Smooth\ Lines}.
+\end{enumerate}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{images/normal-curve} 
+
+}
+
+\caption{The normal curve created.}\label{fig:normal-curve}
+\end{figure}
+
+The resulting graph needed to be adjusted (Figure \textbf{\ref{fig:normal-curve}
+}). Use the instructions in Steps 3-8 in \emph{Section} \textbf{\emph{\ref{create-scatter-plot}}} \emph{Creating a Scatter Plot} to make the necessary adjustments to the graph. Adjust the title, axis titles, and horizontal axis.
+
+\hypertarget{calculating-probability-or-cumulative-area}{%
+\section{Calculating Probability or Cumulative Area}\label{calculating-probability-or-cumulative-area}}
+
+We can use the \texttt{NORM.DIST(x,mean,standard\_dev,TRUE)} function to calculate the probability that variable \emph{x} falls below or at a specified value. Recall that a percentile in a normal distribution also corresponds to the area to the left (cumulative area) of a specific value.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Select cell L1 and enter the label \emph{Percentile}.
+\item
+  Go to cell L2 and enter the formula \texttt{=\ NORM.DIST(J2,\$H\$2,\$H\$4,TRUE)}.
+\end{enumerate}
+
+\textbf{Note:} Remember to include the \texttt{\$} symbol.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  Select cell L2 and place the mouse pointer in the lower right corner of the selected cell until it becomes a \texttt{+} sign, and click-drag downward across the range that covers all the values in column K.
+\item
+  In the \texttt{Home} tab, select \texttt{Percentage} (\%) in the \texttt{Numbers} ribbon to convert the values in Column L to percentages.
+\item
+  Adjust the probability (or percentiles) values to two (2) decimal places.
+\end{enumerate}
+
+The data's percentiles should range from 0.02\% to 99.91\%.
+
+\hypertarget{finding-raw-scores-from-probabilities}{%
+\section{Finding Raw Scores from Probabilities}\label{finding-raw-scores-from-probabilities}}
+
+The function \texttt{NORM.INV(probability,mean,standard\_dev)}, where \emph{probability} is in the percentage form, will provide the raw value corresponding to the probability (or percentile).
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Select cell M1 and type the label \emph{90th Percentile}.
+\item
+  In cell M2, type the label \emph{95th Percentile}.
+\item
+  In cell M3, type the label \emph{99th Percentile}.
+\item
+  In cell N1, type \texttt{=\ NORM.INV(90\%,\ \$H\$2,\$H\$4)}.
+\end{enumerate}
+
+\textbf{Note:} Remember to include the \texttt{\$} symbol.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{4}
+\tightlist
+\item
+  Repeat Step 4 above to obtain the other percentiles, 95th in cell N2 and 99th in cell N3.
+\end{enumerate}
+
+\hypertarget{converting-to-z-scores-1}{%
+\section{Converting to Z-Scores}\label{converting-to-z-scores-1}}
+
+We can use \texttt{STANDARDIZE(value,\ mean,\ standard\_dev)} to convert any value to a \emph{z}-score when the mean and standard deviation are given.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Select the cell K1 and type the label \emph{Z-Scores}.
+\item
+  Below \emph{Z-Scores}, enter the formula \texttt{=\ STANDARDIZE(J2,\$H\$2,\$H\$4)}.
+\end{enumerate}
+
+\textbf{Note:} Remember to include the \texttt{\$} symbol.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  Select the cell with the \emph{z}-score calculated, K2.
+\item
+  Place the mouse pointer in the lower right corner of the selected cell until it becomes a \texttt{+} sign, and click-drag downward across the range that covers all the values in column J.
+\item
+  Adjust the \emph{z}-scores values to two (2) decimal places
+\end{enumerate}
+
+\hypertarget{practice-9}{%
+\section{Practice}\label{practice-9}}
+
+For the variable \emph{mother's age}, perform the following tasks.
+1. Graph the normal curve for the distribution.
+2. Find the distribution's probability.
+3. Find the \emph{88th Percentile}.
+4. Find the \emph{z}-scores.
+
+\hypertarget{the-central-limit-theorem}{%
+\chapter{The Central Limit Theorem}\label{the-central-limit-theorem}}
+
+The \emph{sampling distribution} of sample means is a distribution formed by means of all samples of size \(n\) repeatedly taken from a population. If a population has mean \(\mu\) and standard deviation \(\sigma\), and all possible samples of size \(n\) are taken from the population then sampling distribution satisfies the following properties \(\mu_{\bar{x}}=\mu\) and \(\sigma_{\bar{x}}=\sigma/\sqrt{n}\).
+
+The \emph{Central Limit Theorem} states that the sampling distribution of sample means approaches a normal distribution as the sample size gets larger no matter the population distribution's shape. This is especially true for sample sizes over 30. The greater the sample size, the better the approximation.
+
+If the population itself is normally distributed, then the sampling distribution of sample means is normally distributed for any sample size \(n\).
+
+In this lab, you will simulate the sampling distribution by generating some of the samples of a specific size and comparing the results with the theoretical values for actual sampling distribution.
+
+\hypertarget{preparation-8}{%
+\section{Preparation}\label{preparation-8}}
+
+You will use the \emph{Lab 12 FB Daily.xlsx} that contains some of the daily Facebook stock prices.
+
+Download the data set from here \href{https://github.com/bsosnovski/Intro-Stats-Excel-Lab-Manual/blob/main/Data_Sets/Lab-12-FB-Daily.xlsx}{\textbf{https://github.com/bsosnovski/Intro-Stats-Excel-Lab-Manual/blob/main/Data\_Sets/Lab-12-FB-Daily.xlsx}}.
+
+Open the Excel file \emph{Lab 12 FB Daily.xlsx} and follow the instructions below.
+
+\hypertarget{mean-stdev-population}{%
+\section{Mean and Standard Deviation of the Population}\label{mean-stdev-population}}
+
+Assume that the data contains all the \emph{Close Prices} of the FB stocks (it is data from a population). You will calculate the mean and standard deviation of the populations of FB \emph{Close Prices}.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Go to an empty column in the \emph{Lab 12 FB Daily} worksheet, and type the label \emph{Population}, \emph{Mean} and \emph{Stand Dev} in separate cells.
+\item
+  Select the cell next to the cell \emph{Mean} and enter the formula \texttt{=\ AVERAGE(F2:F389)} to compute the mean.
+\item
+  Select the cell next to the cell \emph{Stand Dev} and enter \texttt{=\ STDEV.P(F2:F389)} to compute the data's standard deviation of the population.
+\item
+  Adjust the mean and standard deviation values to two (2) decimal places.
+\end{enumerate}
+
+\hypertarget{generating-random-samples}{%
+\section{Generating Random Samples}\label{generating-random-samples}}
+
+You will simulate the sampling distribution by generating only 10 random samples of \emph{Close Prices} with a sample size equal to 20.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Go to an empty column and type the label \emph{Sample 1}.
+\item
+  Below \emph{Sample 1}, click \texttt{Data\ \textgreater{}\ Data\ Analysis\ \textgreater{}\ Sampling}.
+\item
+  Click \texttt{OK}.
+\item
+  In the window that appears, enter the following:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Input Range: Select cells \texttt{F2:F389}.
+  \item
+    Sample method: Check \texttt{Random}.
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Number of Samples: \texttt{20}.
+    \end{itemize}
+  \item
+    Output Options: Click \texttt{Output\ Range}.
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Select below \emph{Sample 1} to paste the sample created..
+    \end{itemize}
+  \end{itemize}
+\item
+  Click \texttt{OK}.
+\item
+  Repeat the process for \emph{Sample 2} through \emph{Sample 10}.
+\end{enumerate}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.75\linewidth]{images/data-analysis-sampling} 
+
+}
+
+\caption{Sampling window in Data Analysis ribbon}\label{fig:data-analysis-sampling}
+\end{figure}
+
+\hypertarget{mean-samples}{%
+\section{Sample Means}\label{mean-samples}}
+
+Now you will calculate the mean for each sample you generated.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  For each sample, place its sample mean below the column that contains the sample (use a similar formula to the one in \emph{Section} \textbf{\emph{\ref{mean-stdev-population}}} \emph{Mean and Standard Deviation of the Population}).
+\item
+  Highlight the results to distinguish them from the values in the sample.
+\end{enumerate}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{images/simualation-sampling-distribution} 
+
+}
+
+\caption{An example of the sampling mean distribution generated.}\label{fig:simualation-sampling-distribution}
+\end{figure}
+
+\hypertarget{the-mean-and-standard-deviation-of-the-sampling-distribution}{%
+\section{The Mean and Standard Deviation of the Sampling Distribution}\label{the-mean-and-standard-deviation-of-the-sampling-distribution}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  After \emph{Section} \textbf{\emph{\ref{mean-samples}}} above, all the ten (10) sample means should be on the same row (Figure \textbf{\ref{fig:simualation-sampling-distribution}}). From these sample means calculate the mean and standard deviation (use \texttt{STDEV.S}) for the FB \emph{Close Prices} in an empty part of the worksheet.
+\item
+  Calculate the population standard deviation value in \emph{Section} \textbf{\emph{\ref{mean-stdev-population}}} divided by \(\sqrt{20}\) (square root of the sample size).
+\end{enumerate}
+
+Recall that the theoretical value of generating all the samples of size 20 should be \(\mu_{\bar{x}}=\mu\) and \(\sigma_{\bar{x}}=\sigma/\sqrt{n}\). Compare the results in Step 1 with the results obtained in Step 2.
+
+\hypertarget{practice-10}{%
+\section{Practice}\label{practice-10}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Repeat the process above with 10 samples of size 50 for the FB \emph{Close Prices}.
+\item
+  Repeat the process above with 20 samples of size 50 for the FB \emph{Open Prices}.
+\end{enumerate}
+
+  \bibliography{book.bib,packages.bib}
+
+\end{document}

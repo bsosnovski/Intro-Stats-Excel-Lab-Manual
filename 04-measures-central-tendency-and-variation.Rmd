@@ -23,7 +23,7 @@ Open the Excel file you downloaded and follow the instructions below.
 **Note:** If `Data Analysis` does not appear in the Data menu, refer to the instructions in *Lab* ***\@ref(start)*** *Getting Started with Excel* how to make it available. 
 
 ```{r descriptive-stats1, echo=FALSE, fig.align = 'center', out.width='80%', fig.show='hold', fig.cap='Data Analysis dialog window.', fig.alt = 'A screenshot of the Data Analysis dialog window.'}
-knitr::include_graphics('descriptive-stats1.png')
+knitr::include_graphics('images/descriptive-stats1.png')
 ```
 
 3. The *Descriptive Statistics* window should appear. Complete the Descriptive Statistics window with the information needed from the data in Sample 1.
@@ -34,13 +34,13 @@ knitr::include_graphics('descriptive-stats1.png')
 8.Check the option `Summary statistics`. 
 
 ```{r descriptive-stats2, echo=FALSE, fig.align = 'center', out.width='80%', fig.show='hold', fig.cap='Descriptive Statistics dialog window.', fig.alt = 'A screenshot of the Descriptive Statistics dialog window.'}
-knitr::include_graphics('descriptive-stats2.png')
+knitr::include_graphics('images/descriptive-stats2.png')
 ```
 
 These options give you the statistics of Sample 1 such as mean, median, standard deviation, and others.
 
 ```{r summary-stats, echo=FALSE, fig.align = 'center', out.width='40%', fig.show='hold', fig.cap='The resulting summary statistics for Sample 1.', fig.alt = 'A screenshot of the The resulting summary statistics for Sample 1.'}
-knitr::include_graphics('summary-stats.png')
+knitr::include_graphics('images/summary-stats.png')
 ```
 
 ### Practice 1
@@ -79,7 +79,7 @@ You will investigate the many modes in the data set and what they are. For that,
 **Note:** If there is no mode, #N/A will appear as a result. If there is only one mode, MODE.MULT returns the same value repeatedly.
 
 ```{r excel-functions, echo=FALSE, fig.align = 'center', out.width='60%', fig.show='hold', fig.cap='The results from the Excel functions used above..', fig.alt = 'A screenshot of the results from the Excel functions used.'}
-knitr::include_graphics('excel-functions.png')
+knitr::include_graphics('images/excel-functions.png')
 ```
 
 ### Practice 2

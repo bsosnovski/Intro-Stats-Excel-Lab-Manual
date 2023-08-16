@@ -1,6 +1,8 @@
 # Linear Regression and Correlation
 
-You will use Excel to determine the correlation of a data set with a pair of variables, graph its scatter plot, and determine the best-fitting line (linear regression).
+*Linear regression* (also known as linear regression) is a statistical method used to determine whether a linear relationship (correlation) between variables exists. It is used to predict a variable's value based on another variable's value.
+
+You will use Excel to determine the correlation of a data set with a pair of variables, graph its scatter plot, and determine the best-fitting line (linear regression equations).
 
 ## Preparation
 
@@ -16,14 +18,14 @@ Open the Excel file *Lab 9 Old Faithful.xlsx* and follow the instructions below.
 2. Go to the `Insert` tab. Select `Scatter` in the `Charts` ribbon. Select the leftmost chart in the top row by clicking on it (Figure **\@ref(fig:scatter-plot)**).
 
 ```{r scatter-plot, echo=FALSE, fig.align = 'center', out.width='65%', fig.show='hold', fig.cap=' Scatter option in the Chart ribbon of the Insert tab.', fig.alt = 'A screenshot of the Scatter option in the Chart ribbon of the Insert tab.'}
-knitr::include_graphics('scatter-plot.png')
+knitr::include_graphics('images/scatter-plot.png')
 ```
 
 The resulting plot is shown in Figure **\@ref(fig:resulting-scatter-plot)**.  The `Chart Design` tab shows that the leftmost diagram style is selected (Style 1).
 
 
 ```{r resulting-scatter-plot, echo=FALSE, fig.align = 'center', out.width='65%', fig.show='hold', fig.cap=' Scatter plot created.', fig.alt = 'The scatter plot created.'}
-knitr::include_graphics('resulting-scatter-plot.png')
+knitr::include_graphics('images/resulting-scatter-plot.png')
 ```
 
 3. For the title, replace *Waiting* with *Old Faithful Data*.
@@ -36,7 +38,7 @@ knitr::include_graphics('resulting-scatter-plot.png')
 The adjusted box plot is shown in Figure **\@ref(fig:final-scatter-plot)**.
 
 ```{r final-scatter-plot, echo=FALSE, fig.align = 'center', out.width='65%', fig.show='hold', fig.cap=' Adjusted scatter plot.', fig.alt = 'Adjusted scatter plot.'}
-knitr::include_graphics('final-scatter-plot.png')
+knitr::include_graphics('images/final-scatter-plot.png')
 ```
 
 ## Calculating the Correlation Coefficient
@@ -48,11 +50,11 @@ knitr::include_graphics('final-scatter-plot.png')
 5. For `Array 2`, select the cells in Column B of the data set.
 
 ```{r correl-funciton-mac, echo=FALSE, fig.align = 'center', out.width='50%', fig.show='hold', fig.cap='Dialog window of the Correl function on MAC.', fig.alt = 'A screenshot of dialog box of the Correl function on MAC.'}
-knitr::include_graphics('correl-funciton-mac.png')
+knitr::include_graphics('images/correl-funciton-mac.png')
 ```
 
 ```{r correl-funciton-pc, echo=FALSE, fig.align = 'center', out.width='50%', fig.show='hold', fig.cap='Dialog window of the Correl function on PC.', fig.alt = 'A screenshot of dialog box of the Correl function on PC.'}
-knitr::include_graphics('correl-funciton-mac.png')
+knitr::include_graphics('images/correl-funciton-mac.png')
 ```
 
 Up to 4 decimal places, the correlation coefficient is 0.9008.
@@ -78,7 +80,7 @@ The results output by the `LINEST` function is a slope equal to 10.7296414 and a
 4. Check the box to `Display Equation on chart`. 
 
 ```{r trendline, echo=FALSE, fig.align = 'center', out.width='40%', fig.show='hold', fig.cap='Trendline options.', fig.alt = 'Trendline options.'}
-knitr::include_graphics('trendline.png')
+knitr::include_graphics('images/trendline.png')
 ```
 
 

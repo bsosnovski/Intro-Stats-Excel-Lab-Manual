@@ -1,7 +1,0 @@
-book_filename: "Excel Lab Manual for Introduction to Statistics"
-language:
-  ui:
-    chapter_name: "Lab "
-delete_merged_file: true
-output_dir: "docs"
-repo: https://github.com/bsosnovski/Intro-Stats-Excel-Lab-Manual

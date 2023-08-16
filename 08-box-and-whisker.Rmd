@@ -52,20 +52,20 @@ Use an Excel formula to calculate the *IQR*. Your formula must use cell addresse
 2. Go to the Insert tab. Select `Box and Whisker` in the `Charts` ribbon (Figure **\@ref(fig:box-and-whisker-menu)**).
 
 ```{r box-and-whisker-menu, echo=FALSE, fig.align = 'center', out.width='45%', fig.show='hold', fig.cap='Box and Whisker option in the Chart ribbon of the Insert tab.', fig.alt = 'A screenshot of the Box and Whisker option in Chart ribbon of the Insert tab.'}
-knitr::include_graphics('box-and-whisker-menu.png')
+knitr::include_graphics('images/box-and-whisker-menu.png')
 ```
 
 The resulting plot is shown in Figure **\@ref(fig:box-and-whisker-plot)**. 
 
 ```{r box-and-whisker-plot, echo=FALSE, fig.align = 'center', out.width='55%', fig.show='hold', fig.cap='Box and Whisker created.', fig.alt = 'A screenshot of  the Box and Whisker created.'}
-knitr::include_graphics('box-and-whisker-plot.png')
+knitr::include_graphics('images/box-and-whisker-plot.png')
 ```
  
 3. Replace *Chart Title* with *NY Temperatures in September 2013*.
 4. `RIGHT-click` on the vertical axis and then select `Format Axis` to change the axis format in the graph. Set the *Minimum Bound* as 45. Adjusting the axis removes the unnecessary space in the chart.
 
 ```{r format-axis, echo=FALSE, fig.align = 'center', out.width='35%', fig.show='hold', fig.cap='Format Axis options.', fig.alt = 'A screenshot of the Format Axis options.'}
-knitr::include_graphics('format-axis.png')
+knitr::include_graphics('images/format-axis.png')
 ```
  
 Use the `Chart Design` to customize the look of your chart.
@@ -77,7 +77,7 @@ Use the `Chart Design` to customize the look of your chart.
 The adjusted box plot is shown in Figure **\@ref(fig:final-box-plot)**.
 
 ```{r final-box-plot, echo=FALSE, fig.align = 'center', out.width='55%', fig.show='hold', fig.cap='Adjusted box plot.', fig.alt = 'Adjusted box plot.'}
-knitr::include_graphics('final-box-plot.png')
+knitr::include_graphics('images/final-box-plot.png')
 ```
 
 ## Practice

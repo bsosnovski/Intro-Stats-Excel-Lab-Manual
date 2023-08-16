@@ -1,9 +1,12 @@
 # Random Number Generators and Tables {#number-gen}
 
+There may be cases when you need to generate random numbers in Excel. Excel has a few random number generators: `RANDBETWEEN`, `RAND`, and `RANDARRAY`. In this manual, you will get acquainted with the `RANDBETWEEN` function.
+
+Tables are one of the most powerful Excel features. This lab shows you what you can do with a table. You will learn how to insert tables in Excel, table formatting and gain an understanding of Excel table functions and formulas.
 
 ## Random Samples
 
-Excel has few random number generators. The other random functions are `RAND()`, which returns an evenly distributed random real number greater than or equal to 0 and less than 1, and `RANDARRAY(rows,columns,min,max,integer)`, which Returns an array of random numbers. For RANDARRAY, you can specify the number of rows and columns to fill, minimum and maximum values, and whether to return whole numbers or decimal values.
+The one you will find most convenient for our labs is the function RANDBETWEENN(bottom,top), which Returns a random integer number between the numbers specified in the function's arguments. The other random functions are `RAND()`, which returns an evenly distributed random real number greater than or equal to 0 and less than 1, and `RANDARRAY(rows,columns,min,max,integer)`, which Returns an array of random numbers. For RANDARRAY, you can specify the number of rows and columns to fill, minimum and maximum values, and whether to return whole numbers or decimal values.
 
 We focus now on the `RANDBETWEEN` function.
 
@@ -13,13 +16,13 @@ We focus now on the `RANDBETWEEN` function.
 To use `RANDBETWEEN`, select a cell in the active worksheet. Click in the formula tab and then click the `Insert Function` ribbon. 
 
 ```{r function-button, echo=FALSE, fig.align = 'center', out.width='10%', fig.show='hold', fig.cap='Insert Function ribbon.', fig.alt = 'The Insert Function ribbon is depicted.'}
-knitr::include_graphics('fx-pc.png')
+knitr::include_graphics('images/fx-pc.png')
 ```
 
 Select the category `All` in the dialog window. Then select `RANDBETWEEN` and then fill in the bottom and top numbers. Returns a random integer number between the numbers you specify. 
 
 ```{r irandbetween-pc, echo=FALSE, fig.align = 'center', out.width='60%', fig.show='hold', fig.cap='The dialog window of Insert Function on PC.', fig.alt = 'The dialog box of the Insert Function in Excel on a PC.'}
-knitr::include_graphics('randbetween-pc.png')
+knitr::include_graphics('images/randbetween-pc.png')
 ```
 
 
@@ -33,7 +36,7 @@ knitr::include_graphics('randbetween-pc.png')
 6. Adjust the arguments of the formula (top and bottom numbers) as needed.
 
 ```{r insert-function-dialog-mac, echo=FALSE, fig.align = 'center', out.width='90%', fig.show='hold', fig.cap='Dialog window of Insert Function on MAC.', fig.alt = 'The dialog box of the Insert Function in Excel on a MAC.'}
-knitr::include_graphics('insert-function-dialog-mac.png')
+knitr::include_graphics('images/insert-function-dialog-mac.png')
 ```
 
 **Note:**	Alternatively, you can simply type `=RANDBETWEEN(bottom,top)` in the formula bar, with numbers in place of *bottom* and *top* for the arguments of the formula.
@@ -50,7 +53,7 @@ The random number generators of Excel have the characteristic that whenever a co
 4. Then press `OK`.
 
 ```{r manualcalc-pc, echo=FALSE, fig.align = 'center', out.width='80%', fig.show='hold', fig.cap='Calculation options under Formulas in a PC.', fig.alt = 'A screenshot of the calculation options under Formulas in a PC.'}
-knitr::include_graphics('manualcalc-pc.png')
+knitr::include_graphics('images/manualcalc-pc.png')
 ```
 
 ### Manual Calculation on a MAC
@@ -58,20 +61,20 @@ knitr::include_graphics('manualcalc-pc.png')
 1.	Go to `Excel Menu` then select `Preferences`
 
 ```{r manual-calculation1, echo=FALSE, fig.align = 'center', out.width='90%', fig.show='hold', fig.cap='Preferences in the Excel Menu on a MAC.', fig.alt = 'A screenshot Sub-menu Preferences in the Excel Menu on a MAC.'}
-knitr::include_graphics('manual-calculation1.png')
+knitr::include_graphics('images/manual-calculation1.png')
 ```
 
 2.	Under `Formulas and Lists`, click on `Calculation`
 
 
 ```{r manual-calculation2, echo=FALSE, fig.align = 'center', out.width='60%', fig.show='hold', fig.cap='Formulas and Lists in Preferences on a MAC.', fig.alt = 'A screenshot of Formulas and Lists in Excel Preferences on a MAC.'}
-knitr::include_graphics('manual-calculation2.png')
+knitr::include_graphics('images/manual-calculation2.png')
 ```
 
 3.	For `Workbook Calculation`, select `Manual calculation` and uncheck the option `Recalculate workbook before saving`.
 
 ```{r manual-calculation3, echo=FALSE, fig.align = 'center', out.width='60%', fig.show='hold', fig.cap='Calculation Options on a MAC.', fig.alt = 'A screenshot of Calculation Options on a MAC.'}
-knitr::include_graphics('manual-calculation3.png')
+knitr::include_graphics('images/manual-calculation3.png')
 ```
 
 ## Using the Recalculation Mode
@@ -82,7 +85,7 @@ You can still recalculate by pressing the keys `Shift` + `F9` on the keyboard on
 
 
 ```{r calculation-ribbons, echo=FALSE, fig.align = 'center', out.width='30%', fig.show='hold', fig.cap='Calculation ribbon.', fig.alt = 'A screenshot of Calculation ribbon.'}
-knitr::include_graphics('recalc-pc.png')
+knitr::include_graphics('images/recalc-pc.png')
 ```
 ### Practice 1
 
@@ -101,6 +104,7 @@ To draw the sample, assign each of the students a distinct number between 1 and 
 ## Creating Tables
 
 To make working with data easier, you can organize data in a table format on a worksheet.
+
 You are going to use Excel’s random number generator and tables to create a fictional grade book. 
 
 ### Practice 2
@@ -109,13 +113,13 @@ You are going to use Excel’s random number generator and tables to create a fi
 2. On the `Home` tab, in the `Styles` ribbon, click `Format as Table`, and then click the table style of your choice.
 
 ```{r table-style-group, echo=FALSE, fig.align = 'center', out.width='90%', fig.show='hold', fig.cap='Style ribbon.', fig.alt = 'A screenshot of the Style ribbon.'}
-knitr::include_graphics('style-pc.png')
+knitr::include_graphics('images/style-pc.png')
 ```
 
 3. Select the `My table has headers` check box in the `Format as Table` dialog window.
 
 ```{r format-as-table, echo=FALSE, fig.align = 'center', out.width='70%', fig.show='hold', fig.cap='32: Format As Table window.', fig.alt = 'A screenshot  showing the window for the command Format As Table command.'}
-knitr::include_graphics('format-table.png')
+knitr::include_graphics('images/format-table.png')
 ```
 
 **Note:** When you select a table by clicking the mouse pointer, the `Table Tools` menu becomes available, and a `Design` tab is displayed. To get a good idea of what you can add to or change in your table, click the `Design` tab, then explore the groups and options provided on this tab.

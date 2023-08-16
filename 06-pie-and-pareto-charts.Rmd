@@ -2,6 +2,10 @@
 
 In this lab, you will generate pie and Pareto charts using Excel.
 
+A *pie chart* is a tool to display basic statistical information for qualitative data, and is one of the easier charts to make in Excel.
+
+A *Pareto chart* is a bar graph that visually depicts which situations are more significant.
+
 ## Preparation
 
 In this lab, you will use a data set that provides a snapshot of a sample Netflix user base. The data set includes information such as the user's subscription type, device type, and the country in which they are located.
@@ -16,14 +20,14 @@ A *pie chart* (or a circle chart) is a circular statistical graphic that is divi
 
 
 ```{r degree-earned-data, echo=FALSE, fig.align = 'center', out.width='50%', fig.show='hold', fig.cap='Earned degree data.', fig.alt = 'Earned Degree data.'}
-knitr::include_graphics('degree-earned-data.png')
+knitr::include_graphics('images/degree-earned-data.png')
 ```
 
 2. Select the cells A1:B6. 
 3. Go to the `Insert` tab. Select the `leftmost 2D Pie diagram` in the top row in the `Charts` ribbon.
 
 ```{r pie-chart, echo=FALSE, fig.align = 'center', out.width='40%', fig.show='hold', fig.cap='Pie chart options in the Insert tab.', fig.alt = 'A screenshot of the pie chart options.'}
-knitr::include_graphics('pie-chart.png')
+knitr::include_graphics('images/pie-chart.png')
 ```
 
 4. If your graph does noy appear with a title and legend, do Steps 5 and 6 below.
@@ -31,7 +35,7 @@ knitr::include_graphics('pie-chart.png')
 6. Choose Style 3 for your pie chart.
 
 ```{r pie-chart-design, echo=FALSE, fig.align = 'center', out.width='100%', fig.show='hold', fig.cap='Options in the Chart Design tab for pie charts.', fig.alt = 'A screenshot of the options in the Chart Design tab for pie charts.'}
-knitr::include_graphics('pie-chart-design.png')
+knitr::include_graphics('images/pie-chart-design.png')
 ```
 
 **Note:** Style 3 includes titles, legends, and labels in percent form. Check other styles to see the differences among them.
@@ -63,7 +67,7 @@ This will sort both highlighted columns concerning the highest frequencies.
 5. Check the box to the left on `My list has headers`. Click `OK`.
 
 ```{r sorting-earn-degree-data, echo=FALSE, fig.align = 'center', out.width='70%', fig.show='hold', fig.cap='Custom sort options..', fig.alt = 'A screenshot of the custom sort options.'}
-knitr::include_graphics('sorting-earn-degree-data.png')
+knitr::include_graphics('images/sorting-earn-degree-data.png')
 ```
 
 

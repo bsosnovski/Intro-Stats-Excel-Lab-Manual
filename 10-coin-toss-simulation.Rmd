@@ -2,7 +2,7 @@
 
 In *Lab* ***\@ref(number-gen)*** *Random Number Generators and Tables*, the function `RANDBETWEEN(Bottom,Top)` was used to obtain a random integer between (and including) the bottom and top numbers. 
 
-We can use the random number generator to simulate experiments such as tossing coins or rolling dice.
+You will use the random number generator to simulate probability experiments such as tossing coins. The goal of this lab is to verify the Law of Large Numbers. Recall that the *Law of Large Numbers* states that in the long run, as the sample size increases and increases, the relative frequencies of outcomes get closer and closer to the theoretical or actual probability values. The goal of this lab is to verify the Law of Large Numbers. 
 
 ## Simulating a Coin Tossing Experiment
 
@@ -42,5 +42,5 @@ To calculate the relative frequency of an outcome, calculate the number of times
 
 ## Practice
 
-Repeat this process to generate another simulation with 500 *Coin Tosses* in any empty space of the *Lab 9* worksheet.
-
+1. Repeat this process to generate another simulation with 100 *Coin Tosses* in any empty space of the *Lab 9* worksheet.
+2. Repeat this process to generate another simulation with 500 *Coin Tosses* in any empty space of the worksheet.

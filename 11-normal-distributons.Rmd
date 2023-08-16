@@ -53,7 +53,7 @@ The *y*-values range from $3.34$ x $10^{-5}$ to $1.71$ x $10^{-4}$.
 5. Click `Insert > Scatter > Scatter with Smooth Lines`. 
 
 ```{r normal-curve, echo=FALSE, fig.align = 'center', out.width='100%', fig.show='hold', fig.cap='The normal curve created.', fig.alt = 'A screenshot of the normal curve generated.'}
-knitr::include_graphics('normal-curve.png')
+knitr::include_graphics('images/normal-curve.png')
 ```
 
 The resulting graph needed to be adjusted (Figure **\@ref(fig:normal-curve)

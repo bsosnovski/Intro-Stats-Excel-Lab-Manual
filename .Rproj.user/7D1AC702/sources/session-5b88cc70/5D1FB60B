@@ -3,7 +3,7 @@
     "path": "~/Documents/GitHub/Intro-Stats-Excel-Lab-Manual/index.Rmd",
     "project_path": "index.Rmd",
     "type": "r_markdown",
-    "hash": "2611921212",
+    "hash": "106926380",
     "contents": "",
     "dirty": false,
     "created": 1692076462614.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "4,0",
-        "scrollLine": "0"
+        "cursorPosition": "28,0",
+        "scrollLine": "17"
     },
     "folds": "",
-    "lastKnownWriteTime": 1692150640,
+    "lastKnownWriteTime": 1692158315,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1692150640478,
+    "last_content_update": 1692158315094,
     "read_only": false,
     "read_only_alternatives": []
 }

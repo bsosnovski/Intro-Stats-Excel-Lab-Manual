@@ -23,7 +23,7 @@ cover-image: images/cover-page.png
 
 # Preface {-}
 
-```{r fig.align='center', echo=FALSE, include=identical(knitr:::pandoc_to(), 'html')}
+```{r fig.align='center', echo=FALSE, include=identical(knitr:::pandoc_to(), 'html'),fig.align = 'center', out.width='100%', fig.show='hold', fig.alt = 'Cover page with blue backgroud and black letters.'}
 knitr::include_graphics('images/cover-page.png', dpi = NA)
 ```
 

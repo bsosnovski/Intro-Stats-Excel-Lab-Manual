@@ -20,7 +20,8 @@ knitr::include_graphics('images/window-mac.png')
 ```
 
 ## Saving Excel Files
-On the main menu, click `File > Save As` when saving for the first time. A dialog  will appear, similar to the one in figure **\@ref(fig:saving-dialog-box-pc)**. Fill in the file name, select the directory of your choice where the file will be saved on your machine, and the file type, for example, file with extensions `.xlsx` or `.xls`. 
+
+On the main menu, click `File > Save As` when saving for the first time. A dialog  will appear, similar to the one in figure **\@ref(fig:saving-dialog-box-pc)** on a PC or figure **\@ref(fig:saving-dialog-box-mac)** on a MAC. Fill in the file name, select the directory of your choice where the file will be saved on your machine, and the file type, for example, file with extensions `.xlsx` or `.xls`. 
 
 
 ```{r saving-dialog-box-pc, echo=FALSE, fig.align = 'center', out.width='45%', fig.show='hold', fig.cap='Dialog window when saving a workbook on a PC.', fig.alt = 'A dialog box on a PC showing where to enter file name, select the directory and file type.'}
@@ -78,6 +79,14 @@ knitr::include_graphics('images/autosave-mac2.png')
 ## Opening an Excel File
 
 To open an Excel file, go to the main menu and click `File > Open`. Select the directory containing the file, then select the file you want to open.
+
+Note: On PCs, you will get the Enable Editing warning when you open an Excel document downloaded from the Internet for the first time. You must click the Enable Editing button to modify and work on it.
+
+```{r enable-editing, echo=FALSE, fig.align = 'center', out.width='90%', fig.show='hold', fig.cap='Enable Editing warning.', fig.alt = 'A screenshot of the warning about the Enable Editing.'}
+knitr::include_graphics('images/enable-editing.png')
+```
+ 
+If you are working on your own computer, you can change Excel so that editing is enabled by default. Click File > Options >Trust Center > Trust Center Setting > Protected View. You can then uncheck the options you want related to Enable Protected View.
 
 
 ## The Analysis ToolPak {#toolpak}

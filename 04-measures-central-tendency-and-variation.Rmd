@@ -32,6 +32,7 @@ knitr::include_graphics('images/descriptive-stats1.png')
 6. After you filled in the input range field, check or uncheck the box `Labels in the first row` according to what is in the input range.
 7. Check the option `Output Range` and select a cell in a blank area of your worksheet.
 8.Check the option `Summary statistics`. 
+9. Click `OK`.
 
 ```{r descriptive-stats2, echo=FALSE, fig.align = 'center', out.width='80%', fig.show='hold', fig.cap='Descriptive Statistics dialog window.', fig.alt = 'A screenshot of the Descriptive Statistics dialog window.'}
 knitr::include_graphics('images/descriptive-stats2.png')

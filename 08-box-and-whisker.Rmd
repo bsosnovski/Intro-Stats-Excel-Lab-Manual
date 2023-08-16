@@ -35,7 +35,7 @@ Measures <- c('Min', 'Q1', 'Q2', 'Q3', 'Max', 'Median')
 Values <- c(18, 24.50, 38, 44.25, 58, 38)
 df <- data.frame(Measures,Values)
 knitr::kable(df,
-  caption = 'Example of a five-number-summary', col.names = NULL, format = "html", table.attr = "style='width:50%;'" )
+  caption = 'Example of a five-number-summary', format = "html", table.attr = "style='width:50%;'" )
 ```
 <center>
 

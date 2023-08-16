@@ -50,11 +50,11 @@ knitr::include_graphics('images/final-scatter-plot.png')
 5. For `Array 2`, select the cells in Column B of the data set.
 
 ```{r correl-funciton-mac, echo=FALSE, fig.align = 'center', out.width='50%', fig.show='hold', fig.cap='Dialog window of the Correl function on MAC.', fig.alt = 'A screenshot of dialog box of the Correl function on MAC.'}
-knitr::include_graphics('images/correl-funciton-mac.png')
+knitr::include_graphics('images/correl-function-mac.png')
 ```
 
-```{r correl-funciton-pc, echo=FALSE, fig.align = 'center', out.width='50%', fig.show='hold', fig.cap='Dialog window of the Correl function on PC.', fig.alt = 'A screenshot of dialog box of the Correl function on PC.'}
-knitr::include_graphics('images/correl-funciton-mac.png')
+```{r correl-funciton-pc, echo=FALSE, fig.align = 'center', out.width='90%', fig.show='hold', fig.cap='Dialog window of the Correl function on PC.', fig.alt = 'A screenshot of dialog box of the Correl function on PC.'}
+knitr::include_graphics('images/correl-function-pc.png')
 ```
 
 Up to 4 decimal places, the correlation coefficient is 0.9008.

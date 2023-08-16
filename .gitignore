@@ -302,3 +302,7 @@ TSWLatexianTemp*
 .nojekyll.Rmd
 .DS_Store
 rsconnect/bookdown.org/bsosnovski/intro-stats-excel-lab-manual.dcf
+.DS_Store
+*.json
+*.json
+*.Rproj.user/

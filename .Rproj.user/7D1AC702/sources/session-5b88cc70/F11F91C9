@@ -3,7 +3,7 @@
     "path": "~/Documents/GitHub/Intro-Stats-Excel-Lab-Manual/_output.yml",
     "project_path": "_output.yml",
     "type": "yaml",
-    "hash": "0",
+    "hash": "2947261232",
     "contents": "",
     "dirty": false,
     "created": 1692076308148.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "10,19",
-        "scrollLine": "0"
+        "cursorPosition": "16,18",
+        "scrollLine": "6"
     },
     "folds": "",
-    "lastKnownWriteTime": 1692150689,
+    "lastKnownWriteTime": 1692153270,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1692150689130,
+    "last_content_update": 1692153270890,
     "read_only": false,
     "read_only_alternatives": []
 }

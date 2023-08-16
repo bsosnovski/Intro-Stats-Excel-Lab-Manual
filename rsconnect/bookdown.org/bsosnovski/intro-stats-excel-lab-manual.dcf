@@ -5,10 +5,10 @@ account: bsosnovski
 server: bookdown.org
 hostUrl: https://bookdown.org/__api__
 appId: 12714
-bundleId: 87477
+bundleId: 87479
 url: https://bookdown.org/bsosnovski/intro-stats-excel-lab-manual/
-when: 1692152297.29055
-lastSyncTime: 1692152297.29056
+when: 1692153372.249
+lastSyncTime: 1692153372.24901
 asMultiple: FALSE
 asStatic: FALSE
 ignoredFiles: .nojekyll.Rmd

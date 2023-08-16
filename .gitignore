@@ -307,3 +307,4 @@ rsconnect/bookdown.org/bsosnovski/intro-stats-excel-lab-manual.dcf
 *.json
 .Rproj.user/
 rsconnect/
+.Rhistory

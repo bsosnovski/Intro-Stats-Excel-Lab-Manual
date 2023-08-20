@@ -18,6 +18,7 @@ link-citations: yes
 github-repo: https://github.com/bsosnovski/Intro-Stats-Excel-Lab-Manual
 description: "This is an Excel computer lab manual to be used in an Introduction to Statistics course at QCC."
 cover-image: images/cover-page.png
+#lang: en
 ---
 
 
